@@ -48,7 +48,7 @@ errorout() {
 banner() {
 	clear
 	clear
-	printf "\nBeta versiyada..."
+	printf "\nBeta versiyada...\n"
 	
 }
 
