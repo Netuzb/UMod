@@ -1,4 +1,5 @@
 #!/bin/bash
+# mod by umodules in uz language
 
 if [ ! -n "$BASH" ]; then
 	echo "Non-bash shell detected, fixing..."
@@ -49,8 +50,8 @@ banner() {
 	clear
 	clear
 	printf "\n\e[1;35;47m                   \e[0m"
-printf "\n\e[1;35;47m █ █ █▆█ ███ ██▅  \e[0m"
-printf "\n\e[1;35;47m █▅█ █ █ █▆█ █▅█  \e[0m"
+printf "\n\e[1;35;47m █ █ █▆█ ███ ██▅   \e[0m"
+printf "\n\e[1;35;47m █▅█ █ █ █▆█ █▅█   \e[0m"
 printf "\n\e[1;35;47m                   \e[0m"
 printf "\n\n\e[3;34;40m Jarayon boshlandi...\e[0m\n\n"
 	
