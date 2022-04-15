@@ -17,10 +17,10 @@ class HelpMod(loader.Module):
     strings = {
         "name": "Help",
         "bad_module": "<b>🚫 <b>Module</b> <code>{}</code> <b>not found</b>",
-        "single_mod_header": "📼 <b>{}</b>:",
+        "single_mod_header": "📂 <b>Modul nomi:</b> {}",
         "single_cmd": "\n🗂️ <b>{}{}</b> - ",
         "undoc_cmd": "🦥 No docs",
-        "all_header": "📂 <b>Umumiy modlar: {}\n 📂 Berkitilganlari: {}</b>",
+        "all_header": "📂 <b>Umumiy modlar: {}\n📂 Berkitilganlari: {}</b>",
         "mod_tmpl": "\n{} <b>{}</b>",
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
@@ -37,13 +37,13 @@ class HelpMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "🇺🇿",
+            "📖",
             lambda: "Core module bullet",
             "geek_emoji",
-            "🇺🇿",
+            "📖",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "🇺🇿",
+            "📖",
             lambda: "Plain module bullet"
         )
 
@@ -126,7 +126,7 @@ class HelpMod(loader.Module):
             reply = self.strings("single_mod_header").format(utils.escape_html(name))
             if module.__doc__:
                 reply += (
-                    "<i>\nℹ️ " + utils.escape_html(inspect.getdoc(module)) + "\n</i>"
+                    "<b>\n📖 Modul haqida:</b> " + utils.escape_html(inspect.getdoc(module)) + "\n"
                 )
 
             commands = {
