@@ -22,9 +22,9 @@ from .. import loader, utils
 class WhoIsMod(loader.Module):
     """Get info about user/chat"""
 
-    strings = {"name": "Information"}
+    strings = {"name": "Information #umodules"}
 
-    async def userinfocmd(self, message):
+    async def cmd(self, message):
         """.whois <@ or reply or id>; Northing"""
         args = utils.get_args_raw(message)
         reply = await message.get_reply_message()
@@ -54,7 +54,7 @@ class WhoIsMod(loader.Module):
         os.remove(photo)
         await message.delete()
 
-    async def chatinfocmd(self, message):
+    async def cmd(self, message):
         """.message <@ or id>; Northing"""
         args = utils.get_args_raw(message)
 
