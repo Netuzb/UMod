@@ -4,12 +4,12 @@ from .. import loader, utils
 
 @loader.tds
 class ModulesLinkMod(loader.Module):
-    """ ModulesLink [mod by #umodules]
+    """ Modullar [mod by #umodules]
 
 🇺🇲 • Retrieves already installed modules' links
 🇺🇿 • Oʻrnatilgan modullarning havolalarini osongina olish"""
 
-    strings = {"name": "ModulesLink [mod by #umodules]"}
+    strings = {"name": "Modullar [mod by #umodules]"}
 
     async def mlcmd(self, message):
         """🇺🇲 • Metod of sending file in EN language"""
