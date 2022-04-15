@@ -41,16 +41,16 @@ class UpdaterMod(loader.Module):
 
     strings = {
         "name": "Updater",
-        "source": "ℹ️ <b>Read the source code from</b> <a href='{}'>here</a>",
-        "restarting_caption": "🔄 <b>Restarting...</b>",
-        "downloading": "🔄 <b>Downloading updates...</b>",
-        "downloaded": "✅ <b>Downloaded successfully.\nPlease type</b> \n<code>.restart</code> <b>to restart the bot.</b>",
-        "already_updated": "✅ <b>Already up to date!</b>",
-        "installing": "🔁 <b>Installing updates...</b>",
-        "success": "✅ <b>Restart successful!</b>",
-        "heroku_warning": "⚠️ <b>Heroku API key has not been set. </b>Update was successful but updates will reset every time the bot restarts.",
-        "origin_cfg_doc": "Git origin URL, for where to update from",
-        "lavhost": "🔄 <b>Restart initiated, and will be complete in 3-5 seconds.</b>\n<i>This message <b>will not</b> be edited after restart is complete!</i>",
+        "source": "<b>Manzil mavjud emas</b> <a href='{}'></a>",
+        "restarting_caption": "📖 <b>Qayta ishlash...</b>",
+        "downloading": "📖 <b>Yangilanish yuklanmoqda...</b>",
+        "downloaded": "📖 <b>Muvaffaqiyatli yuklandi.\nEndi</b> \n<code>.restart</code> <b>qo'llang.</b>",
+        "already_updated": "📖 <b>Muvaffaqiyatli yangilandi!</b>",
+        "installing": "📖 <b>Yangilanish oʻrnatilmoqda...</b>",
+        "success": "📖 <b>Restart amalga oshirildi!</b>",
+        "heroku_warning": "📖 <b>Heroku Api token xatoligi. </b>Update was successful but updates will reset every time the bot restarts.",
+        "origin_cfg_doc": "Git havolasi qayerda?",
+        "lavhost": "📖 <b>Odam.</b>\n<i>This message <b>will not</b> be edited after restart is complete!</i>",
     }
 
     def __init__(self):
