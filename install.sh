@@ -48,16 +48,15 @@ errorout() {
 banner() {
 	clear
 	clear
-	printf "\n████░████░███░███░██░██░████░"
-	printf "\n░██░░██░░░██░█░██░██░██░███░░"
-	printf "\n░██░░████░██░░░██░█████░█████"
+	printf "\nBeta versiyada..."
+	
 }
 
 ##############################################################################
 
 banner
-printf '%s\n' "The process takes around 3-7 minutes"
-printf '%s' "Installing now...  "
+printf '%s\n' "Userbot yuklanishi 3-7 daqiqa"
+printf '%s' "Daraja...  "
 
 ##############################################################################
 
