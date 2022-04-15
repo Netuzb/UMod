@@ -98,7 +98,7 @@ class UpdaterMod(loader.Module):
 
     @loader.owner
     async def downloadcmd(self, message: Message) -> None:
-        """Downloads userbot updates"""
+        """Yangilanish yuklash"""
         message = await utils.answer(message, self.strings("downloading", message))
         await self.download_common()
         await utils.answer(message, self.strings("downloaded", message))
@@ -150,7 +150,7 @@ class UpdaterMod(loader.Module):
 
     @loader.owner
     async def updatecmd(self, message: Message, hard: bool = False) -> None:
-        """Downloads userbot updates"""
+        """Yangilanish"""
         if os.environ.get("LAVHOST"):
             await utils.answer(message, self.strings("lavhost"))
             await self._client.send_message("@lavhostbot", "/update")
@@ -194,7 +194,7 @@ class UpdaterMod(loader.Module):
             await self.updatecmd(message, True)
 
     @loader.unrestricted
-    async def sourcecmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Links the source code of this project"""
         await utils.answer(
             message,
