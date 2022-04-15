@@ -40,7 +40,7 @@ class UpdaterMod(loader.Module):
     """Updates itself"""
 
     strings = {
-        "name": "Updater",
+        "name": "Updater #umodules",
         "source": "<b>Manzil mavjud emas</b> <a href='{}'></a>",
         "restarting_caption": "📖 <b>Qayta ishlash...</b>",
         "downloading": "📖 <b>Yangilanish yuklanmoqda...</b>",
@@ -62,7 +62,7 @@ class UpdaterMod(loader.Module):
 
     @loader.owner
     async def restartcmd(self, message: Message) -> None:
-        """Restarts the userbot"""
+        """Qayta ishga tushirish"""
         if os.environ.get("LAVHOST"):
             await utils.answer(message, self.strings("lavhost"))
             await self._client.send_message("@lavhostbot", "/restart")
@@ -97,7 +97,7 @@ class UpdaterMod(loader.Module):
         await message.client.disconnect()
 
     @loader.owner
-    async def downloadcmd(self, message: Message) -> None:
+    async def yuklashcmd(self, message: Message) -> None:
         """Yangilanish yuklash"""
         message = await utils.answer(message, self.strings("downloading", message))
         await self.download_common()
