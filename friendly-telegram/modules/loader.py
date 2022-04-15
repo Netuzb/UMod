@@ -206,7 +206,7 @@ class LoaderMod(loader.Module):
             )
 
     @loader.owner
-    async def dlpresetcmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Set preset. Defaults to full"""
         args = utils.get_args(message)
 
@@ -270,7 +270,7 @@ class LoaderMod(loader.Module):
 
     @loader.owner
     async def loadmodcmd(self, message: Message) -> None:
-        """Loads the module file"""
+        """Fayl orqali oʻrnatish"""
         msg = message if message.file else (await message.get_reply_message())
 
         if msg is None or msg.media is None:
@@ -517,7 +517,7 @@ class LoaderMod(loader.Module):
         return True
 
     @loader.owner
-    async def dlrepocmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Downloads and installs all modules from repo"""
         args = utils.get_args(message)
 
@@ -548,7 +548,7 @@ class LoaderMod(loader.Module):
             await utils.answer(message, self.strings("args_incorrect", message))
 
     @loader.owner
-    async def unloadrepocmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Removes loaded repository"""
         args = utils.get_args(message)
 
@@ -591,7 +591,7 @@ class LoaderMod(loader.Module):
         return True
 
     @loader.owner
-    async def unloadmodcmd(self, message: Message) -> None:
+    async def unloadcmd(self, message: Message) -> None:
         """Unload module by class name"""
         args = utils.get_args_raw(message)
 
@@ -624,7 +624,7 @@ class LoaderMod(loader.Module):
         )
 
     @loader.owner
-    async def clearmodulescmd(self, message: Message) -> None:
+    async def clearmodscmd(self, message: Message) -> None:
         """Delete all installed modules"""
         self._db.set("friendly-telegram.modules.loader", "loaded_modules", [])
         self._db.set("friendly-telegram.modules.loader", "unloaded_modules", [])
