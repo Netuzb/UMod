@@ -48,7 +48,11 @@ errorout() {
 banner() {
 	clear
 	clear
-	printf "\nBeta versiyada...\n"
+	printf "\n\e[1;35;47m                   \e[0m"
+printf "\n\e[1;35;47m █ █ █▆█ ███ ██▅  \e[0m"
+printf "\n\e[1;35;47m █▅█ █ █ █▆█ █▅█  \e[0m"
+printf "\n\e[1;35;47m                   \e[0m"
+printf "\n\n\e[3;34;40m Jarayon boshlandi...\e[0m\n\n"
 	
 }
 
