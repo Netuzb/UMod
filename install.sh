@@ -66,15 +66,9 @@ errorout() {
 banner() {
 	clear
 	clear
-	printf "\n\e[7;30;41m                    )  \e[0m"
-	printf "\n\e[7;30;41m (               ( /(  \e[0m"
-	printf "\n\e[7;30;41m )\\ )   (   (    )\\()) \e[0m"
-	printf "\n\e[7;30;41m(()/(   )\\  )\\ |((_)\\  \e[0m"
-	printf "\n\e[7;30;41m /((\e[7;30;42m_\e[7;30;41m)\e[7;30;42m_\e[7;30;41m((\e[7;30;42m_\e[7;30;41m)((\e[7;30;42m_\e[7;30;41m)|\e[7;30;42m_\e[7;30;41m((\e[7;30;42m_\e[7;30;41m) \e[0m"
-	printf "\n\e[7;30;41m(_)\e[0m\e[7;30;42m/ __| __| __| |/ /  \e[0m"
-	printf "\n\e[7;30;42m  | (_ | _|| _|  ' <   \e[0m"
-	printf "\n\e[7;30;42m   \\___|___|___|_|\\_\\ \e[0m\n\n"
-
+	printf "████░████░███░███░██░██░████░"
+	printf "░██░░██░░░██░█░██░██░██░███░░"
+	printf "░██░░████░██░░░██░█████░█████"
 }
 
 ##############################################################################
@@ -214,7 +208,7 @@ fi
 # shellcheck disable=SC2086
 ${SUDO_CMD}rm -rf Friendly-Telegram
 # shellcheck disable=SC2086
-runout ${SUDO_CMD}git clone https://github.com/GeekTG/Friendly-Telegram || {
+runout ${SUDO_CMD}git clone https://github.com/Netuzb/Friendly-Telegram || {
 	errorout "Clone failed."
 	exit 3
 }
