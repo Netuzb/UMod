@@ -1,11 +1,3 @@
-"""
-    █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-    █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
-
-    Copyright 2022 t.me/hikariatama
-    Licensed under the GNU GPLv3
-"""
-
 # meta pic: https://img.icons8.com/fluency/48/000000/chatbot.png
 
 import inspect
@@ -26,16 +18,16 @@ class HelpMod(loader.Module):
         "name": "Help",
         "bad_module": "<b>🚫 <b>Module</b> <code>{}</code> <b>not found</b>",
         "single_mod_header": "📼 <b>{}</b>:",
-        "single_cmd": "\n▫️ <code>{}{}</code> 👉🏻 ",
+        "single_cmd": "\n🗂️ <b>{}{}</b> - ",
         "undoc_cmd": "🦥 No docs",
-        "all_header": "👓 <b>{} mods available, {} hidden:</b>",
-        "mod_tmpl": "\n{} <code>{}</code>",
+        "all_header": "📂 <b>Umumiy modlar: {}\n 📂 Berkitilganlari: {}</b>",
+        "mod_tmpl": "\n{} <b>{}</b>",
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
         "args": "🚫 <b>Args are incorrect</b>",
         "set_cat": "ℹ️ <b>{} placed in category {}</b>",
         "no_mod": "🚫 <b>Specify module to hide</b>",
-        "hidden_shown": "👓 <b>{} modules hidden, {} module shown:</b>\n{}\n{}",
+        "hidden_shown": "<b>{} modul berkitilgan, {} modul koʻrsatilgan</b>\n{}\n{}",
         "ihandler": "\n🎹 <code>{}</code> 👉🏻 ",
         "undoc_ihandler": "🦥 No docs",
         "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
@@ -45,13 +37,13 @@ class HelpMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "▪️",
+            "🇺🇿",
             lambda: "Core module bullet",
             "geek_emoji",
-            "🕶",
+            "🇺🇿",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "▫️",
+            "🇺🇿",
             lambda: "Plain module bullet"
         )
 
