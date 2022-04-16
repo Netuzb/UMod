@@ -80,6 +80,7 @@ class BluvchiMod(loader.Module):
             f"<b>📖 O'chirilgan akkaunt:</b> <code>{user.deleted}</code>\n"
             f"<b>📖 Tasdiqlangan akkaunt:</b> <code>{user.verified}</code>\n"
             f"<b>📖 Kontaktda mavjudligi:</b> <code>{user.contact}</code>\n\n"
+            f"📃 None = <b>yoʻq, mavjud emas</b>\n"
             f"📃 False = <b>yolgʻon (yoʻq degandek gap)</b>\n"
             f"📃 True = <b>toʻgʻri (xa degandek gap)</b>\n\n"
             f"<b>📃 Qoʻllanma esdan chiqmasin:</b> <code>.id @user</code>"
