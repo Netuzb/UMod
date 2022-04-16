@@ -123,7 +123,7 @@ class LoaderMod(loader.Module):
     """Loads modules"""
 
     strings = {
-        "name": "Loader",
+        "name": "Loader #umodules",
         "repo_config_doc": "Fully...",
         "avail_header": "<b>📖 UModules </b>",
         "select_preset": "<b>⚠️ Please select a preset</b>",
