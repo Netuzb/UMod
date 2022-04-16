@@ -27,7 +27,7 @@ class HelpMod(loader.Module):
         "args": "🚫 <b>Args are incorrect</b>",
         "set_cat": "ℹ️ <b>{} placed in category {}</b>",
         "no_mod": "📖 <b>Modul nomini yozing...</b>",
-        "hidden_shown": "<b>📁 Berkitilgan modullar: {}\n📂 Koʻrsatilgan modullar: {}</b>{}{}\n\n",
+        "hidden_shown": "<b>📁 Berkitilgan modullar: {}\n📂 Koʻrsatilgan modullar: {}</b>{}\n\n{}\n\n",
         "ihandler": "\n🗂️ <b>{}</b> - ",
         "undoc_ihandler": "📂 Hujjatlar yoʻq!!",
         "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
