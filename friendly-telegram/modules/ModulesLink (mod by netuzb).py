@@ -9,7 +9,7 @@ class ModulesLinkMod(loader.Module):
 🇺🇲 • Retrieves already installed modules' links
 🇺🇿 • Oʻrnatilgan modullarning havolalarini osongina olish"""
 
-    strings = {"name": "Modullar [mod by #umodules]"}
+    strings = {"name": "Modullar #umodules"}
 
     async def mlcmd(self, message):
         """🇺🇲 • Metod of sending file in EN language"""
