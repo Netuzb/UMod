@@ -16,20 +16,20 @@ class HelpMod(loader.Module):
 
     strings = {
         "name": "Help",
-        "bad_module": "<b>🚫 <b>Module</b> <code>{}</code> <b>not found</b>",
+        "bad_module": "<b>📂 Modul topilmadi</b> <code>{}</code>",
         "single_mod_header": "📂 <b>Modul nomi:</b> {}",
         "single_cmd": "\n🗂️ <b>{}{}</b> - ",
-        "undoc_cmd": "🦥 No docs",
-        "all_header": "📂 <b>Umumiy modlar: {}\n📂 Berkitilganlari: {}</b>",
+        "undoc_cmd": "📂 Hujjatlar yoʻq!",
+        "all_header": "📂 <b>Umumiy modullar: {}\n📂 Berkitilganlari: {}</b>",
         "mod_tmpl": "\n{} <b>{}</b>",
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
         "args": "🚫 <b>Args are incorrect</b>",
         "set_cat": "ℹ️ <b>{} placed in category {}</b>",
-        "no_mod": "🚫 <b>Specify module to hide</b>",
-        "hidden_shown": "<b>{} modul berkitilgan, {} modul koʻrsatilgan</b>\n{}\n{}",
-        "ihandler": "\n🎹 <code>{}</code> 👉🏻 ",
-        "undoc_ihandler": "🦥 No docs",
+        "no_mod": "📖 <b>Modul nomini yozing...</b>",
+        "hidden_shown": "<b>📁 Berkitilgan modullar: {}\n📂 Koʻrsatilgan modullar: {}</b>\n{}\n{}",
+        "ihandler": "\n🗂️ <b>{}</b> - ",
+        "undoc_ihandler": "📂 Hujjatlar yoʻq!!",
         "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
         "join": "👩‍💼 <b>Join the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
     }
@@ -53,9 +53,8 @@ class HelpMod(loader.Module):
     def set(self, *args) -> None:
         return self._db.set(self.strings["name"], *args)
 
-    async def helphidecmd(self, message: Message) -> None:
-        """<module or modules> - Hide module(-s) from help
-        *Split modules by spaces"""
+    async def berkcmd(self, message: Message) -> None:
+        """modul berkitish <modul nomi>"""
         modules = utils.get_args(message)
         if not modules:
             await utils.answer(message, self.strings("no_mod"))
@@ -283,8 +282,8 @@ class HelpMod(loader.Module):
 
         await utils.answer(message, f"{reply}\n{''.join(core_)}{''.join(plain_)}{''.join(inline_)}")
 
-    async def supportcmd(self, message):
-        """Joins the support GeekTG chat"""
+    async def cmd(self, message):
+        """yordam soʻrash uchun"""
         if await self.allmodules.check_security(
             message, security.OWNER | security.SUDO
         ):
