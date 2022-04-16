@@ -119,11 +119,11 @@ def get_git_api(url):
 
 
 @loader.tds
-class LoaderuzMod(loader.Module):
+class LoaderMod(loader.Module):
     """Loads modules"""
 
     strings = {
-        "name": "Loader #umodules",
+        "name": "Loader",
         "repo_config_doc": "Fully qualified URL to a module repo",
         "avail_header": "<b>📂 Barcha rasmiy modullar:</b>\n",
         "select_preset": "<b>⚠️ Please select a preset</b>",
