@@ -123,7 +123,7 @@ class LoaderMod(loader.Module):
     """Loads modules"""
 
     strings = {
-        "name": "Loader #umodules",
+        "name": "O'rnatgich #umodules",
         "repo_config_doc": "Fully...",
         "avail_header": "<b>📖 UModules </b>",
         "select_preset": "<b>⚠️ Please select a preset</b>",
@@ -269,7 +269,7 @@ class LoaderMod(loader.Module):
             logger.exception(f"Failed to load {module_name}")
 
     @loader.owner
-    async def loadmodcmd(self, message: Message) -> None:
+    async def loadcmd(self, message: Message) -> None:
         """modul faylini saqlash"""
         msg = message if message.file else (await message.get_reply_message())
 
@@ -624,7 +624,7 @@ class LoaderMod(loader.Module):
         )
 
     @loader.owner
-    async def clearmodscmd(self, message: Message) -> None:
+    async def clearcmd(self, message: Message) -> None:
         """barcha modullarni oʻchirish"""
         self._db.set("friendly-telegram.modules.loader", "loaded_modules", [])
         self._db.set("friendly-telegram.modules.loader", "unloaded_modules", [])
