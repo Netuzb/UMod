@@ -97,7 +97,7 @@ class UpdaterMod(loader.Module):
         await message.client.disconnect()
 
     @loader.owner
-    async def yuklashcmd(self, message: Message) -> None:
+    async def yangilashcmd(self, message: Message) -> None:
         """Yangilanish yuklash"""
         message = await utils.answer(message, self.strings("downloading", message))
         await self.download_common()
