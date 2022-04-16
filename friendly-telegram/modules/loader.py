@@ -175,7 +175,7 @@ class LoaderuzMod(loader.Module):
         super().__init__()
         self.config = loader.ModuleConfig(
             "MODULES_REPO",
-            "https://github.com/Netuzb/Friendly-Telegram/tree/master/friendly-telegram/modules",
+            "https://raw.githubusercontent.com/Netuzb/Friendly-Telegram/tree/master/friendly-telegram/modules",
             lambda m: self.strings("repo_config_doc", m),
         )
 
