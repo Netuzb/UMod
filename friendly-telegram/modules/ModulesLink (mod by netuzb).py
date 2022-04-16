@@ -12,7 +12,7 @@ class ModulesLinkMod(loader.Module):
     strings = {"name": "Modullar #umodules"}
 
     async def mlcmd(self, message):
-        """🇺🇲 • Metod of sending file in EN language"""
+        """metod of sending file in EN language"""
         args = utils.get_args_raw(message)
         if not args:
             return await utils.answer(message, "🚫 <b>No args</b>")
@@ -56,7 +56,7 @@ class ModulesLinkMod(loader.Module):
 # ----------------------------------------------------#
 
     async def mluzcmd(self, message):
-        """🇺🇿 • Modul faylini yuboruvchi metod UZ tilida"""
+        """modul faylini yuboruvchi metod UZ tilida"""
         args = utils.get_args_raw(message)
         if not args:
             return await utils.answer(message, "🚫 <b>Arglar yo'q</b>")
