@@ -15,7 +15,7 @@ class HelpMod(loader.Module):
     """Yordam boʻlimi"""
 
     strings = {
-        "name": "Help #umodules",
+        "name": "Yordam #umodules",
         "bad_module": "<b>📂 Modul topilmadi</b> <code>{}</code>",
         "single_mod_header": "📂 <b>Modul nomi:</b> {}",
         "single_cmd": "\n🗂️ <b>{}{}</b> - ",
@@ -24,8 +24,8 @@ class HelpMod(loader.Module):
         "mod_tmpl": "\n{} <b>{}</b>",
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
-        "args": "🚫 <b>Args are incorrect</b>",
-        "set_cat": "ℹ️ <b>{} placed in category {}</b>",
+        "args": "🚫 <b>Arglar noto'g'ri</b>",
+        "set_cat": "ℹ️ <b>{} toifasiga kiritilgan {}</b>",
         "no_mod": "📖 <b>Modul nomini yozing...</b>",
         "hidden_shown": "<b>📁 Berkitilgan modullar: {}\n📂 Koʻrsatilgan modullar: {}\n\n</b>{}{}",
         "ihandler": "\n🗂️ <b>{}</b> - ",
