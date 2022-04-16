@@ -141,7 +141,7 @@ class LoaderMod(loader.Module):
         "requirements_failed": "<b>🚫 Requirements installation failed</b>",
         "requirements_installing": "<b>🔄 Installing requirements...</b>",
         "requirements_restart": "<b>🔄 Requirements installed, but a restart is required</b>",
-        "all_modules_deleted": "<b>✅ All modules deleted</b>",
+        "all_modules_deleted": "<b>✅ Barcha modullar oʻchirildi!</b>",
         "no_modules": "<b>⚠️ You have no custom modules!</b>",
         "searching": "<b>🔍 Searching...</b>",
         "file": "<b>📥 File of module {}:<b>",
@@ -181,7 +181,7 @@ class LoaderMod(loader.Module):
 
     @loader.owner
     async def dlmodcmd(self, message: Message) -> None:
-        """Downloads and installs a module from the official module repo"""
+        """rasmiy manbaga oʻrnatish"""
         if args := utils.get_args(message):
             args = args[0] if urllib.parse.urlparse(args[0]).netloc else args[0].lower()
 
@@ -518,7 +518,7 @@ class LoaderMod(loader.Module):
 
     @loader.owner
     async def cmd(self, message: Message) -> None:
-        """Downloads and installs all modules from repo"""
+        """Yuklash"""
         args = utils.get_args(message)
 
         if len(args) == 1:
@@ -592,7 +592,7 @@ class LoaderMod(loader.Module):
 
     @loader.owner
     async def unloadcmd(self, message: Message) -> None:
-        """Unload module by class name"""
+        """modulni olib tashlash"""
         args = utils.get_args_raw(message)
 
         if not args:
@@ -625,7 +625,7 @@ class LoaderMod(loader.Module):
 
     @loader.owner
     async def clearmodscmd(self, message: Message) -> None:
-        """Delete all installed modules"""
+        """oʻrnatilgan barcha modullarni oʻchirish"""
         self._db.set("friendly-telegram.modules.loader", "loaded_modules", [])
         self._db.set("friendly-telegram.modules.loader", "unloaded_modules", [])
 
