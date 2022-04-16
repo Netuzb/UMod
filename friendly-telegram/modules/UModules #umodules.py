@@ -168,9 +168,7 @@ def register(cb):
 	cb(YangilashMod())
 	
 class YangilashMod(loader.Module):
-	"""UModules universal modullari
-
-💙 • [versiya: v2.0.0] Rivojlanamiz..."""
+	"""UModules universal minimal modullari"""
 
 	strings = {"name": "UModules #modullari",}
 	
