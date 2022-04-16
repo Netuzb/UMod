@@ -31,8 +31,8 @@ class KarishaMod(loader.Module):
 🇺🇿 • Modulda Karisha va Aleks ovozlari mavjud))
 📁 • Modullar bazasi doimo yangilanib boriladi: @UModules""" 
     strings = {
-               "name": "Ovozlar #umdoules",
-               "yana": "<b>🗿 • Yana urinib koʻrinchi, balkim oʻxshab qolar!</b>",
+               "name": "Ovozlar #umodules",
+               "yana": "<b>🗿 • Yana urinib koʻringchi, balkim oʻxshab qolar!</b>",
                "karisha": "<b>🗿 • Buyruqdan keyin soʻz yozish kerak!</b>",
                "xatolik": "<b>🗿 • Xatolik yuz berdi!?</b>",
                "aktivqil": "<b>🗿 • Akasi siz oldin botni aktiv qiling</b> @deepttsbot\n🌟 • <b>Bot adminiga rahmat:</b> @cocuc",
