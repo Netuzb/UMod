@@ -125,19 +125,19 @@ class LoaderMod(loader.Module):
     strings = {
         "name": "Loader",
         "repo_config_doc": "Fully qualified URL to a module repo",
-        "avail_header": "<b>📥 Available official modules from repo</b>",
+        "avail_header": "<b>📂 Barcha rasmiy modullar:</b>\n\n",
         "select_preset": "<b>⚠️ Please select a preset</b>",
         "no_preset": "<b>🚫 Preset not found</b>",
         "preset_loaded": "<b>✅ Preset loaded</b>",
-        "no_module": "<b>🚫 Module not available in repo.</b>",
+        "no_module": "<b>📖 Koʻrsatilgan manzilda modul mavjud emas!?</b>",
         "no_file": "<b>🚫 File not found</b>",
         "provide_module": "<b>⚠️ Provide a module to load</b>",
         "bad_unicode": "<b>🚫 Invalid Unicode formatting in module</b>",
         "load_failed": "<b>🚫 Loading failed. See logs for details</b>",
-        "loaded": "<b>📥 Module </b><code>{}</code>{}<b> loaded.</b>{}",
+        "loaded": "<b>📁 Modul yuklandi:</b> {}{}{}",
         "no_class": "<b>What class needs to be unloaded?</b>",
-        "unloaded": "<b>📤 Module unloaded.</b>",
-        "not_unloaded": "<b>🚫 Module not unloaded.</b>",
+        "unloaded": "<b>📂 Modul olib tashlandi!</b>",
+        "not_unloaded": "<b>📁 Modul olinmadi!</b>",
         "requirements_failed": "<b>🚫 Requirements installation failed</b>",
         "requirements_installing": "<b>🔄 Installing requirements...</b>",
         "requirements_restart": "<b>🔄 Requirements installed, but a restart is required</b>",
@@ -157,7 +157,7 @@ class LoaderMod(loader.Module):
         "repo_not_loaded": "<b>🚫 Repository not loaded</b>",
         "repo_unloaded": "<b>🔄 Repository unloaded, but restart is required to unload repository modules</b>",
         "repo_not_unloaded": "<b>🚫 Repository not unloaded</b>",
-        "single_cmd": "\n📍 <code>{}{}</code> 👉🏻 ",
+        "single_cmd": "\n🗂️ <b>{}{}</b> - ",
         "undoc_cmd": "👁‍🗨 No docs",
         "ihandler": "\n🎹 <i>Inline</i>: <code>{}</code> 👉🏻 ",
         "undoc_ihandler": "👁‍🗨 No docs",
@@ -168,7 +168,7 @@ class LoaderMod(loader.Module):
         "version_incompatible": "🚫 <b>This module requires GeekTG {}+\nPlease, update with </b><code>.update</code>",
         "non_heroku": "♓️ <b>This module is not supported on Heroku</b>",
         "ffmpeg_required": "🚫 <b>This module requires FFMPEG, which is not installed</b>",
-        "developer": "\n🧑‍💻 <b>Developer: </b><code>{}</code>"
+        "developer": "\n\n📖 <b>Yaratuvchi:</b> {}"
     }
 
     def __init__(self):
@@ -450,7 +450,7 @@ class LoaderMod(loader.Module):
 
             if instance.__doc__:
                 modhelp += (
-                    f"<i>\nℹ️ {utils.escape_html(inspect.getdoc(instance))}</i>\n"
+                    f"\n<b>📂 Haqida:</b> {utils.escape_html(inspect.getdoc(instance))}\n"
                 )
 
             if re.search(r"# ?scope: ?disable_onload_docs", doc):
