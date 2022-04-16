@@ -84,8 +84,8 @@ class HelpMod(loader.Module):
             self.strings("hidden_shown").format(
                 len(hidden),
                 len(shown),
-                "\n".join([f"👁‍🗨 <i>{m}</i>" for m in hidden]),
-                "\n".join([f"👁 <i>{m}</i>" for m in shown]),
+                "\n\n".join([f"👁‍🗨 <b>Berk:</b> <i>{m}</i>" for m in hidden]),
+                "\n\n".join([f"👁 <b>Olindi:</b> <i>{m}</i>" for m in shown]),
             ),
         )
 
