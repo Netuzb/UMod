@@ -125,7 +125,7 @@ class LoaderMod(loader.Module):
     strings = {
         "name": "Loader",
         "repo_config_doc": "Fully qualified URL to a module repo",
-        "avail_header": "<b>📂 Barcha rasmiy modullar:</b>\n\n",
+        "avail_header": "<b>📂 Barcha rasmiy modullar:</b>\n",
         "select_preset": "<b>⚠️ Please select a preset</b>",
         "no_preset": "<b>🚫 Preset not found</b>",
         "preset_loaded": "<b>✅ Preset loaded</b>",
@@ -175,7 +175,7 @@ class LoaderMod(loader.Module):
         super().__init__()
         self.config = loader.ModuleConfig(
             "MODULES_REPO",
-            "https://raw.githubusercontent.com/GeekTG/FTG-Modules/main/",
+            "https://github.com/Netuzb/Friendly-Telegram/tree/master/friendly-telegram/modules",
             lambda m: self.strings("repo_config_doc", m),
         )
 
