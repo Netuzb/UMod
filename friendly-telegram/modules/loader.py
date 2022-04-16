@@ -181,7 +181,7 @@ class LoaderMod(loader.Module):
 
     @loader.owner
     async def dlmodcmd(self, message: Message) -> None:
-        """Downloads and installs a module from the official module repo"""
+        """rasmiy manbaga modul yuklash"""
         if args := utils.get_args(message):
             args = args[0] if urllib.parse.urlparse(args[0]).netloc else args[0].lower()
 
@@ -206,7 +206,7 @@ class LoaderMod(loader.Module):
             )
 
     @loader.owner
-    async def dlpresetcmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Set preset. Defaults to full"""
         args = utils.get_args(message)
 
@@ -270,7 +270,7 @@ class LoaderMod(loader.Module):
 
     @loader.owner
     async def loadmodcmd(self, message: Message) -> None:
-        """Loads the module file"""
+        """modul faylini saqlash"""
         msg = message if message.file else (await message.get_reply_message())
 
         if msg is None or msg.media is None:
@@ -517,7 +517,7 @@ class LoaderMod(loader.Module):
         return True
 
     @loader.owner
-    async def dlrepocmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Downloads and installs all modules from repo"""
         args = utils.get_args(message)
 
@@ -548,7 +548,7 @@ class LoaderMod(loader.Module):
             await utils.answer(message, self.strings("args_incorrect", message))
 
     @loader.owner
-    async def unloadrepocmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Removes loaded repository"""
         args = utils.get_args(message)
 
@@ -591,8 +591,8 @@ class LoaderMod(loader.Module):
         return True
 
     @loader.owner
-    async def unloadmodcmd(self, message: Message) -> None:
-        """Unload module by class name"""
+    async def unloadcmd(self, message: Message) -> None:
+        """modulni olish"""
         args = utils.get_args_raw(message)
 
         if not args:
@@ -624,8 +624,8 @@ class LoaderMod(loader.Module):
         )
 
     @loader.owner
-    async def clearmodulescmd(self, message: Message) -> None:
-        """Delete all installed modules"""
+    async def clearmodscmd(self, message: Message) -> None:
+        """barcha modullarni oʻchirish"""
         self._db.set("friendly-telegram.modules.loader", "loaded_modules", [])
         self._db.set("friendly-telegram.modules.loader", "unloaded_modules", [])
 
