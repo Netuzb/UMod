@@ -12,10 +12,10 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class HelpMod(loader.Module):
-    """Help module, made specifically for GeekTG with <3"""
+    """Yordam boʻlimi"""
 
     strings = {
-        "name": "Help",
+        "name": "Help #umodules",
         "bad_module": "<b>📂 Modul topilmadi</b> <code>{}</code>",
         "single_mod_header": "📂 <b>Modul nomi:</b> {}",
         "single_cmd": "\n🗂️ <b>{}{}</b> - ",
