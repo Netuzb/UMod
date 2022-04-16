@@ -26,10 +26,7 @@ def register(cb):
     cb(KarishaMod()) 
  
 class KarishaMod(loader.Module): 
-    """Ovozlar - sunʼiy intellekt TTS ovozlarining sifatlilari
-
-🇺🇿 • Modulda Karisha va Aleks ovozlari mavjud))
-📁 • Modullar bazasi doimo yangilanib boriladi: @UModules""" 
+    """Ovozlar - sunʼiy intellekt TTS ovozlarining sifatlilari""" 
     strings = {
                "name": "Ovozlar #umodules",
                "yana": "<b>🗿 • Yana urinib koʻringchi, balkim oʻxshab qolar!</b>",
