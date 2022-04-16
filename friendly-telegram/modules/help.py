@@ -27,7 +27,7 @@ class HelpMod(loader.Module):
         "args": "🚫 <b>Args are incorrect</b>",
         "set_cat": "ℹ️ <b>{} placed in category {}</b>",
         "no_mod": "📖 <b>Modul nomini yozing...</b>",
-        "hidden_shown": "<b>📁 Berkitilgan modullar: {}\n📂 Koʻrsatilgan modullar: {}</b>\n{}\n{}",
+        "hidden_shown": "<b>📁 Berkitilgan modullar: {}\n📂 Koʻrsatilgan modullar: {}</b>{}{}",
         "ihandler": "\n🗂️ <b>{}</b> - ",
         "undoc_ihandler": "📂 Hujjatlar yoʻq!!",
         "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
@@ -84,14 +84,14 @@ class HelpMod(loader.Module):
             self.strings("hidden_shown").format(
                 len(hidden),
                 len(shown),
-                "\n\n".join([f"👁‍🗨 <b>Berk:</b> <i>{m}</i>" for m in hidden]),
-                "\n\n".join([f"👁 <b>Olindi:</b> <i>{m}</i>" for m in shown]),
+                "\n".join([f"👁‍🗨 <b>Berk:</b> <i>{m}</i>" for m in hidden]),
+                "\n".join([f"👁 <b>Olindi:</b> <i>{m}</i>" for m in shown]),
             ),
         )
 
     @loader.unrestricted
     async def helpcmd(self, message: Message) -> None:
-        """[module] [-f] - Show help"""
+        """barcha modullar [-f]"""
         args = utils.get_args_raw(message)
         force = False
         if "-f" in args:
