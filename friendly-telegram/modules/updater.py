@@ -44,7 +44,7 @@ class UpdaterMod(loader.Module):
         "source": "<b>Manzil mavjud emas</b> <a href='{}'></a>",
         "restarting_caption": "📖 <b>Qayta ishlash...</b>",
         "downloading": "📖 <b>Yangilanish yuklanmoqda...</b>",
-        "downloaded": "📖 <b>Muvaffaqiyatli yuklandi.\nEndi</b> \n<code>.restart</code> <b>qo'llang.</b>",
+        "downloaded": "📖 <b>Muvaffaqiyatli yuklandi.\n📃 Endi</b> <code>.restart</code> <b>qo'llang.</b>",
         "already_updated": "📖 <b>Muvaffaqiyatli yangilandi!</b>",
         "installing": "📖 <b>Yangilanish oʻrnatilmoqda...</b>",
         "success": "📖 <b>Restart amalga oshirildi!</b>",
