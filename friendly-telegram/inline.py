@@ -785,10 +785,10 @@ class InlineManager:
                 [
                     InlineQueryResultArticle(
                         id=rand(20),
-                        title="Show available inline commands",
+                        title="Barcha inlayn buyruqlarni koʻrish ",
                         description=f"You have {len(_help.splitlines())} available command(-s)",
                         input_message_content=InputTextMessageContent(
-                            f"<b>ℹ️ Available inline commands:</b>\n\n{_help}",
+                            f"<b>📖 Sizdagi mavjud inlayn buyruqlar:</b>\n\n{_help}",
                             "HTML",
                             disable_web_page_preview=True,
                         ),
