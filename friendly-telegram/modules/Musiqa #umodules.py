@@ -25,9 +25,9 @@ from asyncio.exceptions import TimeoutError
 
 @loader.tds
 class SpotifyDownloaderMod(loader.Module):
-    """Musiqa qidirish"""
+    """Musiqa izlash moduli"""
     strings = {
-        "name": "Musiqa #umodules",
+        "name": "Musiqa",
         "yoq": "<b>🗿 • Hechnima topilmadi!</b>",
         "qidiryapman": "<b>🗿 • Qidirilmoqda...</b>",
         "eshe": "<b>🗿 • Qayta urunib koʻr!</b>",
