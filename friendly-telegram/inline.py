@@ -778,7 +778,7 @@ class InlineManager:
                     InlineQueryResultArticle(
                         id=rand(20),
                         title="Barcha inlayn buyruqlarni koʻrish ",
-                        description=f"Hozirda mavjud buyruqlar {len(_help.splitlines())}(-s)",
+                        description=f"Hozirda mavjud buyruqlar: {len(_help.splitlines())} (-s)",
                         input_message_content=InputTextMessageContent(
                             f"<b>📖 Sizdagi mavjud inlayn buyruqlar:</b>\n\n{_help}",
                             "HTML",
