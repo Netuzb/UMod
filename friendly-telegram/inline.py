@@ -1,11 +1,3 @@
-"""
-    █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-    █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
-
-    Copyright 2022 t.me/hikariatama
-    Licensed under the GNU GPLv3
-"""
-
 from typing import Union, Any, List
 
 from aiogram import Bot, Dispatcher
@@ -52,7 +44,7 @@ logger = logging.getLogger(__name__)
 
 photo = io.BytesIO(
     requests.get(
-        "https://x0.at/988u.png"
+        "https://x0.at/BlNJ.jpg"
     ).content
 )
 photo.name = "avatar.png"
