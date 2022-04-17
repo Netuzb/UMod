@@ -771,7 +771,7 @@ class InlineManager:
                         )
                     )
 
-                    _help += f"🎹 <code>@{self.bot_username} {name}</code> - {doc}\n"
+                    _help += f"📖 <code>@{self.bot_username} {name}</code> - {doc}\n"
 
             await inline_query.answer(
                 [
