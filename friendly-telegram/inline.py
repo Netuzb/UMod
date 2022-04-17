@@ -52,7 +52,7 @@ logger = logging.getLogger(__name__)
 
 photo = io.BytesIO(
     requests.get(
-        "https://github.com/Netuzb/Friendly-Telegram/raw/master/friendly-telegram/bot_avatar.png"
+        "https://x0.at/988u.png"
     ).content
 )
 photo.name = "avatar.png"
@@ -377,7 +377,7 @@ class InlineManager:
 
             # Generate and set random username for bot
             uid = rand(6)
-            username = f"GeekTG_{uid}_Bot"
+            username = f"UModules_{uid}_Bot"
 
             m = await conv.send_message(username)
             r = await conv.get_response()
@@ -451,7 +451,7 @@ class InlineManager:
 
             for row in r.reply_markup.rows:
                 for button in row.buttons:
-                    if re.search(r"@umodules_[0-9a-zA-Z]{6}_bot", button.text, re.I):
+                    if re.search(r"@UModules_[0-9a-zA-Z]{6}_bot", button.text, re.I):
                         m = await conv.send_message(button.text)
                         r = await conv.get_response()
 
