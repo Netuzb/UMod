@@ -483,7 +483,7 @@ class InlineManager:
                         await m.delete()
                         await r.delete()
 
-                        m = await conv.send_message("GeekQuery")
+                        m = await conv.send_message("UmodInlayn")
                         r = await conv.get_response()
 
                         await m.delete()
