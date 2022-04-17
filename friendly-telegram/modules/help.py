@@ -22,7 +22,7 @@ class HelpMod(loader.Module):
         "undoc_cmd": "📂 Hujjatlar yoʻq!",
         "all_header": "📂 <b>Umumiy modullar: {}\n📂 Berkitilganlari: {}</b>",
         "mod_tmpl": "\n{} <b>{}</b>",
-        "first_cmd_tmpl": ": ( <code>{}</code>",
+        "first_cmd_tmpl": ": [ <code>{}</code>",
         "cmd_tmpl": " | <code>{}</code>",
         "args": "🚫 <b>Arglar noto'g'ri</b>",
         "set_cat": "ℹ️ <b>{} toifasiga kiritilgan {}</b>",
@@ -30,8 +30,8 @@ class HelpMod(loader.Module):
         "hidden_shown": "<b>📁 Berkitilgan modullar: {}\n📂 Koʻrsatilgan modullar: {}\n\n</b>{}{}",
         "ihandler": "\n📃 <b>{}</b> - ",
         "undoc_ihandler": "📂 Hujjatlar yoʻq!!",
-        "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
-        "join": "👩‍💼 <b>Join the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
+        "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/ftgchatuz'>support chat</a>",
+        "join": "👩‍💼 <b>Join the</b> <a href='https://t.me/ftgchatuz'>support chat</a>",
     }
 
     def __init__(self):
@@ -262,7 +262,7 @@ class HelpMod(loader.Module):
                     tmp += self.strings("cmd_tmpl").format(f"🎹 {cmd}")
 
             if commands or icommands:
-                tmp += " )"
+                tmp += " ]"
                 if inline:
                     inline_ += [tmp]
                 elif core:
