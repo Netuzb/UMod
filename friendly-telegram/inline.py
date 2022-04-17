@@ -786,13 +786,13 @@ class InlineManager:
                     InlineQueryResultArticle(
                         id=rand(20),
                         title="Barcha inlayn buyruqlarni koʻrish ",
-                        description=f"You have {len(_help.splitlines())} available command(-s)",
+                        description=f"Hozirda mavjud buyruqlar {len(_help.splitlines())}(-s)",
                         input_message_content=InputTextMessageContent(
                             f"<b>📖 Sizdagi mavjud inlayn buyruqlar:</b>\n\n{_help}",
                             "HTML",
                             disable_web_page_preview=True,
                         ),
-                        thumb_url="https://img.icons8.com/fluency/50/000000/info-squared.png",
+                        thumb_url="https://x0.at/fy6M.png",
                         thumb_width=128,
                         thumb_height=128,
                     )
