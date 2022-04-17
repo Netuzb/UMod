@@ -40,7 +40,7 @@ class UpdaterMod(loader.Module):
     """Updates itself"""
 
     strings = {
-        "name": "Updater #umodules",
+        "name": "Updater",
         "source": "<b>Manzil mavjud emas</b> <a href='{}'></a>",
         "restarting_caption": "📖 <b>Baza qayta ishga tushmoqda...</b>",
         "downloading": "📖 <b>Yangilanish yuklanmoqda...</b>",
