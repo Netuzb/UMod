@@ -369,7 +369,7 @@ class InlineManager:
             await r.delete()
 
             # Set its name to user's name + GeekTG Userbot
-            m = await conv.send_message(f"📖 UModules userbotim - {self._name}")
+            m = await conv.send_message(f"📖 {self._name} - UModules")
             r = await conv.get_response()
 
             await m.delete()
