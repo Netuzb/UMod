@@ -29,7 +29,7 @@ class OrnatgichMod(loader.Module):
 📁 • Manzil: @UModules"""
 
     strings = {
-               "name": "Avto-o'rnatgich #umodules",
+               "name": "Avto-o'rnatgich",
                "yukla": "🗿 • <b>Havola yaratilmoqda...</b>",
                "javob": "🗿 • Modul fayliga javob tariqasida yozing!"}
 
