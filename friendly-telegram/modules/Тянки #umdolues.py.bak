@@ -1,0 +1,88 @@
+""" 
+    ███▒███▒██▒██▒█▒░█▒████
+    ░█▒░█▒░░█▒█▒█▒█▒░█▒█▒█
+    ░█▒░███▒█▒░░█▒████▒█▒░█
+    
+    Litsenziya: LLC © N.OA.ZL.QW (qattan olish kere edi?)
+    Qoʻllanilgan sayt: https://x0.at
+    Taqdimot kuni: 04.04.2022 / 09:27
+    Taqdimot manzili: https://telegram.me/umodules
+"""
+__version__ = (1, 2, 1)
+# Barcha huquqlar Temur Erkinov tomonidan himoyalangan!
+# Sayt uchun alohida minnatdorchilik bildiraman: http://nekos.life and http://lesaintdesseins.fr
+# meta developer: @netuzb
+# Config [barchasi-muhokmalar-tagida]
+# Uzbekistan [Karakalpakstan. Nukus]
+
+from telethon import events
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+from .. import loader, utils
+
+def register(cb):
+	cb(NudesMod())
+
+class NudesMod(loader.Module):
+	"""Animeshka va Asab qizlar suratlarini topadigan modul.
+
+📁 • @UModules yaratgan yagona (18+) reytingli modul.
+📂 • Iltimos, yomon yoʻlda ishlatmang!"""
+
+	strings = {
+               "name": "Animeshka #umdoules",
+               "jdem": "<b>🙈 • Hozir topamizda...</b>",
+               "blok": "<b>Botni blockdan ol!</b>"}
+
+	def __init__(self):
+		self.name = self.strings['name']
+		self._me = None
+		self._ratelimit = []
+
+	async def client_ready(self, client, db):
+		self._db = db
+		self.client = client
+		self.me = await client.get_me()
+
+	async def animcmd(self, message):
+		""".anim <faqat buyruq oʻzi>"""
+		
+		chat = '@murglar_bot'
+		nashel = "<b>UwU • topdim 💖</b>"
+		await message.edit(self.strings("jdem", message)) 
+		async with message.client.conversation(chat) as conv:
+			try:
+				text = utils.get_args_raw(message) 
+				response = conv.wait_event(events.NewMessage(incoming=True, from_users=507490514))
+				await message.client.send_message(chat, "/nudes2d " + text)
+				response = await response
+			except YouBlockedUserError:
+				await message.reply(self.strings("blok", message)) 
+				return
+			await message.delete()
+			await message.client.send_file(message.to_id, response.media, caption=nashel)
+			await self.client.delete_dialog(chat)
+			
+	async def asabcmd(self, message):
+		""".asab <faqat buyruq oʻzi>"""
+		
+		chat = '@murglar_bot'
+		nashel = "<b>OwO • baho beringchi 🥰</b>"
+		await message.edit(self.strings("jdem", message)) 
+		async with message.client.conversation(chat) as conv:
+			try:
+				text = utils.get_args_raw(message) 
+				response = conv.wait_event(events.NewMessage(incoming=True, from_users=507490514))
+				await message.client.send_message(chat, "/nudes3d")
+				response = await response
+			except YouBlockedUserError:
+				await message.reply(self.strings("blok", message)) 
+				return
+			await message.delete()
+			await message.client.send_file(message.to_id, response.media, caption=nashel)
+			await self.client.delete_dialog(chat)
+			
+	async def faqcmd(self, message):
+		""".faq <ma'lumot>"""
+		
+		nashel = "<b>UwU • topdim 💖</b>"
+		await message.edit(self.strings("jdem", message)) 
