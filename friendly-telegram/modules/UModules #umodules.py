@@ -214,7 +214,7 @@ def register(cb):
 class YangilashMod(loader.Module):
 	"""UModules universal modullari. Barcha modullar xavfsizligini siz uchun ta'minlab berish huquqiga ega emasmiz!"""
 
-	strings = {"name": "UModules #modullari",}
+	strings = {"name": "UModules",}
 	
 	async def hackcmd(self, message):
 		"""buzish yangicha ko'rinishi"""
