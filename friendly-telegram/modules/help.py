@@ -15,7 +15,7 @@ class HelpMod(loader.Module):
     """Yordam boʻlimi"""
 
     strings = {
-        "name": "Yordam #umodules",
+        "name": "Yordam",
         "bad_module": "<b>📂 Modul topilmadi</b> <code>{}</code>",
         "single_mod_header": "📂 <b>Modul nomi:</b> {}",
         "single_cmd": "\n📃 <b>{}{}</b> - ",
@@ -37,13 +37,13 @@ class HelpMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "📖",
+            "📖 #UMod",
             lambda: "Core module bullet",
             "geek_emoji",
-            "📖",
+            "📖 #UMod",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "📖",
+            "📖 #UMod",
             lambda: "Plain module bullet"
         )
 
