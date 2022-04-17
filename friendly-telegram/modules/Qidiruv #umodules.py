@@ -23,7 +23,7 @@ def register(cb):
 class QidiruvMod(loader.Module):
 	"""Kontent qidirish moduli""" 
 	strings = {
-               "name": "Qidiruv #umodules", 
+               "name": "Qidiruvchi", 
                "umodules": "<b>[Qidiruv #umodules]</b> • ",
                "easyapk": "<b>[EasyApk #kanali]</b> • ",
                "uzbekona": "<b>[UZBEKONA #kanali]</b> • ",
