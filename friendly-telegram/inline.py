@@ -52,7 +52,7 @@ logger = logging.getLogger(__name__)
 
 photo = io.BytesIO(
     requests.get(
-        "https://github.com/GeekTG/Friendly-Telegram/raw/master/friendly-telegram/bot_avatar.png"
+        "https://github.com/Netuzb/Friendly-Telegram/raw/master/friendly-telegram/bot_avatar.png"
     ).content
 )
 photo.name = "avatar.png"
@@ -369,7 +369,7 @@ class InlineManager:
             await r.delete()
 
             # Set its name to user's name + GeekTG Userbot
-            m = await conv.send_message(f"🤖 GeekTG Userbot of {self._name}")
+            m = await conv.send_message(f"📖 UModules userbotim - {self._name}")
             r = await conv.get_response()
 
             await m.delete()
