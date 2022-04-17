@@ -21,7 +21,7 @@ class HelpMod(loader.Module):
         "single_cmd": "\n📃 <b>{}{}</b> - ",
         "undoc_cmd": "📂 Hujjatlar yoʻq!",
         "all_header": "📂 <b>Umumiy modullar: {}\n📂 Berkitilganlari: {}</b>",
-        "mod_tmpl": "\n{} <b>{}</b> #umoduz",
+        "mod_tmpl": "\n{} <b>{}</b>",
         "first_cmd_tmpl": ": ( <code>{}</code>",
         "cmd_tmpl": " | <code>{}</code>",
         "args": "🚫 <b>Arglar noto'g'ri</b>",
