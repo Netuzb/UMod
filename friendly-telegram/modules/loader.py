@@ -123,7 +123,7 @@ class LoaderMod(loader.Module):
     """Loads modules"""
 
     strings = {
-        "name": "O'rnatgich #umodules",
+        "name": "O'rnatgich",
         "repo_config_doc": "Fully...",
         "avail_header": "<b>📖 UModules </b>",
         "select_preset": "<b>⚠️ Please select a preset</b>",
