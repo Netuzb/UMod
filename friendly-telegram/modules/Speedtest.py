@@ -30,7 +30,7 @@ class SpeedMod(loader.Module):
                "results_upload": "<b>📃 Yuborish tezligi:</b> {} MB/S",
                "results_ping": "<b>📃 Tezlik sifati:</b> {} MS"}
 
-    async def speedcmd(self, message):
+    async def tezlikcmd(self, message):
         """internet tezligini oʻlchash"""
         await utils.answer(message, self.strings("running", message))
         args = utils.get_args(message)
