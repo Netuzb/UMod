@@ -21,7 +21,7 @@ class HelpMod(loader.Module):
         "single_cmd": "\n📃 <b>{}{}</b> - ",
         "undoc_cmd": "📂 Hujjatlar yoʻq!",
         "all_header": "📂 <b>Umumiy modullar: {}\n📂 Berkitilganlari: {}</b>",
-        "mod_tmpl": "\n{} <b>{}</b>",
+        "mod_tmpl": "\n{} <b>{}</b> #umoduz",
         "first_cmd_tmpl": ": ( <code>{}</code>",
         "cmd_tmpl": " | <code>{}</code>",
         "args": "🚫 <b>Arglar noto'g'ri</b>",
@@ -37,13 +37,13 @@ class HelpMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "📖 #UM",
+            "📖",
             lambda: "Core module bullet",
             "geek_emoji",
-            "📖 #UM",
+            "📖",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "📖 #UM",
+            "📖",
             lambda: "Plain module bullet"
         )
 
