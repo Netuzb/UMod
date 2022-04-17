@@ -44,7 +44,7 @@ logger = logging.getLogger(__name__)
 
 photo = io.BytesIO(
     requests.get(
-        "https://x0.at/BlNJ.jpg"
+        "https://x0.at/W3VZ.png"
     ).content
 )
 photo.name = "avatar.png"
