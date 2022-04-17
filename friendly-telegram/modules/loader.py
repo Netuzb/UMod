@@ -141,7 +141,7 @@ class LoaderMod(loader.Module):
         "requirements_failed": "<b>🚫 Requirements installation failed</b>",
         "requirements_installing": "<b>🔄 Installing requirements...</b>",
         "requirements_restart": "<b>🔄 Requirements installed, but a restart is required</b>",
-        "all_modules_deleted": "<b>✅ All modules deleted</b>",
+        "all_modules_deleted": "<b>📖 Barcha modullar o'chirildi!</b>",
         "no_modules": "<b>⚠️ You have no custom modules!</b>",
         "searching": "<b>🔍 Searching...</b>",
         "file": "<b>📥 File of module {}:<b>",
