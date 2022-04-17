@@ -21,7 +21,7 @@ from .. import loader, utils
 logger = logging.getLogger(__name__)
 
 @loader.tds
-class SpeedtestMod(loader.Module):
+class SpeedMod(loader.Module):
     """Speedtest.net orqali tezlikni oʻlchash moduli"""
     strings = {"name": "Speedtest",
                "running": "<b>📖 Speedtest ishga tushmoqda...</b>",
