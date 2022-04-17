@@ -450,7 +450,7 @@ class LoaderMod(loader.Module):
 
             if instance.__doc__:
                 modhelp += (
-                    f"<i>\nℹ️ {utils.escape_html(inspect.getdoc(instance))}</i>\n"
+                    f"<b>\n📖 Haqida:</b> {utils.escape_html(inspect.getdoc(instance))}\n"
                 )
 
             if re.search(r"# ?scope: ?disable_onload_docs", doc):
