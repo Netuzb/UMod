@@ -15,6 +15,8 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #    Modded by GeekTG Team
+__version__ = (1, 0, 0)
+# meta developer: @umodules
 
 import os
 
@@ -208,7 +210,7 @@ class CoreMod(loader.Module):
         await utils.answer(message, string)
 
     @loader.owner
-    async def addaliascmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Set an alias for a command"""
         args = utils.get_args(message)
 
