@@ -94,8 +94,9 @@ class HelpMod(loader.Module):
         """barcha modullar [-f]"""
         args = utils.get_args_raw(message)
         force = False
-        flood = "salom"
+        flood = """📖 <b>Tabriklayman! Sizda UMod</b> 😎"""
         await message.reply(flood) 
+        await message.delete()
         if "-f" in args:
             args = args.replace(" -f", "").replace("-f", "")
             force = True
