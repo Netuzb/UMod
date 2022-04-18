@@ -54,7 +54,7 @@ class CoreMod(loader.Module):
         "packs_cleared": "<b>✅ Translations cleared</b>",
         "lang_set": "<b>✅ Language changed</b>",
         "db_cleared": "<b>📖 ✅ Barcha oʻzgarishlar tozalandi</b>",
-        "geek": "🕶 <b>Congrats! You are UMod!</b>\n\n<b>UMod version: {}.{}.{}</b>\n<b>Branch: master</b>",
+        "geek": "🕶 <b>Congrats! You are UMod!</b>",
         "geek_beta": "🕶 <b>Congrats! You are UMod!</b>\n\n<b>UMod version: {}.{}.{}beta</b>\n<b>Branch: beta</b>\n\n<i>🔮 You're using the unstable branch (<b>beta</b>). You receive fresh but untested updates. Report any bugs to @ftgchatuz</i>",
         "geek_alpha": "🕶 <b>Congrats! You are UMod!</b>\n\n<b>UMod version: {}.{}.{}alpha</b>\n<b>Branch: alpha</b>\n\n<i>🔮 You're using <b><u>very</u></b> unstable branch (<b>alpha</b>). You receive fresh but untested updates. You <b><u>can't ask for help, only report bugs</u></b></i>",
     }
@@ -91,7 +91,7 @@ class CoreMod(loader.Module):
     async def ftgvercmd(self, message: Message) -> None:
         """UMod tekshiruvchi"""
 
-        await utils.answer(message, self.strings("geek").format(*ver))
+        await utils.answer(message, self.strings("geek"))
 
     async def cmd(self, message: Message) -> None:
         """.blacklist [id]
