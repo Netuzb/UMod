@@ -42,6 +42,7 @@ class CoreMod(loader.Module):
         "prefix_set": "✅ <b>Command prefix updated. Type</b> <code>{newprefix}setprefix {oldprefix}</code> <b>to change it back</b>",
         "alias_created": "✅ <b>Alias created. Access it with</b> <code>{}</code>",
         "aliases": "<b>Aliases:</b>\n",
+        "umod": "<b>Tabriklayman!</b>\n",
         "no_command": "🚫 <b>Command</b> <code>{}</code> <b>does not exist</b>",
         "alias_args": "🚫 <b>You must provide a command and the alias for it</b>",
         "delalias_args": "🚫 <b>You must provide the alias name</b>",
@@ -88,6 +89,11 @@ class CoreMod(loader.Module):
         return f"{str(chatid)}.{module}" if module else chatid
 
     async def ftgvercmd(self, message: Message) -> None:
+        """FTG tekshiruvchi"""
+            await utils.answer(message, self.strings("umod")
+            return
+
+    async def cmd(self, message: Message) -> None:
         """UMod tekshiruvchi"""
         ver = getattr(main, "__version__", False)
 
