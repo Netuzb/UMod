@@ -89,11 +89,6 @@ class CoreMod(loader.Module):
         return f"{str(chatid)}.{module}" if module else chatid
 
     async def ftgvercmd(self, message: Message) -> None:
-        """FTG tekshiruvchi"""
-            await utils.answer(message, self.strings("umod")
-            return
-
-    async def cmd(self, message: Message) -> None:
         """UMod tekshiruvchi"""
         ver = getattr(main, "__version__", False)
 
