@@ -752,20 +752,13 @@ async def amain(first, client, allclients, web, arguments):
             _platform = r"Termux" if termux else (r"Heroku" if is_heroku else "VDS")
 
             logo1 = f"""
-                                      )
-                   (               ( /(
-                   ) )   (   (    )())
-                  (()/(   )  ) |((_)
-                   /((_)_((_)((_)|_((_)
-                  (_)/ __| __| __| |/ /
-                    | (_ | _|| _|  ' <
-                      ___|___|___|_|_\\
+UMod qayta ishga tushirildi!
 
-                     • Build: {build[:7]}
-                     • Version: {'.'.join(list(map(str, list(__version__))))}
-                     • {upd}
-                     • Platform: {_platform}
-                     - Started for {(await client.get_me(True)).user_id} -"""
+• Qurmoq: {build[:7]}
+• Versiya: {'.'.join(list(map(str, list(__version__))))}
+• {upd}
+• Qurilma: {_platform}
+- Boshlangan sana {(await client.get_me(True)).user_id} -"""
 
             print(logo1)
 
