@@ -94,11 +94,11 @@ class HelpMod(loader.Module):
         """yordam buyrugʻi"""
         args = utils.get_args_raw(message)
         force = False
-        flood = """📖 <b>Tabriklayman! Sizda UMod</b> 😎
-📃 <b>Endilikdan help buyrugʻi emas: <code>.helpuz</code> buyrugʻini ishlating.
+        flood = """📖 <b>Tabriklayman! Sizda UMod v1.1.0</b> 😎
+📃 <b>Endilikdan help buyrugʻi emas: <code>.mm</code> buyrugʻini ishlating.
 
-📖 Helpuz sababi:</b>
-📃 UMod iloji boricha to'laqonli oʻzbek tilida ish yuritishga harakat qiladi. Barcha modullarni ham aynan oʻzbek tilida ishlashini taʼminlashga harakat qilyapmiz.
+📖 MM sababi:</b>
+📃 UMod iloji boricha to'laqonli oʻzbek tilida ish yuritishga harakat qiladi. Barcha modullarni ham aynan oʻzbek tilida ishlashini taʼminlashga harakat qilyapmiz. <b>MM</b> - bu shunchaki jarayonni tezlashtirish uchun :))
 
 📖 <b>P.s:</b> - Agar doimiy <code>.help</code> ishlatishni xohlasangiz Geek rasmiy userbotini o'rnatib oling :))"""
         await message.reply(flood) 
@@ -106,7 +106,7 @@ class HelpMod(loader.Module):
         return
 
     @loader.unrestricted
-    async def helpuzcmd(self, message: Message) -> None:
+    async def mmcmd(self, message: Message) -> None:
         """barcha modullar [-f]"""
         args = utils.get_args_raw(message)
         force = False        
