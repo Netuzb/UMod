@@ -91,7 +91,7 @@ if [ ! x"" = x"$DYNO" ] && ! command -v python >/dev/null; then
 	export PATH="/app/.heroku/python/bin:$PATH" # Prefer the bootstrapped python, incl. pip, over the system one.
 fi
 
-if [ -d "Friendly-Telegram/friendly-telegram" ]; then
+if [ -d "UMod/friendly-telegram" ]; then
 	cd Friendly-Telegram || {
 		endspin "Error: Install git package and re-run installer"
 		exit 6
@@ -192,13 +192,13 @@ if [ ! x"$SUDO_USER" = x"" ]; then
 fi
 
 # shellcheck disable=SC2086
-${SUDO_CMD}rm -rf Friendly-Telegram
+${SUDO_CMD}rm -rf UMod
 # shellcheck disable=SC2086
-runout ${SUDO_CMD}git clone https://github.com/Netuzb/Friendly-Telegram || {
+runout ${SUDO_CMD}git clone https://github.com/Netuzb/UMod|| {
 	errorout "Clone failed."
 	exit 3
 }
-cd Friendly-Telegram || {
+cd UMod || {
 	endspin "Error: Install git package and re-run installer"
 	exit 7
 }
