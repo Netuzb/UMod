@@ -314,7 +314,7 @@
         <label class="_2fa" for="_2fa">Ikki etapli parol: </label>
         <input class="_2fa" id="_2fa" placeholder="parol" style="width: 12em;" type="password">
       </span>
-      <div id="continue_btn">Continue</div>
+      <div id="continue_btn">Keyingisi</div>
     </div>
   </div>
   <div id="root">
@@ -459,7 +459,7 @@
                       }
                     } else {
                       Swal.fire({
-                        title: 'Enter Heroku token',
+                        title: 'Heroku token kiriting',
                         text: 'Leave empty to NOT install to Heroku',
                         input: 'text',
                         inputAttributes: {
@@ -479,7 +479,7 @@
                                   } else {
                                     Swal.fire({
                                       'icon': 'success',
-                                      'text': 'Auth successful!',
+                                      'text': 'Muvaffaqiyatli bajarildi!',
                                       'timer': 1000
                                     });
                                     setTimeout(() => {
@@ -511,7 +511,7 @@
         .catch(function (error) {
           Swal.fire({
             'icon': 'error', 
-            'title': 'Code send failed'
+            'title': 'Kod yuborishda xatolik'
           });
         });
       } else {
@@ -546,7 +546,7 @@
                 } else {
                   Swal.fire({
                     'icon': 'success',
-                    'text': 'Auth successful!',
+                    'text': 'Muvoffaqiyatli bajarildi!',
                     'timer': 1000
                   });
                   setTimeout(() => {
@@ -562,14 +562,14 @@
               });
             {% else %}
               Swal.fire({
-                title: 'Enter Heroku token',
+                title: 'Heroku token yozing',
                 text: 'Leave empty to NOT install to Heroku',
                 input: 'text',
                 inputAttributes: {
                   autocapitalize: 'off'
                 },
                 showCancelButton: false,
-                confirmButtonText: 'Confirm',
+                confirmButtonText: 'Keyingisi',
                 showLoaderOnConfirm: true,
                 preConfirm: (heroku_token) => {
                   return fetch("/finishLogin", {method: "POST", body: heroku_token, credentials: "include"})
@@ -582,7 +582,7 @@
                           } else {
                             Swal.fire({
                               'icon': 'success',
-                              'text': 'Auth successful!',
+                              'text': 'Muvoffaqiyatli bajarildi!',
                               'timer': 1000
                             });
                             setTimeout(() => {
