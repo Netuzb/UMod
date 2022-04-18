@@ -91,12 +91,25 @@ class HelpMod(loader.Module):
 
     @loader.unrestricted
     async def helpcmd(self, message: Message) -> None:
-        """barcha modullar [-f]"""
+        """yordam buyrugʻi"""
         args = utils.get_args_raw(message)
         force = False
-        flood = """📖 <b>Tabriklayman! Sizda UMod</b> 😎"""
+        flood = """📖 <b>Tabriklayman! Sizda UMod</b> 😎
+📃 <b>Endilikdan help buyrugʻi emas: <code>.helpuz</code> buyrugʻini ishlating.
+
+📖 Helpuz sababi:</b>
+📃 UMod iloji boricha to'laqonli oʻzbek tilida ish yuritishga harakat qiladi. Barcha modullarni ham aynan oʻzbek tilida ishlashini taʼminlashga harakat qilyapmiz.
+
+📖 <b>P.s:</b> - Agar doimiy <code>.help</code> ishlatishni xohlasangiz Geek rasmiy userbotini o'rnatib oling :))"""
         await message.reply(flood) 
         await message.delete()
+        return
+
+    @loader.unrestricted
+    async def helpuzcmd(self, message: Message) -> None:
+        """barcha modullar [-f]"""
+        args = utils.get_args_raw(message)
+        force = False        
         if "-f" in args:
             args = args.replace(" -f", "").replace("-f", "")
             force = True
