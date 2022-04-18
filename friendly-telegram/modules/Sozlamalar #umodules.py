@@ -90,16 +90,8 @@ class CoreMod(loader.Module):
 
     async def ftgvercmd(self, message: Message) -> None:
         """UMod tekshiruvchi"""
-        ver = getattr(main, "__version__", False)
 
-        branch = os.popen("git rev-parse --abbrev-ref HEAD").read()  # skipcq: BAN-B605, BAN-B607
-
-        if "beta" in branch:
-            await utils.answer(message, self.strings("geek_beta").format(*ver))
-        elif "alpha" in branch:
-            await utils.answer(message, self.strings("geek_alpha").format(*ver))
-        else:
-            await utils.answer(message, self.strings("geek").format(*ver))
+        await utils.answer(message, self.strings("geek").format(*ver))
 
     async def cmd(self, message: Message) -> None:
         """.blacklist [id]
