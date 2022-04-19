@@ -372,7 +372,7 @@ class CommandDispatcher:
                         exc = "".join(
                             exc.split("\n")[1:]
                         )  # Remove `Traceback (most recent call last):`
-                        txt = f"<b>📖 Buyruqda xato kuzatildi:</b> <code>{prefix}{utils.escape_html(message.message)}</code>\n📖 <b>Iltimos modulni qayta tekshiring</b> <a href='{exc}'></a>"
+                        txt = f"<b>📖 Buyruqda xato kuzatildi:</b> <code>{prefix}{utils.escape_html(message.message)}</code>\n📖 <b>Iltimos modulni qayta tekshiring: <code>.logs</code></b> <a href='{exc}'></a>"
                         await (message.edit if message.out else message.reply)(txt)
                     except Exception:
                         pass
