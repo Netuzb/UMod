@@ -37,9 +37,10 @@ class UploadPHMod(loader.Module):
 		
 		qollanma = """
 <b>📖 Qoʻllanma: <code>Telegraph host</code>
-📃 1. Kerakli, yuklamoqchi boʻlgan rasm/gif/video topasiz, aniqlaysiz. Va shu media'ga javoban <code>.ph</code> buyrugʻini yozib yuborasiz.
-📃 1.1. Buyruqdan keyin darrov "Nega qotib qoldi?" degan savolga berilmang.
-📃 1.2. Modul tezligi media hajmiga bogʻliq.
+
+📃 - Kerakli, yuklamoqchi boʻlgan rasm/gif/video topasiz, aniqlaysiz. Va shu media'ga javoban <code>.ph</code> buyrugʻini yozib yuborasiz.
+📃 - Buyruqdan keyin darrov "Nega qotib qoldi?" degan savolga berilmang.
+📃 - Modul tezligi media hajmiga bogʻliq.
 
 📖 Qisqacha namuna:
 📃 <a href="https://te.legra.ph/file/763e3cb894fb1566723ec.mp4">Videoni koʻrish</a></b>"""
