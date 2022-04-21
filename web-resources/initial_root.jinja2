@@ -434,17 +434,17 @@
           if (!response.ok) {
             Swal.fire({
               'icon': 'error', 
-              'title': 'Code send failed'
+              'title': 'Kod yuborishda xatolik'
             });
           } else {
             Swal.fire({
-              title: 'Enter received code',
+              title: 'Kodni kiriting',
               input: 'text',
               inputAttributes: {
                 autocapitalize: 'off'
               },
               showCancelButton: false,
-              confirmButtonText: 'Confirm',
+              confirmButtonText: 'Tayyor',
               showLoaderOnConfirm: true,
               preConfirm: (login) => {
                 _tg_pass = login
@@ -467,14 +467,14 @@
                       }
                     } else {
                       Swal.fire({
-                        title: 'Heroku токенни йозинг:',
+                        title: 'Heroku tokenini kiriting:',
                         text: 'Leave empty to NOT install to Heroku',
                         input: 'text',
                         inputAttributes: {
                           autocapitalize: 'off'
                         },
                         showCancelButton: false,
-                        confirmButtonText: 'Confirm',
+                        confirmButtonText: 'Tayyor',
                         showLoaderOnConfirm: true,
                         preConfirm: (heroku_token) => {
                           return fetch("/finishLogin", {method: "POST", body: heroku_token, credentials: "include"})
@@ -482,12 +482,12 @@
                                   if (!response.ok) {
                                     Swal.fire({
                                       'icon': 'error',
-                                      'text': 'Логинга киришда ҳатолик!'
+                                      'text': 'Loginga kirishda xatolik!'
                                     })
                                   } else {
                                     Swal.fire({
                                       'icon': 'success',
-                                      'text': 'Мувофақятли бажарилди!',
+                                      'text': 'Muvoffaqiyatli amalga oshirildi!',
                                       'timer': 1000
                                     });
                                     setTimeout(() => {
@@ -498,7 +498,7 @@
                                 .catch(function (response) {
                                   Swal.fire({
                                     'icon': 'error',
-                                    'text': 'Логинга киришда ҳатолик!'
+                                    'text': 'Loginga kirishda xatolik!'
                                   })
                                 });
                         },
@@ -549,12 +549,12 @@
                 if (!response.ok) {
                   Swal.fire({
                     'icon': 'error',
-                    'text': 'Логинга киришда ҳатолик!'
+                    'text': 'Loginga kirishda xatolik!'
                   })
                 } else {
                   Swal.fire({
                     'icon': 'success',
-                    'text': 'Мувофақятли бажарилди!',
+                    'text': 'Muvoffaqiyatli amalga oshirildi!',
                     'timer': 1000
                   });
                   setTimeout(() => {
@@ -565,12 +565,12 @@
               .catch(function (response) {
                 Swal.fire({
                   'icon': 'error',
-                  'text': 'Логинга киришда ҳатолик!'
+                  'text': 'Loginga kirishda xatolik!'
                 })
               });
             {% else %}
               Swal.fire({
-                title: 'Heroku токенни йозинг:',
+                title: 'Heroku tokenini kiriting:',
                 text: 'Leave empty to NOT install to Heroku',
                 input: 'text',
                 inputAttributes: {
@@ -585,12 +585,12 @@
                           if (!response.ok) {
                             Swal.fire({
                               'icon': 'error',
-                              'text': 'Логинга киришда ҳатолик!'
+                              'text': 'Loginga kirishda xatolik!'
                             })
                           } else {
                             Swal.fire({
                               'icon': 'success',
-                              'text': 'Мувофақятли бажарилди!',
+                              'text': 'Muvoffaqiyatli amalga oshirildi!',
                               'timer': 1000
                             });
                             setTimeout(() => {
@@ -601,7 +601,7 @@
                         .catch(function (response) {
                           Swal.fire({
                             'icon': 'error',
-                            'text': 'Логинга киришда ҳатолик!'
+                            'text': 'Loginga kirishda xatolik!'
                           })
                         });
                 },
