@@ -1273,8 +1273,8 @@ class InlineManager:
             )
         except Exception:
             msg = (
-                "🚫 <b>A problem occurred with inline bot "
-                "while processing query. Check logs for "
+                "🚫 <b>Inlayn buyruqlarda taqdim etilmadi! "
+                "Xatoliklani tekshiring"
                 "further info.</b>"
             )
 
