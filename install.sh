@@ -60,8 +60,8 @@ printf "\n\n\e[3;34;40m Jarayon boshlandi...\e[0m\n\n"
 ##############################################################################
 
 banner
-printf '%s\n' "Userbot yuklanishi 3-7 daqiqa"
-printf '%s' "Daraja...  "
+printf '%s\n' "\n\e[3;34;40m - Userbot yuklanishi 3-7 daqiqa \e[0m\n"
+printf '%s' "\n\e[3;34;40m - Daraja...  \e[0m\n"
 
 ##############################################################################
 
