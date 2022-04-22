@@ -209,7 +209,7 @@ runin ${SUDO_CMD}"python$PYVER" -m pip install -r requirements.txt --upgrade --u
 	errorin "Requirements failed!"
 	exit 4
 }
-endspin "Endi: quyidagi Localhost toʻliq nusxalab, browserdan kiring."
+endspin "- Tayyor! Sozlandi."
 rm -f ../ftg-install.log
 touch .setup_complete
 # shellcheck disable=SC2086,SC2015
