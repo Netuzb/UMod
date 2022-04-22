@@ -49,19 +49,19 @@ errorout() {
 banner() {
 	clear
 	clear
-	printf "\n\e[1;35;47m                   \e[0m"
-printf "\n\e[1;35;47m █ █ █▆█ ███ ██▅   \e[0m"
-printf "\n\e[1;35;47m █▅█ █ █ █▆█ █▅█   \e[0m"
-printf "\n\e[1;35;47m                   \e[0m"
-printf "\n\n\e[3;34;40m Jarayon boshlandi...\e[0m\n\n"
+	printf "\n\e[1;35;47m                  \e[0m"
+printf "\n\e[1;35;47m █ █ █▆█ ███ ██▅  \e[0m"
+printf "\n\e[1;35;47m █▅█ █ █ █▆█ █▅█  \e[0m"
+printf "\n\e[1;35;47m                  \e[0m"
+printf "\n\n\e[3;34;40m UMod - Yangi Avlod Yuzerboti\e[0m\n\n"
 	
 }
 
 ##############################################################################
 
 banner
-printf '%s\n' "\n\e[3;34;40m - Userbot yuklanishi 3-7 daqiqa \e[0m\n"
-printf '%s' "\n\e[3;34;40m - Daraja...  \e[0m\n"
+printf '%s\n' "- Userbot yuklanishi 3-7 daqiqa"
+printf '%s' "- Daraja...  "
 
 ##############################################################################
 
