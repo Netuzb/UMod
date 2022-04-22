@@ -401,11 +401,11 @@ def main():  # noqa: C901
                 if platform.system() == "Linux" and not os.path.exists(
                     "/etc/os-release"
                 ):
-                    print(f"Havolani nusalang ------- http://localhost:{port}")
+                    print(f"Havolani nusxalang ----- http://localhost:{port}")
                 else:
                     ipaddress = get("https://api.ipify.org").text
                     print(
-                        f"Havolani nusalang ------- http://{ipaddress}:{port} or http://localhost:{port}"
+                        f"Havolani nusxalang ----- http://{ipaddress}:{port} or http://localhost:{port}"
                     )
             loop.run_until_complete(web.wait_for_api_token_setup())
             api_token = web.api_token
@@ -487,11 +487,11 @@ def main():  # noqa: C901
                     if platform.system() == "Linux" and not os.path.exists(
                         "/etc/os-release"
                     ):
-                        print(f"Havolani nusalang ------- http://localhost:{port}")
+                        print(f"Havolani nusxalang ----- http://localhost:{port}")
                     else:
                         ipaddress = get("https://api.ipify.org").text
                         print(
-                            f"Havolani nusalang ------- http://{ipaddress}:{port} or http://localhost:{port}"
+                            f"Havolani nusxalang ----- http://{ipaddress}:{port} or http://localhost:{port}"
                         )
             loop.run_until_complete(web.wait_for_clients_setup())
             arguments.heroku = web.heroku_api_token
