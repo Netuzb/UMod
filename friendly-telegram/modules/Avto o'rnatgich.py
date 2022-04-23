@@ -55,7 +55,7 @@ class OrnatgichMod(loader.Module):
             await message.edit(ste(e))
             return
         url = x0at.text
-        output = f'📖<b>Havola: <code>{url}</code>📖 Modul uchun:</b> <code>.dlmod {url}</code>\n📃 <b>Modullar bazasi</b>: @umodules'
+        output = f'📖<b> Havola: <code>{url}</code>📖 Modul uchun:</b> <code>.dlmod {url}</code>\n📃 <b>Modullar bazasi</b>: @umodules'
         await message.edit(output)
         
 # modullar bazasi @umodules barcha modullarni noldan yaratamiz)) va ishonchli
