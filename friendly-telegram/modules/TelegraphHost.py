@@ -26,7 +26,7 @@ def register(cb):
 class UploadPHMod(loader.Module):
 	"""telegra.ph hostiga rasm/video/gif yuklash"""
 	strings = {
-               "name": "Telegraph host",
+               "name": "TelegraphHost",
                "reply": "📖 <b>Mediaga javob tariqasida...</b>"}
 
 	def __init__(self):
