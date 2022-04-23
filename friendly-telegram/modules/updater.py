@@ -47,7 +47,7 @@ class UpdaterMod(loader.Module):
         "downloaded": "📖 <b>Muvoffaqiyatli yuklandi.\n📃 Endi</b> <code>.restart</code> <b>qo'llang.</b>",
         "already_updated": "📖 <b>Muvaffaqiyatli yangilandi!</b>",
         "installing": "📖 <b>Yangilanish oʻrnatilmoqda...</b>",
-        "success": "📖 <b>Muvoffaqiyatli yakunlandi!</b>",
+        "success": "📖 <b>Muvoffaqiyatli yakunlandi!\n📃 Maʼlumot uchun: <code>.ftgver</code></b>",
         "heroku_warning": "📖 <b>Heroku Api token xatoligi. </b>Update was successful but updates will reset every time the bot restarts.",
         "origin_cfg_doc": "Git havolasi qayerda?",
         "lavhost": "📖 <b>Odam.</b>\n<i>This message <b>will not</b> be edited after restart is complete!</i>",
