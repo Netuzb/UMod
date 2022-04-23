@@ -29,7 +29,7 @@ class CarbonMod(loader.Module):
     """Kodni chiroyli suratga joylash"""
 
     strings = {
-        "name": "Carbon API",
+        "name": "CarbonAypi",
         "args": "<b>📖 Hechnima yoʻq...</b>",
         "loading": "<b>📖 Bajarilmoqda...</b>",
         "yoq": "<b>📖 Kod yozishni esdan chiqardingiz.</b>",
