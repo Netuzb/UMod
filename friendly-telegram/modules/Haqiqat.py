@@ -29,7 +29,7 @@ class HaqiqatMod(loader.Module):
 	"""Haqiqat yoki yolgʻon moduli"""
 	
 	strings = {
-		"name": "Haqiqat • ru-uz",
+		"name": "Haqiqat",
 		"soz_kiriting": "",
 		}
 		
