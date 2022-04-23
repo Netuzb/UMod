@@ -26,7 +26,7 @@ class OrnatgichMod(loader.Module):
     """Modul fayliga reply holatda yozing va u sizga o'rnatish kerak boʻlgan modulni toʻgʻridan-toʻgʻri havolasini yartib beradi!"""
 
     strings = {
-               "name": "Avto o'rnatgich",
+               "name": "AvtoYuklagich",
                "yukla": "📖 <b>Havola yaratilmoqda...</b>",
                "javob": "📖 <b>Modul fayliga javob tariqasida yozing!</b>"}
 
