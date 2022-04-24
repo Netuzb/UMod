@@ -1,4 +1,4 @@
-#	████░████░███░███░██░██░████░
+#    ████░████░███░███░██░██░████░
 #    ░██░░██░░░██░█░██░██░██░███░░
 #    ░██░░████░██░░░██░█████░█████
 #    ═════════════════════════════════════════
@@ -48,9 +48,9 @@ class HaqiqatMod(loader.Module):
 			await sleep (0.6)
 			await message.edit("📖<b> - Haqiqat yoki yolgʻon, hozir bilamiz...\n📖 - Javob qidirilmoqda... \n📖 - \n📖 - </b>")
 			await sleep (0.6)
-			await message.edit(f"📖<b> - Haqiqat yoki yolgʻon, hozir bilamiz...\n📖 - Javob topildi... \n📖 - Berilgan mavzu: ''{text}'' \n📖 - </b>")
+			await message.edit(f"📖<b> - Haqiqat yoki yolgʻon, hozir bilamiz...\n📖 - Javob topildi. ✅\n📖 - Berilgan mavzu: ''{text}'' \n📖 - </b>")
 			await sleep (2.0)
-			await message.edit(f"📖<b> - Haqiqat yoki yolgʻon, hozir bilamiz...\n📖 - Javob topildi... \n📖 - Berilgan mavzu: {text} \n📖 - ''{text}'' - {random.choice(haq)}</b>")
+			await message.edit(f"📖<b> - Haqiqat yoki yolgʻon, hozir bilamiz...\n📖 - Javob topildi. ✅\n📖 - Berilgan mavzu: ''{text}'' \n📖 - ''{text}'' - {random.choice(haq)}</b>")
 			return
 
 	async def инфаcmd(self, message):
