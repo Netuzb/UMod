@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 
 @loader.tds
-class CarbonaypiMod(loader.Module):
+class CarbonMod(loader.Module):
     """Kodni chiroyli suratga joylash"""
 
     strings = {
