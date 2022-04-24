@@ -64,13 +64,11 @@ class HaqiqatMod(loader.Module):
 		if not text and not reply:
 			await message.edit(soz_kiriting)
 		else:
-			await message.edit("📖<b> Ответ ищется... 🕒</b>")
+			await message.edit("📖<b> - Правда или ложь, теперь мы знаем...\n📖 - \n📖 - \n📖 - </b>")
 			await sleep (0.6)
-			await message.edit("📖<b> Ответ ищется... 🕓</b>")
+			await message.edit("📖<b> - Правда или ложь, теперь мы знаем...\n📖 - Ищу ответ... \n📖 - \n📖 - </b>")
 			await sleep (0.6)
-			await message.edit("📖<b> Ответ ищется... 🕔</b>")
-			await sleep (0.6)
-			await message.edit(f"📖<b> - Указанная тема:</b>\n📖 <b>- ''{text}''</b>")
+			await message.edit(f"📖<b> - Правда или ложь, теперь мы знаем...\n📖 - Ответ был найден. ✅\n📖 - Тема указана: ''{text}'' \n📖 - </b>")
 			await sleep (2.0)
-			await message.reply(f"📖 <b>- ''{text}'':</b>" + "\n" + f"<b>{random.choice(haq)}</b>")
+			await message.edit(f"📖<b> - Правда или ложь, теперь мы знаем...\n📖 - Ответ был найден. ✅\n📖 - Тема указана: ''{text}'' \n📖 - ''{text}'' - {random.choice(haq)}</b>")
 			return
