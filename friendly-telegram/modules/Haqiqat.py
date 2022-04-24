@@ -45,7 +45,7 @@ class HaqiqatMod(loader.Module):
 			await message.edit(soz_kiriting)
 		else:
 			await message.edit("📖<b> - Haqiqat yoki yolgʻon, hozir bilamiz...\n📖 - \n📖 - \n📖 - </b>")
-			await sleep (0.6)
+			await sleep (1.6)
 			await message.edit("📖<b> - Haqiqat yoki yolgʻon, hozir bilamiz...\n📖 - Javob qidirilmoqda... \n📖 - \n📖 - </b>")
 			await sleep (0.6)
 			await message.edit(f"📖<b> - Haqiqat yoki yolgʻon, hozir bilamiz...\n📖 - Javob topildi. ✅\n📖 - Berilgan mavzu: ''{text}'' \n📖 - </b>")
@@ -65,7 +65,7 @@ class HaqiqatMod(loader.Module):
 			await message.edit(soz_kiriting)
 		else:
 			await message.edit("📖<b> - Правда или ложь, теперь мы знаем...\n📖 - \n📖 - \n📖 - </b>")
-			await sleep (0.6)
+			await sleep (1.6)
 			await message.edit("📖<b> - Правда или ложь, теперь мы знаем...\n📖 - Ищу ответ... \n📖 - \n📖 - </b>")
 			await sleep (0.6)
 			await message.edit(f"📖<b> - Правда или ложь, теперь мы знаем...\n📖 - Ответ был найден. ✅\n📖 - Тема указана: ''{text}'' \n📖 - </b>")
