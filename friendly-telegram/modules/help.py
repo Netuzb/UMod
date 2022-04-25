@@ -20,7 +20,7 @@ class HelpMod(loader.Module):
         "single_mod_header": "📂 <b>Modul nomi:</b> {}",
         "single_cmd": "\n📃 <b>{}{}</b> - ",
         "undoc_cmd": "📂 Hujjatlar yoʻq!",
-        "all_header": "📂 <b>Umumiy modullar: <code>{}</code>\n📂 Berkitilganlari: <code>{}</code>\📂 Premium modullar: <code>• UM •</code></b>",
+        "all_header": "📂 <b>Umumiy modullar: <code>{}</code>\n📂 Berkitilganlari: <code>{}</code>\n📂 Premium modullar: <code>• UM •</code></b>",
         "mod_tmpl": "\n{} <b>{}</b>",
         "first_cmd_tmpl": ": [ <code>{}</code>",
         "cmd_tmpl": " | <code>{}</code>",
