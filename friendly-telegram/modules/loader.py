@@ -132,7 +132,7 @@ class LoaderMod(loader.Module):
         "no_module": "<b>📖 Modul manzili xato!</b>",
         "no_file": "<b>🚫 File not found</b>",
         "provide_module": "<b>⚠️ Provide a module to load</b>",
-        "bad_unicode": "<b>🚫 Invalid Unicode formatting in module</b>",
+        "bad_unicode": "<b>🚫 Bu modul emas</b>",
         "load_failed": "<b>‼️ Modul oʻrnatilmadi!\n📖 Xatoliklarni tekshirib koʻring: <code>.logs</code></b>",
         "loaded": "<b>📖 Modul nomi: </b><code>{}</code>{}{}",
         "no_class": "<b>What class needs to be unloaded?</b>",
