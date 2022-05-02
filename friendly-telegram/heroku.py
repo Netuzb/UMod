@@ -1,3 +1,5 @@
+# xuy
+
 #    Friendly Telegram (telegram userbot)
 #    Copyright (C) 2018-2022 The Authors
 
