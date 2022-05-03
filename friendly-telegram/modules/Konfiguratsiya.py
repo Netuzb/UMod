@@ -32,7 +32,7 @@ class ConfigMod(loader.Module):
 
     strings = {
         "name": "5.UModKonfig",
-        "configure": "🥷 <b>Bu yerda siz modullarning konfiguratsiyasini sozlashingiz mumkin</b>",
+        "configure": "🥷 <b>Bu yerda siz modullarning konfiguratsiyasini sozlashingiz mumkin</b>\n\n👾 Kerakli modullardan birini tanlab oʻzingizga moslab taxrirlashingiz mumkin.",
         "configuring_mod": "🥷 <b>Mod uchun konfiguratsiya opsiyasini tanlang</b> <code>{}</code>",
         "configuring_option": "🥷 <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code>\n<i>👾 {}</i>\n\n<b>Standart: </b><code>{}</code>\n\n<b>Hozirgi: </b><code>{}</code>",
         "option_saved": "🥷 <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code><b> saqlandi!</b>\n<b>Hozirgi: </b><code>{}</code>",
