@@ -282,39 +282,6 @@ class HelpMod(loader.Module):
 
         await utils.answer(message, f"{reply}\n{''.join(core_)}{''.join(plain_)}{''.join(inline_)}")
 
-    async def yordamcmd(self, message):
-        """yordam soʻrash uchun"""
-        if await self.allmodules.check_security(
-            message, security.OWNER | security.SUDO
-        ):
-            await self._client(JoinChannelRequest("https://t.me/ftgchatuz"))
-
-            try:
-                await self.inline.form(
-                    self.strings("joined", message),
-                    reply_markup=[
-                        [{"text": "🥷 Guruhga aʼzo boʻlish", "url": "https://t.me/ftgchatuz"}],
-                        [{"text": "👾 Kanalga aʼzo boʻlish", "url": "https://t.me/umodules"}]
-                    ],
-                    ttl=10,
-                    message=message,
-                )
-            except Exception:
-                await utils.answer(message, self.strings("joined", message))
-        else:
-            try:
-                await self.inline.form(
-                    self.strings("join", message),
-                    reply_markup=[
-                        [{"text": "🥷 Guruhga aʼzo boʻlish", "url": "https://t.me/ftgchatuz"}],
-                        [{"text": "👾 Kanalga aʼzo boʻlish", "url": "https://t.me/ftgchatuz"}]
-                    ],
-                    ttl=10,
-                    message=message,
-                )
-            except Exception:
-                await utils.answer(message, self.strings("join", message))
-
     async def client_ready(self, client, db) -> None:
         self._client = client
         self.is_bot = await client.is_bot()
