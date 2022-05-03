@@ -35,15 +35,16 @@ class UploadPHMod(loader.Module):
 	async def ph_qollanmacmd(self, message):
 		"""qoʻllanma"""
 		
-		qollanma = """
-<b>📖 Qoʻllanma: <code>Telegraph host</code>
+		qollanma = """<b>
+🥷 Qoʻllanma: <code>Telegraph host</code>
+├╴╴╴╴╴╴╴╴╴╴
+├ 👾 - Kerakli, yuklamoqchi boʻlgan rasm/gif/video topasiz, aniqlaysiz. Va shu media'ga javoban <code>.ph</code> buyrugʻini yozib yuborasiz.
+├ 👾 - Buyruqdan keyin darrov "Nega qotib qoldi?" degan savolga berilmang.
+├ 👾 - Modul tezligi media hajmiga bogʻliq.
 
-📃 - Kerakli, yuklamoqchi boʻlgan rasm/gif/video topasiz, aniqlaysiz. Va shu media'ga javoban <code>.ph</code> buyrugʻini yozib yuborasiz.
-📃 - Buyruqdan keyin darrov "Nega qotib qoldi?" degan savolga berilmang.
-📃 - Modul tezligi media hajmiga bogʻliq.
-
-📖 Qisqacha namuna:
-📃 <a href="https://te.legra.ph/file/763e3cb894fb1566723ec.mp4">Videoni koʻrish</a></b>"""
+🥷 Qisqacha namuna:
+├╴╴╴╴╴╴╴╴╴╴
+└ 👾 <a href="https://te.legra.ph/file/763e3cb894fb1566723ec.mp4">Videoni koʻrish</a></b>"""
 		await message.edit(qollanma)
 		return
 		
