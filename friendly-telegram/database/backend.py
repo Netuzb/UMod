@@ -80,7 +80,7 @@ class CloudBackend:
             return (
                 await self._client(
                     CreateChannelRequest(
-                        f"🥷 𝚄𝙼𝚘𝚍-{self._me.user_id}-𝙳𝚊𝚝𝚊",
+                        f"🥷 𝚄𝙼𝚘𝚍-{self._me.user_id}-𝙱𝚊𝚣𝚊",
                         "🥷 𝚄𝙼𝚘𝚍𝚡 - 𝙳𝚊𝚝𝚊𝙱𝚊𝚣𝚊...",
                         megagroup=True,
                     )
