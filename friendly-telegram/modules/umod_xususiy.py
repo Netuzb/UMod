@@ -332,13 +332,13 @@ class GeekSettingsMod(loader.Module):
             ],
             [
                 {
-                    "text": "🔄 Qayta ishga tushirish",
+                    "text": "👾 Restart",
                     "callback": self.inline__restart,
                     "args": (True,),
                 },
-                {"text": "🪂 Yangilash", "callback": self.inline__update, "args": (True,)},
+                {"text": "👾 Yangilash", "callback": self.inline__update, "args": (True,)},
             ],
-            [{"text": "😌 Menyuni yopish", "callback": self.inline__close}],
+            [{"text": "♨️ Bekor", "callback": self.inline__close}],
         ]
 
     @loader.owner
