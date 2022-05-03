@@ -26,8 +26,8 @@ def register(cb):
 class UploadPHMod(loader.Module):
 	"""telegra.ph hostiga rasm/video/gif yuklash"""
 	strings = {
-               "name": "TelegraphHost",
-               "reply": "📖 <b>Mediaga javob tariqasida...</b>"}
+               "name": "Telegraph",
+               "reply": "🥷 <b>Mediaga javob tariqasida...</b>"}
 
 	def __init__(self):
 		self.name = self.strings['name']
@@ -67,7 +67,7 @@ class UploadPHMod(loader.Module):
 				link = 'https://te.legra.ph'+path[0]['src']
 			except KeyError:
 				link = path["error"]
-			await message.edit("<b>📖 Havola tayyor.\n📖 Yuklangan host: https://te.legra.ph\n\n📖 Yuklangan manzilga havola:\n📃 "+link+"</b>")
+			await message.edit("<b>🥷 Havola tayyor.\n├╴╴╴╴╴╴╴╴╴╴\n├👾 Yuklangan host: https://te.legra.ph\n├ 👾 Yuklangan manzilga havola:\n└ 👾 "+link+"</b>")
 				
 			
 async def check_media(reply_message):
