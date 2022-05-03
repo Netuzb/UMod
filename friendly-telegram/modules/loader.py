@@ -1,21 +1,3 @@
-#    Friendly Telegram (telegram userbot)
-#    Copyright (C) 2018-2022 The Authors
-
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-#    Modded by GeekTG Team
-
 import asyncio
 import importlib
 import inspect
@@ -125,16 +107,16 @@ class LoaderMod(loader.Module):
     strings = {
         "name": "O'rnatgich",
         "repo_config_doc": "Fully...",
-        "avail_header": "<b>📖 UModules </b>",
+        "avail_header": "<b>🥷 UMod\n</b>",
         "select_preset": "<b>⚠️ Please select a preset</b>",
         "no_preset": "<b>🚫 Preset not found</b>",
         "preset_loaded": "<b>✅ Preset loaded</b>",
-        "no_module": "<b>📖 Modul manzili xato!</b>",
+        "no_module": "<b>🥷 Modul manzili xato!</b>",
         "no_file": "<b>🚫 File not found</b>",
         "provide_module": "<b>⚠️ Provide a module to load</b>",
         "bad_unicode": "<b>🚫 Bu modul emas</b>",
         "load_failed": "<b>‼️ Modul oʻrnatilmadi!\n📖 Xatoliklarni tekshirib koʻring: <code>.logs</code></b>",
-        "loaded": "<b>📖 Modul nomi: </b><code>{}</code>{}{}",
+        "loaded": "<b>🥷 Modul oʻrnatildi:\n🧟‍♀️ Nomi: </b><code>{}</code>\n🧛🏻 <b>Versiya:</b> {}{}",
         "no_class": "<b>What class needs to be unloaded?</b>",
         "unloaded": "<b>📖 Modul olindi.</b>",
         "not_unloaded": "<b>📖 Modul olinmadi.</b>",
@@ -157,7 +139,7 @@ class LoaderMod(loader.Module):
         "repo_not_loaded": "<b>🚫 Repository not loaded</b>",
         "repo_unloaded": "<b>🔄 Repository unloaded, but restart is required to unload repository modules</b>",
         "repo_not_unloaded": "<b>🚫 Repository not unloaded</b>",
-        "single_cmd": "\n📃 <b>{}{}</b> - ",
+        "single_cmd": "\n👾 <b>{}{}</b> - ",
         "undoc_cmd": "👁‍🗨 No docs",
         "ihandler": "\n📃 <i>Inline</i>: <code>{}</code> - ",
         "undoc_ihandler": "👁‍🗨 No docs",
@@ -168,7 +150,7 @@ class LoaderMod(loader.Module):
         "version_incompatible": "🚫 <b>This module requires GeekTG {}+\nPlease, update with </b><code>.update</code>",
         "non_heroku": "♓️ <b>This module is not supported on Heroku</b>",
         "ffmpeg_required": "🚫 <b>This module requires FFMPEG, which is not installed</b>",
-        "developer": "\n\n📖 <b>Modul egasi: </b><code>{}</code>"
+        "developer": "\n\n🥷 <b>Modul egasi:\n👾 </b><code>{}</code>"
     }
 
     def __init__(self):
