@@ -270,7 +270,7 @@ class GeekSettingsMod(loader.Module):
             [
                 (
                     {
-                        "text": "✅ NoNick",
+                        "text": "✅ NoNick - aktiv",
                         "callback": self.inline__setting,
                         "args": (
                             "no_nickname",
@@ -279,7 +279,7 @@ class GeekSettingsMod(loader.Module):
                     }
                     if self._db.get(main.__name__, "no_nickname", True)
                     else {
-                        "text": "🚫 NoNick",
+                        "text": "🚫 NoNick - aktivmas",
                         "callback": self.inline__setting,
                         "args": (
                             "no_nickname",
@@ -291,7 +291,7 @@ class GeekSettingsMod(loader.Module):
             [
                 (
                     {
-                        "text": "✅ Grep",
+                        "text": "✅ Grep - aktiv",
                         "callback": self.inline__setting,
                         "args": (
                             "grep",
@@ -300,7 +300,7 @@ class GeekSettingsMod(loader.Module):
                     }
                     if self._db.get(main.__name__, "grep", True)
                     else {
-                        "text": "🚫 Grep",
+                        "text": "🚫 Grep - aktivmas",
                         "callback": self.inline__setting,
                         "args": (
                             "grep",
@@ -312,7 +312,7 @@ class GeekSettingsMod(loader.Module):
             [
                 (
                     {
-                        "text": "✅ InlineLogs",
+                        "text": "✅ InlineLogs - aktiv",
                         "callback": self.inline__setting,
                         "args": (
                             "inlinelogs",
@@ -321,7 +321,7 @@ class GeekSettingsMod(loader.Module):
                     }
                     if self._db.get(main.__name__, "inlinelogs", True)
                     else {
-                        "text": "🚫 InlineLogs",
+                        "text": "🚫 InlineLogs - aktivmas",
                         "callback": self.inline__setting,
                         "args": (
                             "inlinelogs",
