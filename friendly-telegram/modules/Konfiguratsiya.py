@@ -31,11 +31,11 @@ class ConfigMod(loader.Module):
     """Modullarni konfiguratsiya qilish"""
 
     strings = {
-        "name": "Konfiguratsiya",
-        "configure": "📖 <b>Bu yerda siz modullarning konfiguratsiyasini sozlashingiz mumkin</b>",
-        "configuring_mod": "📖 <b>Mod uchun konfiguratsiya opsiyasini tanlang</b> <code>{}</code>",
-        "configuring_option": "📖 <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code>\n<i>ℹ️ {}</i>\n\n<b>Standart: </b><code>{}</code>\n\n<b>Hozirgi: </b><code>{}</code>",
-        "option_saved": "📖 <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code><b> saqlandi!</b>\n<b>Hozirgi: </b><code>{}</code>",
+        "name": "5.UModKonfig",
+        "configure": "🥷 <b>Bu yerda siz modullarning konfiguratsiyasini sozlashingiz mumkin</b>",
+        "configuring_mod": "🥷 <b>Mod uchun konfiguratsiya opsiyasini tanlang</b> <code>{}</code>",
+        "configuring_option": "🥷 <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code>\n<i>👾 {}</i>\n\n<b>Standart: </b><code>{}</code>\n\n<b>Hozirgi: </b><code>{}</code>",
+        "option_saved": "🥷 <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code><b> saqlandi!</b>\n<b>Hozirgi: </b><code>{}</code>",
     }
 
     def get(self, *args) -> dict:
