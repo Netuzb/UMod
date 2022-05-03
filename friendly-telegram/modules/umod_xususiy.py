@@ -42,7 +42,7 @@ class GeekSettingsMod(loader.Module):
         """List current watchers"""
         watchers, disabled_watchers = self.get_watchers()
         watchers = [
-            f"♻️ {_}" for _ in watchers if _ not in list(disabled_watchers.keys())
+            f"🥷 {_}" for _ in watchers if _ not in list(disabled_watchers.keys())
         ]
         watchers += [f"💢 {k} {v}" for k, v in disabled_watchers.items()]
         await utils.answer(
@@ -162,7 +162,7 @@ class GeekSettingsMod(loader.Module):
         self._db.set(main.__name__, "disabled_watchers", disabled_watchers)
         await utils.answer(message, self.strings("disabled").format(args))
 
-    async def nonickusercmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Allow certain command to be executed without nickname"""
         reply = await message.get_reply_message()
         u = reply.sender_id
@@ -180,7 +180,7 @@ class GeekSettingsMod(loader.Module):
 
         self._db.set(main.__name__, "nonickusers", nn)
 
-    async def nonickcmdcmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         args = utils.get_args_raw(message)
         if not args:
             return await utils.answer(message, self.strings("no_cmd"))
@@ -338,7 +338,7 @@ class GeekSettingsMod(loader.Module):
         ]
 
     @loader.owner
-    async def settingscmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Show settings menu"""
         await self.inline.form(
             self.strings("inline_settings"),
