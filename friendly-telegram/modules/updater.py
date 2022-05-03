@@ -131,8 +131,8 @@ class UpdaterMod(loader.Module):
             logger.exception("Req install failed")
 
     @loader.owner
-    async def updatecmd(self, message: Message, hard: bool = False) -> None:
-        """Yangilanish"""
+    async def cmd(self, message: Message, hard: bool = False) -> None:
+        """..."""
         if os.environ.get("LAVHOST"):
             await utils.answer(message, self.strings("lavhost"))
             await self._client.send_message("@lavhostbot", "/update")
