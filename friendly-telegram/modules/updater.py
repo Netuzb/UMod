@@ -24,11 +24,11 @@ class UpdaterMod(loader.Module):
     strings = {
         "name": "Yangilanish",
         "source": "<b>Manzil mavjud emas</b> <a href='{}'></a>",
-        "restarting_caption": "📖 <b>Baza qayta ishga tushmoqda...</b>",
-        "downloading": "📖 <b>Yangilanish yuklanmoqda...</b>",
-        "downloaded": "📖 <b>Muvaffaqiyatli yuklandi.\n📃 Endi</b> <code>.restart</code> <b>qo'llang.</b>",
-        "already_updated": "📖 <b>Muvaffaqiyatli yangilandi!</b>",
-        "installing": "📖 <b>Yangilanish oʻrnatilmoqda...</b>",
+        "restarting_caption": "🥷 <b>Baza qayta ishga tushmoqda...</b>",
+        "downloading": "🥷 <b>Yangilanish yuklanmoqda...</b>",
+        "downloaded": "🥷 <b>Muvaffaqiyatli yuklandi.\n└ 👾 Endi</b> <code>.restart</code> <b>qo'llang.</b>",
+        "already_updated": "🥷 <b>Muvaffaqiyatli yangilandi!</b>",
+        "installing": "🥷 <b>Yangilanish oʻrnatilmoqda...</b>",
         "success": "📖 <b>Muvaffaqiyatli yakunlandi!\n📃 Maʼlumot uchun: <code>.ftgver</code></b>",
         "heroku_warning": "📖 <b>Heroku Api token xatoligi. </b>Update was successful but updates will reset every time the bot restarts.",
         "origin_cfg_doc": "1234567890qweryeiwiskmsmsmsksmsmmsmd?",
@@ -84,7 +84,6 @@ class UpdaterMod(loader.Module):
         message = await utils.answer(message, self.strings("downloading", message))
         await self.download_common()
         await utils.answer(message, self.strings("downloaded", message))
-        await message.client.send_message(message.to_id, ".restart")
 
     async def download_common(self):
         try:
