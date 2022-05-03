@@ -116,7 +116,7 @@ class LoaderMod(loader.Module):
         "provide_module": "<b>⚠️ Provide a module to load</b>",
         "bad_unicode": "<b>🚫 Bu modul emas</b>",
         "load_failed": "<b>‼️ Modul oʻrnatilmadi!\n📖 Xatoliklarni tekshirib koʻring: <code>.logs</code></b>",
-        "loaded": "<b>🥷 Modul oʻrnatildi:\n├╴╴╴╴╴╴╴╴╴╴\n├ 🧟‍♀️ Nomi: </b><code>{}</code>\n├╴╴╴╴╴╴╴╴╴╴\n├ 🧛🏻 <b>Versiya:</b> {}{}",
+        "loaded": "<b>🥷 Modul oʻrnatildi:\n├╴╴╴╴╴╴╴╴╴╴\n├ 🧟‍♀️ Nomi: </b><code>{}</code><b>\n├╴╴╴╴╴╴╴╴╴╴\n├ 🧛🏻 Versiya:</b> {}{}",
         "no_class": "<b>What class needs to be unloaded?</b>",
         "unloaded": "<b>🥷 Modul toʻliq oʻchirib tashlandi.</b>",
         "not_unloaded": "<b>🧛🏻 Modul neto joylashganmi deyman, oʻchirishga qurbim yetmadi.</b>",
