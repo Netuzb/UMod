@@ -105,7 +105,7 @@ class LoaderMod(loader.Module):
     """Loads modules"""
 
     strings = {
-        "name": "O'rnatgich",
+        "name": "3.UModDlmod",
         "repo_config_doc": "Fully...",
         "avail_header": "<b>🥷 UMod\n</b>",
         "select_preset": "<b>⚠️ Please select a preset</b>",
