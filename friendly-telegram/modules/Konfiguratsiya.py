@@ -147,7 +147,7 @@ class ConfigMod(loader.Module):
 
         await call.edit(
             self.strings("configuring_mod").format(utils.escape_html(mod)),
-            reply_markup=list(chunks(btns, 2))
+            reply_markup=list(chunks(btns, 1))
             + [
                 [
                     {"text": "👈 Orqaga", "callback": self.inline__global_config},
@@ -165,7 +165,7 @@ class ConfigMod(loader.Module):
             if hasattr(mod, "config") and mod.strings("name") not in blacklist
         ]
         kb = []
-        for mod_row in chunks(to_config, 3):
+        for mod_row in chunks(to_config, 1):
             row = [
                 {"text": btn, "callback": self.inline__configure, "args": (btn,)}
                 for btn in mod_row
