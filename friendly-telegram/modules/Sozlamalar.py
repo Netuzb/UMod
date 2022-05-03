@@ -20,7 +20,7 @@ class CoreMod(loader.Module):
         "unblacklisted": "✅ <b>Chat {} unblacklisted from userbot</b>",
         "user_blacklisted": "✅ <b>User {} blacklisted from userbot</b>",
         "user_unblacklisted": "✅ <b>User {} unblacklisted from userbot</b>",
-        "what_prefix": "❓ <b>What should the prefix be set to?</b>",
+        "what_prefix": "<b>🥷 Akasi yangi nuqta simvoli qani?</b>",
         "prefix_incorrect": "🥷 <b>Nuqta oʻrnida simvol tanlanmadi.</b>",
         "prefix_set": "<b>🥷 Yangi nuqta oʻrnida simvol muvaffaqiyatli oʻrnatildi.\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Yangi nuqta simvoli:</b> <code>{newprefix}help</code> <a href='{oldprefix}'></a>",
         "alias_created": "✅ <b>Alias created. Access it with</b> <code>{}</code>",
