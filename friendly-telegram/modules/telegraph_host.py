@@ -21,9 +21,9 @@ import requests
 from telethon.tl.types import DocumentAttributeFilename
 
 def register(cb):
- cb(UploadPHMod())
+ cb(TelegraphMod())
 
-class UploadPHMod(loader.Module):
+class TelegraphMod(loader.Module):
 	"""telegra.ph hostiga rasm/video/gif yuklash"""
 	strings = {
                "name": "Telegraph",
