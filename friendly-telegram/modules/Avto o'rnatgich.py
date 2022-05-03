@@ -26,9 +26,9 @@ class OrnatgichMod(loader.Module):
     """Modul fayliga reply holatda yozing va u sizga o'rnatish kerak boʻlgan modulni toʻgʻridan-toʻgʻri havolasini yartib beradi!"""
 
     strings = {
-               "name": "AvtoYuklagich",
-               "yukla": "📖 <b>Havola yaratilmoqda...</b>",
-               "javob": "📖 <b>Modul fayliga javob tariqasida yozing!</b>"}
+               "name": "7.UModAuto",
+               "yukla": "🥷 <b>Havola yaratilmoqda...</b>",
+               "javob": "🥷 <b>Modul fayliga javob tariqasida yozing!</b>"}
 
     async def client_ready(self, client, db):
         self.client = client
@@ -55,7 +55,7 @@ class OrnatgichMod(loader.Module):
             await message.edit(ste(e))
             return
         url = x0at.text
-        output = f'📖<b> Havola: <code>{url}</code>📖 Modul uchun:</b> <code>.dlmod {url}</code>'
+        output = f'<b>🥷 Havola tayyor!\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Havola: <code>{url}</code>\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Modul uchun:</b> <code>.dlmod {url}</code>'
         await message.edit(output)
         
 # modullar bazasi @umodules barcha modullarni noldan yaratamiz)) va ishonchli
