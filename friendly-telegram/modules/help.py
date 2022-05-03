@@ -17,18 +17,18 @@ class HelpMod(loader.Module):
     strings = {
         "name": "Yordam",
         "bad_module": "<b>📂 Modul topilmadi</b> <code>{}</code>",
-        "single_mod_header": "📂 <b>Modul nomi:</b> {}",
-        "single_cmd": "\n📃 <b>{}{}</b> - ",
+        "single_mod_header": "🥷 <b>Modul nomi:</b> {}\n<b>├╴╴╴╴╴╴╴╴╴╴\n</b>",
+        "single_cmd": "\n└ 👾 <b>{}{}</b> - ",
         "undoc_cmd": "📂 Hujjatlar yoʻq!",
-        "all_header": "📂 <b>Umumiy modullar: <code>{}</code>\n📂 Berkitilganlari: <code>{}</code>\n📂 Premium modullar: <code>UM-0</code></b>",
+        "all_header": "🥷 <b>Umumiy modullar: <code>{}</code>\n🧟‍♀️ Berkitilganlari: <code>{}</code></b>",
         "mod_tmpl": "\n{} <b>{}</b>",
         "first_cmd_tmpl": ": [ <code>{}</code>",
         "cmd_tmpl": " | <code>{}</code>",
         "args": "🚫 <b>Arglar noto'g'ri</b>",
         "set_cat": "ℹ️ <b>{} toifasiga kiritilgan {}</b>",
-        "no_mod": "📖 <b>Modul nomini yozing...</b>",
-        "hidden_shown": "<b>📁 Berkitilgan modullar: {}\n📂 Koʻrsatilgan modullar: {}\n\n</b>{}{}",
-        "ihandler": "\n📃 <b>{}</b> - ",
+        "no_mod": "🥷 <b>Modul nomini yozing...</b>",
+        "hidden_shown": "<b>🥷 Berkitilgan modullar: {}\n🧟‍♀️ Koʻrsatilgan modullar: {}\n\n</b>{}{}",
+        "ihandler": "\n└ 👾 <b>{}</b> - ",
         "undoc_ihandler": "📂 Hujjatlar yoʻq!!",
         "joined": "😎 <b> Siz guruhga aʼzo boʻlib ulgurgansiz!</b>",
         "join": "🥱 <b>UMod muhokama guruhiga aʼzo boʻling!\n\nBarcha muhokamalar faqat rasmiy guruhlarda boʻlib oʻtadi!</b>",
@@ -37,13 +37,13 @@ class HelpMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "📖",
+            "👾",
             lambda: "Core module bullet",
             "geek_emoji",
-            "📖",
+            "👾",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "📖",
+            "👾",
             lambda: "Plain module bullet"
         )
 
@@ -125,7 +125,7 @@ class HelpMod(loader.Module):
             reply = self.strings("single_mod_header").format(utils.escape_html(name))
             if module.__doc__:
                 reply += (
-                    "<b>\n📖 Modul haqida:</b> " + utils.escape_html(inspect.getdoc(module)) + "\n"
+                    "<b>\n└ 🧟‍♀️ Modul vazifasi:</b> " + utils.escape_html(inspect.getdoc(module)) + "\n"
                 )
 
             commands = {
@@ -293,8 +293,8 @@ class HelpMod(loader.Module):
                 await self.inline.form(
                     self.strings("joined", message),
                     reply_markup=[
-                        [{"text": "📖 Guruhga aʼzo boʻlish", "url": "https://t.me/ftgchatuz"}],
-                        [{"text": "📖 Kanalga aʼzo boʻlish", "url": "https://t.me/umodules"}]
+                        [{"text": "🥷 Guruhga aʼzo boʻlish", "url": "https://t.me/ftgchatuz"}],
+                        [{"text": "👾 Kanalga aʼzo boʻlish", "url": "https://t.me/umodules"}]
                     ],
                     ttl=10,
                     message=message,
@@ -306,8 +306,8 @@ class HelpMod(loader.Module):
                 await self.inline.form(
                     self.strings("join", message),
                     reply_markup=[
-                        [{"text": "📖 Guruhga aʼzo boʻlish", "url": "https://t.me/ftgchatuz"}],
-                        [{"text": "📖 Kanalga aʼzo boʻlish", "url": "https://t.me/ftgchatuz"}]
+                        [{"text": "🥷 Guruhga aʼzo boʻlish", "url": "https://t.me/ftgchatuz"}],
+                        [{"text": "👾 Kanalga aʼzo boʻlish", "url": "https://t.me/ftgchatuz"}]
                     ],
                     ttl=10,
                     message=message,
