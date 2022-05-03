@@ -55,6 +55,6 @@ class PingerMod(loader.Module):
 			ping_data.append(duration)
 			ping_msg.append(msg)
 		ping = sum(ping_data) / len(ping_data)
-		await message.edit(f"<b>🥷 Tezlik: </b> {str(ping)[0:5]} MS")
+		await message.reply(f"<b>🥷 Tezlik: </b> {str(ping)[0:5]} MS")
 		for i in ping_msg:
 			await i.delete()
