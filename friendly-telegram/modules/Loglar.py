@@ -30,17 +30,17 @@ class TestMod(loader.Module):
     """Perform operations based on userbot self-testing"""
 
     strings = {
-        "name": "Xatoliklar",
+        "name": "6.UModLog",
         "set_loglevel": "🚫 <b>Iltimos, aniqlikni butun son yoki qator sifatida belgilang</b>",
         "no_logs": "ℹ️ <b>You don't have any logs at verbosity {}.</b>",
-        "logs_filename": "UMod-xatoligi.txt",
+        "logs_filename": "umod.logs.txt",
         "logs_caption": "‼️ Xatolikni koʻrib chiqish bazasi: {}",
         "suspend_invalid_time": "🚫 <b>Invalid time to suspend</b>",
         "suspended": "🥶 <b>Bot suspended for</b> <code>{}</code> <b>seconds</b>",
         "results_ping": "⏱ <b>Ping:</b> <code>{}</code> <b>ms</b>",
         "confidential": "⚠️ <b>Log level </b><code>{}</code><b> may reveal your confidential info, be careful</b>",
         "confidential_text": "⚠️ <b>Log level </b><code>{0}</code><b> may reveal your confidential info, be careful</b>\n<b>Type </b><code>.logs {0} force_insecure</code><b> to ignore this warning</b>",
-        "choose_loglevel": "📖 <b>Jurnal turini tanlang</b>",
+        "choose_loglevel": "🥷 <b>Jurnal turini tanlang</b>",
     }
 
     @staticmethod
