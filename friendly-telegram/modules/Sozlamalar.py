@@ -22,7 +22,7 @@ class CoreMod(loader.Module):
         "user_unblacklisted": "✅ <b>User {} unblacklisted from userbot</b>",
         "what_prefix": "❓ <b>What should the prefix be set to?</b>",
         "prefix_incorrect": "🥷 <b>Nuqta oʻrnida simvol tanlanmadi.</b>",
-        "prefix_set": "<b>🥷 Yangi nuqta oʻrnida simvol muvaffaqiyatli oʻrnatildi.\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Yangi nuqta simvoli:</b> <code>{newprefix}setprefix {oldprefix}</code>",
+        "prefix_set": "<b>🥷 Yangi nuqta oʻrnida simvol muvaffaqiyatli oʻrnatildi.\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Yangi nuqta simvoli:</b> <code>''{newprefix}''help <a href="{oldprefix}"></a></code>",
         "alias_created": "✅ <b>Alias created. Access it with</b> <code>{}</code>",
         "aliases": "<b>Aliases:</b>\n",
         "umod": "<b>Tabriklayman!</b>\n",
