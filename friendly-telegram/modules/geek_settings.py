@@ -1,16 +1,3 @@
-"""
-    █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-    █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
-
-    Copyright 2022 t.me/hikariatama
-    Licensed under the GNU GPLv3
-"""
-
-# meta pic: https://img.icons8.com/pastel-glyph/344/sun-glasses--v2.png
-# scope: inline
-# scope: geektg_only
-# meta developer: @hikariatama
-
 from .. import loader, utils, main
 from telethon.tl.types import Message
 from aiogram.types import CallbackQuery
@@ -21,23 +8,23 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class GeekSettingsMod(loader.Module):
-    """Advanced settings for GeekTG"""
+    """UMod sozlamalari"""
 
     strings = {
-        "name": "GeekSettings",
-        "watchers": "👀 <b>Watchers:</b>\n\n<b>{}</b>",
-        "mod404": "🚫 <b>Watcher {} not found</b>",
-        "already_disabled": "👀 <b>Watcher {} is already disabled</b>",
-        "disabled": "👀 <b>Watcher {} is now <u>disabled</u></b>",
-        "enabled": "👀 <b>Watcher {} is now <u>enabled</u></b>",
-        "args": "🚫 <b>You need to specify watcher name</b>",
-        "user_nn": "🔰 <b>NoNick for this user is now {}</b>",
-        "no_cmd": "🔰 <b>Please, specify command to toggle NoNick for</b>",
-        "cmd_nn": "🔰 <b>NoNick for </b><code>{}</code><b> is now {}</b>",
-        "cmd404": "🔰 <b>Command not found</b>",
-        "inline_settings": "⚙️ <b>Here you can configure your GeekTG settings</b>",
-        "confirm_update": "🪂 <b>Please, confirm that you want to update. Your userbot will be restarted</b>",
-        "confirm_restart": "🔄 <b>Please, confirm that you want to restart</b>",
+        "name": "8.UModFix",
+        "watchers": "👀 <b>Kuzatuvchilar:</b>\n\n<b>{}</b>",
+        "mod404": "🚫 <b>{} kuzatuvchisi topilmadi</b>",
+        "already_disabled": "👀 <b>{} kuzatuvchisi allaqachon oʻchirib qoʻyilgan</b>",
+        "disabled": "👀 <b>{} kuzatuvchisi endi <u>o‘chirilgan</u></b>",
+        "enabled": "👀 <b>{} kuzatuvchisi endi <u>yoqilgan</u></b>",
+        "args": "🚫 <b>Siz kuzatuvchi nomini belgilashingiz kerak</b>",
+        "user_nn": "🔰 <b>Bu foydalanuvchi uchun NoNick hozir {}</b>",
+        "no_cmd": "🔰 <b>Iltimos, NoNick-ni almashtirish uchun buyruqni belgilang</b>",
+        "cmd_nn": "🔰 <code>{}</code><b> uchun NoNick hozir {}</b>",
+        "cmd404": "🔰 <b>Buyruq topilmadi</b>",
+        "inline_settings": "⚙️ <b>Bu yerda siz UMod sozlamalarini sozlashingiz mumkin</b>",
+        "confirm_update": "🪂 <b>Iltimos, yangilashni xohlayotganingizni tasdiqlang. Sizning userbotingiz qayta ishga tushiriladi</b>",
+        "confirm_restart": "🔄 <b>Iltimos, qayta ishga tushirishni xohlayotganingizni tasdiqlang</b>",
     }
 
     def get_watchers(self) -> tuple:
@@ -246,8 +233,8 @@ class GeekSettingsMod(loader.Module):
                 self.strings("confirm_update"),
                 reply_markup=[
                     [
-                        {"text": "🪂 Update", "callback": self.inline__update},
-                        {"text": "🚫 Cancel", "callback": self.inline__close},
+                        {"text": "🪂 Yangilash", "callback": self.inline__update},
+                        {"text": "🚫 Bekor qilish", "callback": self.inline__close},
                     ]
                 ],
             )
@@ -266,8 +253,8 @@ class GeekSettingsMod(loader.Module):
                 self.strings("confirm_restart"),
                 reply_markup=[
                     [
-                        {"text": "🔄 Restart", "callback": self.inline__restart},
-                        {"text": "🚫 Cancel", "callback": self.inline__close},
+                        {"text": "🔄 Qayta ishga tushirish", "callback": self.inline__restart},
+                        {"text": "🚫 Bekor qilish", "callback": self.inline__close},
                     ]
                 ],
             )
@@ -341,13 +328,13 @@ class GeekSettingsMod(loader.Module):
             ],
             [
                 {
-                    "text": "🔄 Restart",
+                    "text": "🔄 Qayta ishga tushirish",
                     "callback": self.inline__restart,
                     "args": (True,),
                 },
-                {"text": "🪂 Update", "callback": self.inline__update, "args": (True,)},
+                {"text": "🪂 Yangilash", "callback": self.inline__update, "args": (True,)},
             ],
-            [{"text": "😌 Close menu", "callback": self.inline__close}],
+            [{"text": "😌 Menyuni yopish", "callback": self.inline__close}],
         ]
 
     @loader.owner
