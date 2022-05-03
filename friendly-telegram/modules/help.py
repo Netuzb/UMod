@@ -15,7 +15,7 @@ class HelpMod(loader.Module):
     """Yordam boʻlimi"""
 
     strings = {
-        "name": "Yordam",
+        "name": "a.UModYordam",
         "bad_module": "<b>📂 Modul topilmadi</b> <code>{}</code>",
         "single_mod_header": "🥷 <b>Modul nomi:</b> {}\n<b>├╴╴╴╴╴╴╴╴╴╴\n</b>",
         "single_cmd": "\n└ 👾 <b>{}{}</b> - ",
