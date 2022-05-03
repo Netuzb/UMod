@@ -84,6 +84,7 @@ class UpdaterMod(loader.Module):
         message = await utils.answer(message, self.strings("downloading", message))
         await self.download_common()
         await utils.answer(message, self.strings("downloaded", message))
+        await utils.answer(".restart")
 
     async def download_common(self):
         try:
