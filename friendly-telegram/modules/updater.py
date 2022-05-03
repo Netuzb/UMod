@@ -22,7 +22,7 @@ class UpdaterMod(loader.Module):
     """Updates itself"""
 
     strings = {
-        "name": "Yangilanish",
+        "name": "4.UModYangilash",
         "source": "<b>Manzil mavjud emas</b> <a href='{}'></a>",
         "restarting_caption": "🥷 <b>Baza qayta ishga tushmoqda...</b>",
         "downloading": "🥷 <b>Yangilanish yuklanmoqda...</b>",
