@@ -116,7 +116,7 @@ class LoaderMod(loader.Module):
         "provide_module": "<b>⚠️ Provide a module to load</b>",
         "bad_unicode": "<b>🚫 Bu modul emas</b>",
         "load_failed": "<b>🥷 Modul oʻrnatilmadi!\n👾 Xatoliklarni tekshirib koʻring: <code>.logs</code></b>",
-        "loaded": "<b>🥷 Modul oʻrnatildi:\n├╴╴╴╴╴╴╴╴╴╴\n├ 👾 Nomi: </b><code>{}</code><b>\n├╴╴╴╴╴╴╴╴╴╴\n├ 👾 Versiya:</b> {}{}",
+        "loaded": "<b>🥷 Modul oʻrnatildi:\n├╴╴╴╴╴╴╴╴╴╴\n├ 👾 Nomi: </b><code>{}</code><b>\n├ 👾 Versiya:</b> {}{}",
         "no_class": "<b>What class needs to be unloaded?</b>",
         "unloaded": "<b>🥷 Modul toʻliq oʻchirib tashlandi.</b>",
         "not_unloaded": "<b>🥷 Modul neto joylashganmi deyman, oʻchirishga qurbim yetmadi.</b>",
@@ -150,7 +150,7 @@ class LoaderMod(loader.Module):
         "version_incompatible": "🚫 <b>This module requires GeekTG {}+\nPlease, update with </b><code>.update</code>",
         "non_heroku": "♓️ <b>This module is not supported on Heroku</b>",
         "ffmpeg_required": "🚫 <b>This module requires FFMPEG, which is not installed</b>",
-        "developer": "\n\n🥷 <b>Modul egasi:\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 </b><code>{}</code>"
+        "developer": "\n\n🥷 <b>Qisqa maʼlumot:\n├╴╴╴╴╴╴╴╴╴╴\n├ 👾 Modul egasi: <code>{}</code>\n└ 👾 Modul bazasi: <code>@UModules</code></b>"
     }
 
     def __init__(self):
