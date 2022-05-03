@@ -116,14 +116,14 @@ class LoaderMod(loader.Module):
         "provide_module": "<b>⚠️ Provide a module to load</b>",
         "bad_unicode": "<b>🚫 Bu modul emas</b>",
         "load_failed": "<b>‼️ Modul oʻrnatilmadi!\n📖 Xatoliklarni tekshirib koʻring: <code>.logs</code></b>",
-        "loaded": "<b>🥷 Modul oʻrnatildi:\n🧟‍♀️ Nomi: </b><code>{}</code>\n🧛🏻 <b>Versiya:</b> {}{}",
+        "loaded": "<b>🥷 Modul oʻrnatildi:\n╴╴╴╴╴╴╴╴╴╴\n🧟‍♀️ Nomi: </b><code>{}</code>\n╴╴╴╴╴╴╴╴╴╴\n🧛🏻 <b>Versiya:</b> {}{}",
         "no_class": "<b>What class needs to be unloaded?</b>",
-        "unloaded": "<b>📖 Modul olindi.</b>",
-        "not_unloaded": "<b>📖 Modul olinmadi.</b>",
+        "unloaded": "<b>🥷 Modul toʻliq oʻchirib tashlandi.</b>",
+        "not_unloaded": "<b>🧛🏻 Modul neto joylashganmi deyman, oʻchirishga qurbim yetmadi.</b>",
         "requirements_failed": "<b>🚫 Requirements installation failed</b>",
-        "requirements_installing": "<b>📖 🔄 Rasmiy manbaga o'rnatilmoqda...</b>",
-        "requirements_restart": "<b>📖 🔄 Tayyor! <code>.restart</code> qoʻllang.</b>",
-        "all_modules_deleted": "<b>📖 Barcha modullar o'chirildi!</b>",
+        "requirements_installing": "<b>🥷 Rasmiy manbaga o'rnatilmoqda...</b>",
+        "requirements_restart": "<b>🧑‍🚀 Tayyor! <code>.restart</code> qoʻllang.</b>",
+        "all_modules_deleted": "<b>🧟‍♀️ Zombilar barcha modullarni yeb tashlashdi! Bitta ham modul qolmadi.</b>",
         "no_modules": "<b>⚠️ You have no custom modules!</b>",
         "searching": "<b>🔍 Searching...</b>",
         "file": "<b>📥 File of module {}:<b>",
@@ -141,16 +141,16 @@ class LoaderMod(loader.Module):
         "repo_not_unloaded": "<b>🚫 Repository not unloaded</b>",
         "single_cmd": "\n👾 <b>{}{}</b> - ",
         "undoc_cmd": "👁‍🗨 No docs",
-        "ihandler": "\n📃 <i>Inline</i>: <code>{}</code> - ",
+        "ihandler": "\n👾 <i>Inline</i>: <code>{}</code> - ",
         "undoc_ihandler": "👁‍🗨 No docs",
-        "chandler": "\n📃 <i>Callback</i>: <code>{}</code> - ",
+        "chandler": "\n👾 <i>Callback</i>: <code>{}</code> - ",
         "undoc_chandler": "👁‍🗨 No docs",
         "inline_init_failed": """🚫 <b>This module requires GeekTG inline feature and initialization of InlineManager failed</b>
 <i>Please, remove one of your old bots from @BotFather and restart userbot to load this module</i>""",
         "version_incompatible": "🚫 <b>This module requires GeekTG {}+\nPlease, update with </b><code>.update</code>",
         "non_heroku": "♓️ <b>This module is not supported on Heroku</b>",
         "ffmpeg_required": "🚫 <b>This module requires FFMPEG, which is not installed</b>",
-        "developer": "\n\n🥷 <b>Modul egasi:\n👾 </b><code>{}</code>"
+        "developer": "\n\n🥷 <b>Modul egasi:\n╴╴╴╴╴╴╴╴╴╴\n👾 </b><code>{}</code>"
     }
 
     def __init__(self):
