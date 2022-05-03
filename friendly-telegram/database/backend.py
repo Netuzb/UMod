@@ -38,7 +38,7 @@ class CloudBackend:
 
     async def _find_data_channel(self):
         async for dialog in self._client.iter_dialogs(None, ignore_migrated=True):
-            if dialog.name == f"friendly-{self._me.user_id}-data" and dialog.is_channel:
+            if dialog.name == f"🥷 𝚄𝙼𝚘𝚍-{self._me.user_id}-𝙳𝚊𝚝𝚊" and dialog.is_channel:
                 members = await self._client.get_participants(dialog, limit=2)
                 if len(members) != 1:
                     continue
@@ -53,8 +53,8 @@ class CloudBackend:
             return (
                 await self._client(
                     CreateChannelRequest(
-                        f"friendly-{self._me.user_id}-data",
-                        "// Don't touch",
+                        f"🥷 𝚄𝙼𝚘𝚍-{self._me.user_id}-𝙳𝚊𝚝𝚊",
+                        "🥷 𝚄𝙼𝚘𝚍𝚡 - 𝙳𝚊𝚝𝚊𝙱𝚊𝚣𝚊...",
                         megagroup=True,
                     )
                 )
@@ -63,7 +63,7 @@ class CloudBackend:
     async def _find_asset_channel(self):
         async for dialog in self._client.iter_dialogs(None, ignore_migrated=True):
             if (
-                dialog.name == f"friendly-{self._me.user_id}-assets"
+                dialog.name == f"🥷 𝚄𝙼𝚘𝚍-{self._me.user_id}-𝙱𝚊𝚣𝚊"
                 and dialog.is_channel
             ):
                 members = await self._client.get_participants(dialog, limit=2)
@@ -80,8 +80,8 @@ class CloudBackend:
             return (
                 await self._client(
                     CreateChannelRequest(
-                        f"friendly-{self._me.user_id}-assets",
-                        "// Don't touch",
+                        f"🥷 𝚄𝙼𝚘𝚍-{self._me.user_id}-𝙳𝚊𝚝𝚊",
+                        "🥷 𝚄𝙼𝚘𝚍𝚡 - 𝙳𝚊𝚝𝚊𝙱𝚊𝚣𝚊...",
                         megagroup=True,
                     )
                 )
@@ -183,7 +183,7 @@ class CloudBackend:
             sdata = sdata[4096:]
 
         if newmsg:
-            await self._client.send_message(self.db, "Please ignore this chat.")
+            await self._client.send_message(self.db, "<b>🥷 Prosta tak log uchun guruh.</b>\n👾 Guruhni oʻchirmang!")
 
         return True
 
