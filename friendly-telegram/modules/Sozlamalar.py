@@ -1,20 +1,3 @@
-#    Friendly Telegram (telegram userbot)
-#    Copyright (C) 2018-2022 The Authors
-
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-#    Modded by GeekTG Team
 __version__ = (1, 0, 0)
 # meta developer: @umodules
 
@@ -31,7 +14,7 @@ class CoreMod(loader.Module):
     """UMod'ni sozlash boʻlimi"""
 
     strings = {
-        "name": "Sozlamalar",
+        "name": "2.UModSozlama",
         "too_many_args": "🚫 <b>Too many args</b>",
         "blacklisted": "✅ <b>Chat {} blacklisted from userbot</b>",
         "unblacklisted": "✅ <b>Chat {} unblacklisted from userbot</b>",
