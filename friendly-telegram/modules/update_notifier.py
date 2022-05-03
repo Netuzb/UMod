@@ -78,13 +78,7 @@ class UpdateNotifierMod(loader.Module):
             git.Repo()
         except Exception as e:
             raise LoadError("Can't load due to repo init error") from e
-
-        self._markup = self.inline._generate_markup(
-            [
-                {"text": "🥷 Обновить", "data": "hikka_update"},
-                {"text": "🥱 Игнорить", "data": "hikka_upd_ignore"},
-            ]
-        )
+            await message.reply("new update")
 
         self._task = asyncio.ensure_future(self.poller())
 
