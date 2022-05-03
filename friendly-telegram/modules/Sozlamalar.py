@@ -21,8 +21,8 @@ class CoreMod(loader.Module):
         "user_blacklisted": "✅ <b>User {} blacklisted from userbot</b>",
         "user_unblacklisted": "✅ <b>User {} unblacklisted from userbot</b>",
         "what_prefix": "❓ <b>What should the prefix be set to?</b>",
-        "prefix_incorrect": "🚫 <b>Prefix must be one symbol in length</b>",
-        "prefix_set": "✅ <b>Command prefix updated. Type</b> <code>{newprefix}setprefix {oldprefix}</code> <b>to change it back</b>",
+        "prefix_incorrect": "🥷 <b>Nuqta oʻrnida simvol tanlanmadi.</b>",
+        "prefix_set": "<b>🥷 Yangi nuqta oʻrnida simvol muvaffaqiyatli oʻrnatildi.\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Yangi nuqta simvoli:</b> <code>{newprefix}setprefix {oldprefix}</code>",
         "alias_created": "✅ <b>Alias created. Access it with</b> <code>{}</code>",
         "aliases": "<b>Aliases:</b>\n",
         "umod": "<b>Tabriklayman!</b>\n",
@@ -154,8 +154,8 @@ class CoreMod(loader.Module):
         )
 
     @loader.owner
-    async def cmd(self, message: Message) -> None:
-        """Sets command prefix"""
+    async def nuqtacmd(self, message: Message) -> None:
+        """nuqtani almashtirish"""
         args = utils.get_args_raw(message)
 
         if not args:
