@@ -81,7 +81,7 @@ class PingerMod(loader.Module):
 			await i.delete()
 			
 
-	async def pingucmd(self, message):
+	async def prankpingcmd(self, message):
 		"""prank ping"""
 		a = 5
 		r = utils.get_args(message)
