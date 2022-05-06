@@ -56,30 +56,30 @@ class GeekSecurityMod(loader.Module):
         "group_admin": "👨‍💻 Admin (har qanday)",
         "group_member": "👥 Guruhda",
         "pm": "🤙 PMda",
-        "owner_list": "🤴 <b>Guruhdagi foydalanuvchilar </b><code>egasi</code><b>:</b>\n\n{}",
-        "sudo_list": "🤵‍♀️ <b>Guruhdagi foydalanuvchilar </b><code>sudo</code><b>:</b>\n\n{}",
-        "support_list": "🙋‍♂️ <b>Guruhdagi foydalanuvchilar </b><code>qo‘llab-quvvatlash</code><b>:</b>\n\n{}",
-        "no_owner": "🤴 <b>Guruhda foydalanuvchilar yo'q </b><code>egasi</code>",
-        "no_sudo": "🤵‍♀️ <b></b><code>sudo</code> guruhida foydalanuvchilar yo'q",
-        "no_support": "🙋‍♂️ <b>Guruhda </b><code>qo‘llab-quvvatlash</code> foydalanuvchilari yo‘q",
-        "owner_added": '🤴 <b><a href="tg://user?id={}">{}</a> </b><code>egasi</code> guruhiga qoshildi',
-        "sudo_added": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> </b><code>sudo</code> guruhiga qoshildi',
-        "support_added": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> </b><code>qollab-quvvatlash</code> guruhiga qoshildi',
-        "owner_removed": '🤴 <b><a href="tg://user?id={}">{}</a> </b><code>egasi</code> guruhidan olib tashlandi',
-        "sudo_removed": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> </b><code>sudo</code> guruhidan olib tashlandi',
-        "support_removed": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> </b><code>qollab-quvvatlash</code> guruhidan ochirildi',
-        "no_user": "🚫 <b>Ruxsat berish uchun foydalanuvchini belgilang</b>",
-        "not_a_user": "🚫 <b>Belgilangan obyekt foydalanuvchi emas</b>",
-        "li": '👾 <b><a href="tg://user?id={}">{}</a></b>',
+        "owner_list": "🤴 <b>Users in group </b><code>owner</code><b>:</b>\n\n{}",
+        "sudo_list": "🤵‍♀️ <b>Users in group </b><code>sudo</code><b>:</b>\n\n{}",
+        "support_list": "🙋‍♂️ <b>Users in group </b><code>support</code><b>:</b>\n\n{}",
+        "no_owner": "🤴 <b>There is no users in group </b><code>owner</code>",
+        "no_sudo": "🤵‍♀️ <b>There is no users in group </b><code>sudo</code>",
+        "no_support": "🙋‍♂️ <b>There is no users in group </b><code>support</code>",
+        "owner_added": '🤴 <b><a href="tg://user?id={}">{}</a> added to group </b><code>owner</code>',
+        "sudo_added": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> added to group </b><code>sudo</code>',
+        "support_added": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> added to group </b><code>support</code>',
+        "owner_removed": '🤴 <b><a href="tg://user?id={}">{}</a> removed from group </b><code>owner</code>',
+        "sudo_removed": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> removed from group </b><code>sudo</code>',
+        "support_removed": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> removed from group </b><code>support</code>',
+        "no_user": "🚫 <b>Specify user to permit</b>",
+        "not_a_user": "🚫 <b>Specified entity is not a user</b>",
+        "li": '⦿ <b><a href="tg://user?id={}">{}</a></b>',
         "warning": (
-            '⚠️ <b>Iltimos, <a href="tg://user?id={}">{}</a> qoshmoqchi ekanligingizni tasdiqlang. '
-            'guruhlash </b><code>{}</code><b>!\nUshbu harakat shaxsiy malumotlarni ochib berishi va ruxsat berishi mumkin '
-            'toliq yoki qisman bu foydalanuvchiga userbot ruxsati</b>'
+            '⚠️ <b>Please, confirm, that you want to add <a href="tg://user?id={}">{}</a> '
+            'to group </b><code>{}</code><b>!\nThis action may reveal personal info and grant '
+            'full or partial access to userbot to this user</b>'
         ),
-        "cancel": "🚫 Bekor qilish",
-        "confirm": "👑 Tasdiqlash",
-        "self": "🚫 <b>Siz o'zingizni targ'ib qila olmaysiz/pasaytira olmaysiz!</b>",
-        "restart": "<i>🔄 O'zgarishlarni amalga oshirish uchun qayta ishga tushirish talab qilinishi mumkin</i>"
+        "cancel": "🚫 Cancel",
+        "confirm": "👑 Confirm",
+        "self": "🚫 <b>You can't promote/demote yourself!</b>",
+        "restart": "<i>🔄 Restart may be required to commit changes</i>"
     }
 
     def get(self, *args) -> dict:
