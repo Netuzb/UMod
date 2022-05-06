@@ -56,25 +56,25 @@ class GeekSecurityMod(loader.Module):
         "group_admin": "👨‍💻 Admin (har qanday)",
         "group_member": "👥 Guruhda",
         "pm": "🤙 PMda",
-        "owner_list": "🤴 <b>Users in group </b><code>owner</code><b>:</b>\n\n{}",
-        "sudo_list": "🤵‍♀️ <b>Users in group </b><code>sudo</code><b>:</b>\n\n{}",
-        "support_list": "🙋‍♂️ <b>Users in group </b><code>support</code><b>:</b>\n\n{}",
-        "no_owner": "🤴 <b>There is no users in group </b><code>owner</code>",
-        "no_sudo": "🤵‍♀️ <b>There is no users in group </b><code>sudo</code>",
-        "no_support": "🙋‍♂️ <b>There is no users in group </b><code>support</code>",
-        "owner_added": '🤴 <b><a href="tg://user?id={}">{}</a> added to group </b><code>owner</code>',
-        "sudo_added": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> added to group </b><code>sudo</code>',
-        "support_added": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> added to group </b><code>support</code>',
-        "owner_removed": '🤴 <b><a href="tg://user?id={}">{}</a> removed from group </b><code>owner</code>',
-        "sudo_removed": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> removed from group </b><code>sudo</code>',
-        "support_removed": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> removed from group </b><code>support</code>',
+        "owner_list": "🤴 <b>Guruhdagi foydalanuvchilar </b><code>egasi</code><b>:</b>\n\n{}",
+        "sudo_list": "🤵‍♀️ <b>Guruhdagi foydalanuvchilar </b><code>sudo</code><b>:</b>\n\n{}",
+        "support_list": "🙋‍♂️ <b>Guruhdagi foydalanuvchilar </b><code>qo‘llab-quvvatlash</code><b>:</b>\n\n{}",
+        "no_owner": "🤴 <b>Guruhda foydalanuvchilar yo'q </b><code>egasi</code>",
+        "no_sudo": "🤵‍♀️ <b></b><code>sudo</code> guruhida foydalanuvchilar yo'q",
+        "no_support": "🙋‍♂️ <b>Guruhda </b><code>qo‘llab-quvvatlash</code> foydalanuvchilari yo‘q",
+        "owner_added": '🤴 <b><a href="tg://user?id={}">{}</a> </b><code>egasi</code> guruhiga qo'shildi',
+        "sudo_added": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> </b><code>sudo</code> guruhiga qo'shildi',
+        "support_added": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> </b><code>qo'llab-quvvatlash</code> guruhiga qo'shildi',
+        "owner_removed": '🤴 <b><a href="tg://user?id={}">{}</a> </b><code>egasi</code> guruhidan olib tashlandi',
+        "sudo_removed": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> </b><code>sudo</code> guruhidan olib tashlandi',
+        "support_removed": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> </b><code>qo'llab-quvvatlash</code> guruhidan o'chirildi',
         "no_user": "🚫 <b>Ruxsat berish uchun foydalanuvchini belgilang</b>",
         "not_a_user": "🚫 <b>Belgilangan obyekt foydalanuvchi emas</b>",
         "li": '👾 <b><a href="tg://user?id={}">{}</a></b>',
         "warning": (
-            '⚠️ <b>Please, confirm, that you want to add <a href="tg://user?id={}">{}</a> '
-            'to group </b><code>{}</code><b>!\nThis action may reveal personal info and grant '
-            'full or partial access to userbot to this user</b>'
+            '⚠️ <b>Iltimos, <a href="tg://user?id={}">{}</a> qo‘shmoqchi ekanligingizni tasdiqlang. '
+            'guruhlash </b><code>{}</code><b>!\nUshbu harakat shaxsiy ma'lumotlarni ochib berishi va ruxsat berishi mumkin '
+            'to'liq yoki qisman bu foydalanuvchiga userbot ruxsati</b>'
         ),
         "cancel": "🚫 Bekor qilish",
         "confirm": "👑 Tasdiqlash",
@@ -150,7 +150,7 @@ class GeekSecurityMod(loader.Module):
         perms = self._get_current_perms(command)
         buttons = [
             {
-                "text": f"{'✅' if level else '🚫'} {self.strings[group]}",
+                "text": f"{'✅' agar boshqa darajada bolsa '🚫'} {self.strings[group]}",
                 "callback": self.inline__switch_perm,
                 "args": (command.__name__[:-3], group, not level),
             }
@@ -166,7 +166,7 @@ class GeekSecurityMod(loader.Module):
         perms = self._get_current_bm()
         buttons = [
             {
-                "text": f"{'✅' if level else '🚫'} {self.strings[group]}",
+                "text": f"{'✅' agar boshqa darajada bolsa '🚫'} {self.strings[group]}",
                 "callback": self.inline__switch_perm_bm,
                 "args": (group, not level),
             }
