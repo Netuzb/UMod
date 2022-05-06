@@ -73,7 +73,7 @@ class GeekSecurityMod(loader.Module):
         "li": '👾 <b><a href="tg://user?id={}">{}</a></b>',
         "warning": (
             '⚠️ <b>Iltimos, <a href="tg://user?id={}">{}</a> qoshmoqchi ekanligingizni tasdiqlang. '
-            'guruhlash </b><code>{}</code><b>!\nUshbu harakat shaxsiy ma'lumotlarni ochib berishi va ruxsat berishi mumkin '
+            'guruhlash </b><code>{}</code><b>!\nUshbu harakat shaxsiy malumotlarni ochib berishi va ruxsat berishi mumkin '
             'to'liq yoki qisman bu foydalanuvchiga userbot ruxsati</b>'
         ),
         "cancel": "🚫 Bekor qilish",
