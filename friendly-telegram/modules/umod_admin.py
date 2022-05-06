@@ -62,17 +62,17 @@ class GeekSecurityMod(loader.Module):
         "no_owner": "🤴 <b>Guruhda foydalanuvchilar yo'q </b><code>egasi</code>",
         "no_sudo": "🤵‍♀️ <b></b><code>sudo</code> guruhida foydalanuvchilar yo'q",
         "no_support": "🙋‍♂️ <b>Guruhda </b><code>qo‘llab-quvvatlash</code> foydalanuvchilari yo‘q",
-        "owner_added": '🤴 <b><a href="tg://user?id={}">{}</a> </b><code>egasi</code> guruhiga qo'shildi',
-        "sudo_added": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> </b><code>sudo</code> guruhiga qo'shildi',
-        "support_added": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> </b><code>qo'llab-quvvatlash</code> guruhiga qo'shildi',
+        "owner_added": '🤴 <b><a href="tg://user?id={}">{}</a> </b><code>egasi</code> guruhiga qoshildi',
+        "sudo_added": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> </b><code>sudo</code> guruhiga qoshildi',
+        "support_added": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> </b><code>qollab-quvvatlash</code> guruhiga qo'shildi',
         "owner_removed": '🤴 <b><a href="tg://user?id={}">{}</a> </b><code>egasi</code> guruhidan olib tashlandi',
         "sudo_removed": '🤵‍♀️ <b><a href="tg://user?id={}">{}</a> </b><code>sudo</code> guruhidan olib tashlandi',
-        "support_removed": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> </b><code>qo'llab-quvvatlash</code> guruhidan o'chirildi',
+        "support_removed": '🙋‍♂️ <b><a href="tg://user?id={}">{}</a> </b><code>qollab-quvvatlash</code> guruhidan o'chirildi',
         "no_user": "🚫 <b>Ruxsat berish uchun foydalanuvchini belgilang</b>",
         "not_a_user": "🚫 <b>Belgilangan obyekt foydalanuvchi emas</b>",
         "li": '👾 <b><a href="tg://user?id={}">{}</a></b>',
         "warning": (
-            '⚠️ <b>Iltimos, <a href="tg://user?id={}">{}</a> qo‘shmoqchi ekanligingizni tasdiqlang. '
+            '⚠️ <b>Iltimos, <a href="tg://user?id={}">{}</a> qoshmoqchi ekanligingizni tasdiqlang. '
             'guruhlash </b><code>{}</code><b>!\nUshbu harakat shaxsiy ma'lumotlarni ochib berishi va ruxsat berishi mumkin '
             'to'liq yoki qisman bu foydalanuvchiga userbot ruxsati</b>'
         ),
