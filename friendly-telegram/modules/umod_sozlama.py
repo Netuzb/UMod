@@ -237,10 +237,8 @@ class CoreMod(loader.Module):
                 self.strings("no_alias", message).format(utils.escape_html(alias)),
             )
 
-    async def cmd(self, message: Message) -> None:
-        """Add a translation pack
-        .addtrnsl <pack>
-        Restart required after use"""
+    async tiladddef cmd(self, message: Message) -> None:
+        """Tarjima tilini qoʻshish .addtil <pack>"""
         args = utils.get_args(message)
 
         if len(args) != 1:
@@ -266,16 +264,15 @@ class CoreMod(loader.Module):
         else:
             await utils.answer(message, self.strings("bad_pack", message))
 
-    async def cmd(self, message: Message) -> None:
-        """Remove all translation packs"""
+    async def tildelcmd(self, message: Message) -> None:
+        """Hamma tillarni oʻchirish"""
         self._db.set(main.__name__, "langpacks", [])
         await utils.answer(message, self.strings("packs_cleared", message))
 
-    async def cmd(self, message: Message) -> None:
-        """Change the preferred language used for translations
-        Specify the language as space separated list of ISO 639-1 language codes in order of preference (e.g. fr en)
-        With no parameters, all translations are disabled
-        Restart required after use"""
+    async def tiltancmd(self, message: Message) -> None:
+        """Tarjimalar uchun ishlatiladigan afzal tilni o'zgartiring
+        Tilni afzallik tartibida ISO 639-1 til kodlari roʻyxati boʻsh joy sifatida belgilang (masalan, fr en)
+        Parametrlarsiz, hammasi"""
         langs = utils.get_args(message)
         self._db.set(main.__name__, "language", langs)
         await utils.answer(message, self.strings("lang_set", message))
