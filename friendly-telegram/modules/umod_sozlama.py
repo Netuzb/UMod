@@ -237,8 +237,8 @@ class CoreMod(loader.Module):
                 self.strings("no_alias", message).format(utils.escape_html(alias)),
             )
 
-    async tiladddef cmd(self, message: Message) -> None:
-        """Tarjima tilini qoʻshish .addtil <pack>"""
+    async def tiladdcmd(self, message: Message) -> None:
+        """Tarjima tilini qoʻshish .tiladd <pack>"""
         args = utils.get_args(message)
 
         if len(args) != 1:
