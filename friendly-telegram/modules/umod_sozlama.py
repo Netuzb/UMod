@@ -237,7 +237,7 @@ class CoreMod(loader.Module):
                 self.strings("no_alias", message).format(utils.escape_html(alias)),
             )
 
-    async def tiladdcmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Tarjima tilini qoʻshish .tiladd <pack>"""
         args = utils.get_args(message)
 
@@ -264,12 +264,12 @@ class CoreMod(loader.Module):
         else:
             await utils.answer(message, self.strings("bad_pack", message))
 
-    async def tildelcmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Hamma tillarni oʻchirish"""
         self._db.set(main.__name__, "langpacks", [])
         await utils.answer(message, self.strings("packs_cleared", message))
 
-    async def tiltancmd(self, message: Message) -> None:
+    async def cmd(self, message: Message) -> None:
         """Tarjimalar uchun ishlatiladigan afzal tilni o'zgartiring
         Tilni afzallik tartibida ISO 639-1 til kodlari roʻyxati boʻsh joy sifatida belgilang (masalan, fr en)
         Parametrlarsiz, hammasi"""
