@@ -22,7 +22,7 @@ class CoreMod(loader.Module):
         "user_unblacklisted": "✅ <b>{} foydalanuvchisi userbotdan qora roʻyxatdan chiqarildi</b>",
         "what_prefix": "<b>🌇 Akasi yangi nuqta simvoli qani?</b>",
         "prefix_incorrect": "🌇 <b>Nuqta oʻrnida simvol tanlanmadi.</b>",
-        "prefix_set": "<b>🌇 Yangi nuqta oʻrnida simvol muvaffaqiyatli oʻrnatildi.\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Yangi nuqta simvoli:</b> <code>{newprefix}help</code> <a href='{oldprefix}'></a>",
+        "prefix_set": "<b>🌇 Yangi nuqta oʻrnida simvol muvaffaqiyatli oʻrnatildi.\n🌉 Yangi nuqta simvoli:</b> <code>{newprefix}help</code> <a href='{oldprefix}'></a>",
         "alias_created": "✅ <b>Taxallus yaratildi. Unga</b> <code>{}</code> orqali kiring",
         "aliases": "<b>Taxalluslar:</b>\n",
         "umod": "<b>Tabriklayman!</b>\n",
