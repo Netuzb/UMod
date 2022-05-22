@@ -1,9 +1,3 @@
-# <3 title: GeekConfig [geek]
-# <3 pic: https://img.icons8.com/external-filled-outline-wichaiwi/64/000000/external-multitasking-generation-z-filled-outline-wichaiwi.png
-# <3 desc: Interactive configurator for GeekTG
-
-# scope: inline_content
-
 from .. import loader, utils
 from telethon.tl.types import Message
 import logging
@@ -31,11 +25,11 @@ class ConfigMod(loader.Module):
     """Modullarni konfiguratsiya qilish"""
 
     strings = {
-        "name": "5.UModKonfig",
-        "configure": "🥷 <b>Bu yerda siz modullarning konfiguratsiyasini sozlashingiz mumkin</b>\n\n👾 Kerakli modullardan birini tanlab oʻzingizga moslab taxrirlashingiz mumkin.",
-        "configuring_mod": "🥷 <b>Mod uchun konfiguratsiya opsiyasini tanlang</b> <code>{}</code>",
-        "configuring_option": "🥷 <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code>\n<i>👾 {}</i>\n\n<b>Standart: </b><code>{}</code>\n\n<b>Hozirgi: </b><code>{}</code>",
-        "option_saved": "🥷 <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code><b> saqlandi!</b>\n<b>Hozirgi: </b><code>{}</code>",
+        "name": "umod_config",
+        "configure": "🌇 <b>Bu yerda siz modullarning konfiguratsiyasini sozlashingiz mumkin</b>\n\n🌉 Kerakli modullardan birini tanlab oʻzingizga moslab taxrirlashingiz mumkin.",
+        "configuring_mod": "🌇 <b>Mod uchun konfiguratsiya opsiyasini tanlang</b> <code>{}</code>",
+        "configuring_option": "🏙️ <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code>\n<i>🌉 {}</i>\n\n<b>Standart: </b><code>{}</code>\n\n<b>Hozirgi: </b><code>{}</code>",
+        "option_saved": "🏙️ <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code><b> saqlandi!</b>\n<b>Hozirgi: </b><code>{}</code>",
     }
 
     def get(self, *args) -> dict:
