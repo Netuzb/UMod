@@ -22,17 +22,17 @@ class UpdaterMod(loader.Module):
     """Updates itself"""
 
     strings = {
-        "name": "4.UModYangilash",
+        "name": "umod_yangilash",
         "source": "<b>Manzil mavjud emas</b> <a href='{}'></a>",
-        "restarting_caption": "🥷 <b>Baza qayta ishga tushmoqda...</b>",
-        "downloading": "🥷 <b>Yangilanish yuklanmoqda...</b>",
-        "downloaded": "🥷 <b>Muvaffaqiyatli yuklandi.\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Endi</b> <code>.restart</code> <b>qo'llang.</b>",
-        "already_updated": "🥷 <b>Muvaffaqiyatli yangilandi!</b>",
-        "installing": "🥷 <b>Yangilanish oʻrnatilmoqda...</b>",
-        "success": "🥷 <b>Muvaffaqiyatli yakunlandi!\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Maʼlumot uchun: <code>.ftgver</code></b>",
-        "heroku_warning": "📖 <b>Heroku Api token xatoligi. </b>Update was successful but updates will reset every time the bot restarts.",
+        "restarting_caption": "🌇 <b>Baza qayta ishga tushmoqda...</b>",
+        "downloading": "🌇 <b>Yangilanish yuklanmoqda...</b>",
+        "downloaded": "🌇 <b>Muvaffaqiyatli yuklandi.\n🌉 Endi</b> <code>.restart</code> <b>qo'llang.</b>",
+        "already_updated": "🌇 <b>Muvaffaqiyatli yangilandi!</b>",
+        "installing": "🌇 <b>Yangilanish oʻrnatilmoqda...</b>",
+        "success": "🏙️ <b>Muvaffaqiyatli yakunlandi!\n🌉 Maʼlumot uchun: <code>.ftgver</code></b>",
+        "heroku_warning": "🏙️ <b>Heroku Api token xatoligi. </b>Update was successful but updates will reset every time the bot restarts.",
         "origin_cfg_doc": "1234567890qweryeiwiskmsmsmsksmsmmsmd?",
-        "lavhost": "📖 <b>Odam.</b>\n<i>This message <b>will not</b> be edited after restart is complete!</i>",
+        "lavhost": "🏙️ <b>Odam.</b>\n<i>This message <b>will not</b> be edited after restart is complete!</i>",
     }
 
     def __init__(self):
