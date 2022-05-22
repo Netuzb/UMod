@@ -1,3 +1,12 @@
+# ▀█▀ █▀▀ █▀▄▀█ █░█ █▀█
+# ░█░ ██▄ █░▀░█ █▄█ █▀▄
+# ═══════════════════════
+# █▀▀ █▀█ █▄▀ █ █▄░█ █▀█ █░█
+# ██▄ █▀▄ █░█ █ █░▀█ █▄█ ▀▄▀
+# ═════════════════════════════
+# meta developer: @netuzb
+# meta channel: @umodules
+
 import io, inspect
 from .. import loader, utils
 
@@ -6,13 +15,13 @@ from .. import loader, utils
 class ModulesLinkMod(loader.Module):
     """Modulni yuklash"""
 
-    strings = {"name": "Modullar"}
+    strings = {"name": "modulchi"}
 
     async def mlcmd(self, message):
         """modul faylini olish"""
         args = utils.get_args_raw(message)
         if not args:
-            return await utils.answer(message, "📖 <b>Arglar yo'q</b>")
+            return await utils.answer(message, "<b>🌉 Hechbalo yo'q</b>")
 
         try:
             f = " ".join(
@@ -33,9 +42,9 @@ class ModulesLinkMod(loader.Module):
 
             link = str(r).split("(")[1].split(")")[0]
             if "http" not in link:
-                text = f"<b>📖 {utils.escape_html(f)}</b>"
+                text = f"🏙️ <b>{utils.escape_html(f)}</b>"
             else:
-                text = f'📖 <b>Modul manzili: <a href="{link}">bu yerda</a>\n📖 {utils.escape_html(f)}</b> <a href="{link}"></a>'
+                text = f'🌉 <b>Modul manzili: <a href="{link}">bu yerda</a>\n🏙️ {utils.escape_html(f)}</b> <a href="{link}"></a>'
 
             out = io.BytesIO(r.__loader__.data)
             out.name = f"{f}.py"
@@ -46,4 +55,4 @@ class ModulesLinkMod(loader.Module):
             if message.out:
                 await message.delete()
         except:
-            await utils.answer(message, "📖 <b>Modul topilmadi</b>")
+            await utils.answer(message, "🏙️ <b>Modul topilmadi</b>")
