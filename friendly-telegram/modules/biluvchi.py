@@ -64,7 +64,8 @@ class BluvchiMod(loader.Module):
                 args if not args.isdigit() else int(args))
         except ValueError:           
             user = await message.client.gek_entity(GetFullUserRequest(message.sender_id))
-        await message.edit(
+        await message.delete()
+        await message.reply(
             f"<b>🌇 Foydalanuvchi haqida maʼlumotlar:</b>\n\n"
             f"<b>🏙️ Ismi:</b> <a href='tg://user?id={user.id}'>{user.first_name}</a>\n"            
             f"<b>🏙️ Familiyasi:</b> <a href='t.me/{user.username}'>{user.last_name}</a>\n"
