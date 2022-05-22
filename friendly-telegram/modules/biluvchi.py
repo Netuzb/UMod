@@ -46,7 +46,7 @@ from .. import loader, utils
 class BluvchiMod(loader.Module):
     """Shaxs haqida maʼlumot beradigan modul"""
 
-    strings = {"name": "Biluvchi"}
+    strings = {"name": "biluvchi"}
 
     async def client_ready(self, client, db):
         self.db = db
