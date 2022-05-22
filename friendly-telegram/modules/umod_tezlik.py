@@ -1,15 +1,12 @@
-#    ████░████░███░███░██░██░████░
-#    ░██░░██░░░██░█░██░██░██░███░░
-#    ░██░░████░██░░░██░█████░█████
-#    ═════════════════════════════════════════
-#    ████░████░░██░██░██░███░░██░█████░██░░░██
-#    ██░░░███░░░████░░██░██░█░██░██░██░░██░██░
-#    ████░█████░██░██░██░██░░███░█████░░░███░░
-#    ═════════════════════════════════════════
-#    Litsenziya: https://t.me/UModules/112
-#    Taqdim qilingan manzil: https://telegram.me/umodules
+# ▀█▀ █▀▀ █▀▄▀█ █░█ █▀█
+# ░█░ ██▄ █░▀░█ █▄█ █▀▄
+# ═══════════════════════
+# █▀▀ █▀█ █▄▀ █ █▄░█ █▀█ █░█
+# ██▄ █▀▄ █░█ █ █░▀█ █▄█ ▀▄▀
+# ═════════════════════════════
+# meta developer: @netuzb
+# meta channel: @umodules
 
-#meta develope: @umodules
 __version__ = (1, 0, 0)
 
 from telethon import events
@@ -25,7 +22,7 @@ def register(cb):
 class PingerMod(loader.Module):
 	"""Userbot tezligini o'lchaydigan modul"""
 
-	strings = {'name': 'Tezlik'}
+	strings = {'name': 'tezlik'}
 
 	def __init__(self):
 		self.name = self.strings['name']
@@ -54,7 +51,7 @@ class PingerMod(loader.Module):
 			ping_msg.append(msg)
 		ping = sum(ping_data) / len(ping_data)
 		await message.delete()
-		await message.reply(f"<b>🥷 Tezlik: </b> {str(ping)[0:5]} MS")
+		await message.reply(f"<b>🌇 Tezlik: </b> {str(ping)[0:5]} MS")
 		for i in ping_msg:
 			await i.delete()
 			
@@ -76,7 +73,7 @@ class PingerMod(loader.Module):
 			ping_msg.append(msg)
 		ping = sum(ping_data) / len(ping_data)
 		await message.delete()
-		await message.reply(f"<b>💩 Tezlik: </b> {str(ping)[0:5]} MS")
+		await message.reply(f"<b>🌉 Tezlik: </b> {str(ping)[0:5]} MS")
 		for i in ping_msg:
 			await i.delete()
 			
@@ -98,7 +95,7 @@ class PingerMod(loader.Module):
 			ping_msg.append(msg)
 		ping = sum(ping_data) / len(ping_data)
 		await message.delete()
-		await message.reply(f"<b>👾 Tezlik: </b> {str(ping)[0:5]} MS")
+		await message.reply(f"<b>🏙️ Tezlik: </b> {str(ping)[0:5]} MS")
 		for i in ping_msg:
 			await i.delete()
 
