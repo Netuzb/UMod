@@ -1,20 +1,14 @@
-"""
-    ████░████░███░███░██░██░████░
-    ░██░░██░░░██░█░██░██░██░███░░
-    ░██░░████░██░░░██░█████░█████
-    ═════════════════════════════════════════
-    ████░████░░██░██░██░███░░██░█████░██░░░██
-    ██░░░███░░░████░░██░██░█░██░██░██░░██░██░
-    ████░█████░██░██░██░██░░███░█████░░░███░░
-    ═════════════════════════════════════════
-    Litsenziya: LLC © N.OA.ZL.QW (qaysi tupoy modul uchun litsenziya oladi? beradi?)
-    Taqdim qilingan manzil: https://telegram.me/umodules
-    ═════════════════════════════════════════
-    GeekTG yoki FTG oʻrnatish qoʻllanmasi: https://t.me/TGraphUz/1620
-"""
-# meta developer: @umodules
-# Uzbekistan presents in World top coders team
+# ▀█▀ █▀▀ █▀▄▀█ █░█ █▀█
+# ░█░ ██▄ █░▀░█ █▄█ █▀▄
+# ═══════════════════════
+# █▀▀ █▀█ █▄▀ █ █▄░█ █▀█ █░█
+# ██▄ █▀▄ █░█ █ █░▀█ █▄█ ▀▄▀
+# ═════════════════════════════
+# meta developer: @netuzb
+# meta channel: @umodules
+
 __version__ = (1, 0, 0)
+
 from .. import loader, utils
 import asyncio
 import requests
@@ -27,7 +21,7 @@ class TelegraphMod(loader.Module):
 	"""telegra.ph hostiga rasm/video/gif yuklash"""
 	strings = {
                "name": "Telegraph",
-               "reply": "🥷 <b>Mediaga javob tariqasida...</b>"}
+               "reply": "🏙️ <b>Mediaga javob tariqasida...</b>"}
 
 	def __init__(self):
 		self.name = self.strings['name']
@@ -36,15 +30,14 @@ class TelegraphMod(loader.Module):
 		"""qoʻllanma"""
 		
 		qollanma = """<b>
-🥷 Qoʻllanma: <code>Telegraph host</code>
-├╴╴╴╴╴╴╴╴╴╴
-├ 👾 - Kerakli, yuklamoqchi boʻlgan rasm/gif/video topasiz, aniqlaysiz. Va shu media'ga javoban <code>.ph</code> buyrugʻini yozib yuborasiz.
-├ 👾 - Buyruqdan keyin darrov "Nega qotib qoldi?" degan savolga berilmang.
-├ 👾 - Modul tezligi media hajmiga bogʻliq.
+🌇 Qoʻllanma: <code>Telegraph host</code>
 
-🥷 Qisqacha namuna:
-├╴╴╴╴╴╴╴╴╴╴
-└ 👾 <a href="https://te.legra.ph/file/763e3cb894fb1566723ec.mp4">Videoni koʻrish</a></b>"""
+🌉 - Kerakli, yuklamoqchi boʻlgan rasm/gif/video topasiz, aniqlaysiz. Va shu media'ga javoban <code>.ph</code> buyrugʻini yozib yuborasiz.
+🌉 - Buyruqdan keyin darrov "Nega qotib qoldi?" degan savolga berilmang.
+🌉 - Modul tezligi media hajmiga bogʻliq.
+
+🌇 Qisqacha namuna:
+🌉 <a href="https://te.legra.ph/file/763e3cb894fb1566723ec.mp4">Videoni koʻrish</a></b>"""
 		await message.edit(qollanma)
 		return
 		
@@ -68,7 +61,7 @@ class TelegraphMod(loader.Module):
 				link = 'https://te.legra.ph'+path[0]['src']
 			except KeyError:
 				link = path["error"]
-			await message.edit("<b>🥷 Havola tayyor.\n├╴╴╴╴╴╴╴╴╴╴\n├👾 Yuklangan host: https://te.legra.ph\n├ 👾 Yuklangan manzilga havola:\n└ 👾 "+link+"</b>")
+			await message.edit("<b>🌇 Havola tayyor.\n🌉 Yuklangan host: https://te.legra.ph\n🌉 Yuklangan manzilga havola:\n🏙️ "+link+"</b>")
 				
 			
 async def check_media(reply_message):
