@@ -1,17 +1,10 @@
-# scope: inline_content
-
 import time
-
 import logging
 from io import BytesIO
-
 from .. import loader, utils
-
 from typing import Union
 from telethon.tl.types import Message
-
 from telethon.errors.rpcerrorlist import ChatSendInlineForbiddenError
-
 import aiogram
 
 logger = logging.getLogger(__name__)
@@ -22,17 +15,17 @@ class TestMod(loader.Module):
     """Perform operations based on userbot self-testing"""
 
     strings = {
-        "name": "6.UModLog",
+        "name": "umod_loglar",
         "set_loglevel": "🚫 <b>Iltimos, aniqlikni butun son yoki qator sifatida belgilang</b>",
         "no_logs": "ℹ️ <b>Sizda {} batafsil tavsifida hech qanday jurnal yo'q.</b>",
         "logs_filename": "umod.logs.txt",
         "logs_caption": "‼️ Xatolikni koʻrib chiqish bazasi: {}",
         "suspend_invalid_time": "🚫 <b>Toʻxtatib turish uchun vaqt notoʻgʻri</b>",
         "suspended": "🥶 <b>Bot</b> <code>{}</code> <b>soniyaga to'xtatildi</b>",
-        "results_ping": "🥷 <b>Ping:</b> <code>{}</code> <b>ms</b>",
+        "results_ping": "🌇 <b>Ping:</b> <code>{}</code> <b>ms</b>",
         "confidential": "⚠️ <b>Jurnal darajasi </b><code>{}</code><b> maxfiy ma'lumotlaringizni oshkor qilishi mumkin, ehtiyot bo'ling</b>",
         "confidential_text": "⚠️ <b>Jurnal darajasi </b><code>{0}</code><b> maxfiy ma'lumotlaringizni oshkor qilishi mumkin, ehtiyot bo'ling</b>\n<b>Type </b><code>.logs { 0} force_insecure</code><b> bu ogohlantirishga e'tibor bermaslik uchun</b>",
-        "choose_loglevel": "🥷 <b>Jurnal turini tanlang</b>",
+        "choose_loglevel": "🌇 <b>Jurnal turini tanlang</b>",
     }
 
     @staticmethod
