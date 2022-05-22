@@ -1,16 +1,13 @@
-""" 
-    ███▒███▒██▒██▒█▒░█▒████
-    ░█▒░█▒░░█▒█▒█▒█▒░█▒█▒█
-    ░█▒░███▒█▒░░█▒████▒█▒░█
-    
-    Litsenziya: LLC © N.OA.ZL.QW (qattan olish kere edi?)
-    Qoʻllanilgan sayt: https://x0.at
-    Taqdimot kuni: 12.03.2022 / 16:27
-    Taqdimot manzili: https://telegram.me/umodules
-"""
+# ▀█▀ █▀▀ █▀▄▀█ █░█ █▀█
+# ░█░ ██▄ █░▀░█ █▄█ █▀▄
+# ═══════════════════════
+# █▀▀ █▀█ █▄▀ █ █▄░█ █▀█ █░█
+# ██▄ █▀▄ █░█ █ █░▀█ █▄█ ▀▄▀
+# ═════════════════════════
+# meta developer: @netuzb
+# meta channel: @umodules
+
 __version__ = (1, 0, 0)
-# pylint: disable=relative-beyond-top-level
-# meta developer: @umodules
 
 from .. import loader, utils  
 import logging
@@ -26,16 +23,16 @@ class OrnatgichMod(loader.Module):
     """Modul fayliga reply holatda yozing va u sizga o'rnatish kerak boʻlgan modulni toʻgʻridan-toʻgʻri havolasini yartib beradi!"""
 
     strings = {
-               "name": "7.UModAuto",
-               "yukla": "🥷 <b>Havola yaratilmoqda...</b>",
-               "javob": "🥷 <b>Modul fayliga javob tariqasida yozing!</b>"}
+               "name": "umod_auto",
+               "yukla": "🌇 <b>Havola yaratilmoqda...</b>",
+               "javob": "🏙️ <b>Modul fayliga javob tariqasida yozing!</b>"}
 
     async def client_ready(self, client, db):
         self.client = client
 
     @loader.sudo
     async def ornatishcmd(self, message):
-        """<modul fayliga reply holatda>"""
+        """modul fayliga reply holatda"""
     
         await message.edit(self.strings("yukla", message))
         reply = await message.get_reply_message()
@@ -55,8 +52,6 @@ class OrnatgichMod(loader.Module):
             await message.edit(ste(e))
             return
         url = x0at.text
-        output = f'<b>🥷 Havola tayyor!\n├╴╴╴╴╴╴╴╴╴╴\n├ 👾 Havola: <code>{url}</code>├ 👾 Modul uchun:</b> <code>.dlmod {url}</code><b>└ 👾 <b>Baza: @umodules</b>'
+        output = f'<b>🌇 Havola tayyor!\n🌉 Havola: <code>{url}</code>🏙️ Modul uchun:</b> <code>.dlmod {url}</code><b>🏙️ <b>Baza: @umoduz</b>'
         await message.edit(output)
         
-# modullar bazasi @umodules barcha modullarni noldan yaratamiz)) va ishonchli
-# administrator Temur Erkinov (@netuzb)
