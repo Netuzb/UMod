@@ -15,35 +15,35 @@ class HelpMod(loader.Module):
     """Yordam boʻlimi"""
 
     strings = {
-        "name": "1.UModYordam",
-        "bad_module": "<b>📂 Modul topilmadi</b> <code>{}</code>",
-        "single_mod_header": "🥷 <b>Modul nomi:</b> {}\n<b>├╴╴╴╴╴╴╴╴╴╴</b>",
-        "single_cmd": "\n 👾 <b>{}{}</b> - ",
-        "undoc_cmd": "📂 Hujjatlar yoʻq!",
-        "all_header": "🥷 <b>Umumiy modullar: <code>{}</code>\n🧟‍♀️ Berkitilganlari: <code>{}</code></b>",
+        "name": "umod_yordam",
+        "bad_module": "<b>🏙️ Modul: <code>{}</code> - topilmadi!</b>",
+        "single_mod_header": "🌇 <b>Modul nomi:</b> {}",
+        "single_cmd": "\n 🏙️ <b>{}{}</b> - ",
+        "undoc_cmd": "🏙️ Hujjatlar yoʻq!",
+        "all_header": "🌇 <b>Umumiy modullar: <code>{}</code>\n🌉 Berkitilganlari: <code>{}</code></b>",
         "mod_tmpl": "\n{} <b>{}</b>",
-        "first_cmd_tmpl": ": [ <code>{}</code>",
-        "cmd_tmpl": " | <code>{}</code>",
-        "args": "🚫 <b>Arglar noto'g'ri</b>",
-        "set_cat": "ℹ️ <b>{} toifasiga kiritilgan {}</b>",
-        "no_mod": "🥷 <b>Modul nomini yozing...</b>",
-        "hidden_shown": "<b>🥷 Berkitilgan modullar: {}\n🧟‍♀️ Koʻrsatilgan modullar: {}\n\n</b>{}{}",
-        "ihandler": "\n 👾 <b>{}</b> - ",
-        "undoc_ihandler": "📂 Hujjatlar yoʻq!!",
-        "joined": "😎 <b> Siz guruhga aʼzo boʻlib ulgurgansiz!</b>",
-        "join": "🥱 <b>UMod muhokama guruhiga aʼzo boʻling!\n\nBarcha muhokamalar faqat rasmiy guruhlarda boʻlib oʻtadi!</b>",
+        "first_cmd_tmpl": ": {}",
+        "cmd_tmpl": ", {}",
+        "args": "🏙️ <b>Topilmadi!</b>",
+        "set_cat": "{}...{}",
+        "no_mod": "🌇 <b>Modul nomini yozing...</b>",
+        "hidden_shown": "<b>🌇 Berkitilgan modullar: {}\n🌉 Koʻrsatilgan modullar: {}\n\n</b>{}{}",
+        "ihandler": "\n 🏙️ <b>{}</b> - ",
+        "undoc_ihandler": "🏙️ Hujjatlar yoʻq!!",
+        "joined": "...",
+        "join": "...",
     }
 
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "👾",
+            "🏙️",
             lambda: "Core module bullet",
             "geek_emoji",
-            "👾",
+            "🏙️",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "👾",
+            "🏙️",
             lambda: "Plain module bullet"
         )
 
@@ -125,7 +125,7 @@ class HelpMod(loader.Module):
             reply = self.strings("single_mod_header").format(utils.escape_html(name))
             if module.__doc__:
                 reply += (
-                    "<b>\n└ 🧟‍♀️ Modul vazifasi:</b> " + utils.escape_html(inspect.getdoc(module)) + "\n"
+                    "<b>\n🌉 Modul vazifasi:</b> " + utils.escape_html(inspect.getdoc(module)) + "\n"
                 )
 
             commands = {
@@ -262,7 +262,7 @@ class HelpMod(loader.Module):
                     tmp += self.strings("cmd_tmpl").format(f"🎹 {cmd}")
 
             if commands or icommands:
-                tmp += " ]"
+                tmp += "."
                 if inline:
                     inline_ += [tmp]
                 elif core:
