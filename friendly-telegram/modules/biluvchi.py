@@ -1,20 +1,14 @@
-"""
-    ████░████░███░███░██░██░████░
-    ░██░░██░░░██░█░██░██░██░███░░
-    ░██░░████░██░░░██░█████░█████
-    ═════════════════════════════════════════
-    ████░████░░██░██░██░███░░██░█████░██░░░██
-    ██░░░███░░░████░░██░██░█░██░██░██░░██░██░
-    ████░█████░██░██░██░██░░███░█████░░░███░░
-    ═════════════════════════════════════════
-    Litsenziya: LLC © N.OA.ZL.QW (qaysi tupoy modul uchun litsenziya oladi? beradi?)
-    Taqdim qilingan manzil: https://telegram.me/umodules
-    ═════════════════════════════════════════
-    GeekTG yoki FTG oʻrnatish qoʻllanmasi: https://t.me/TGraphUz/1620
-"""
-# meta developer: @umodules
-# Uzbekistan presents in World top coders team
+# ▀█▀ █▀▀ █▀▄▀█ █░█ █▀█
+# ░█░ ██▄ █░▀░█ █▄█ █▀▄
+# ═══════════════════════
+# █▀▀ █▀█ █▄▀ █ █▄░█ █▀█ █░█
+# ██▄ █▀▄ █░█ █ █░▀█ █▄█ ▀▄▀
+# ═════════════════════════════
+# meta developer: @netuzb
+# meta channel: @umodules
+
 __version__ = (1, 1, 0)
+
 import asyncio
 import io
 from asyncio import sleep
@@ -71,19 +65,17 @@ class BluvchiMod(loader.Module):
         except ValueError:           
             user = await message.client.gek_entity(GetFullUserRequest(message.sender_id))
         await message.edit(
-            f"<b>📂 Foydalanuvchi haqida maʼlumotlar:</b>\n\n"
-            f"<b>📖 Ismi:</b> <a href='tg://user?id={user.id}'>{user.first_name}</a>\n"            
-            f"<b>📖 Familiyasi:</b> <a href='t.me/{user.username}'>{user.last_name}</a>\n"
-            f"<b>📖 User'nomi:</b> @{user.username}\n"
-            f"<b>📖 Raqami:</b> {user.phone}\n"
-            f"<b>📖 ID raqami:</b> <code>{user.id}</code>\n\n"
-            f"<b>📖 O'chirilgan akkaunt:</b> <code>{user.deleted}</code>\n"
-            f"<b>📖 Tasdiqlangan akkaunt:</b> <code>{user.verified}</code>\n"
-            f"<b>📖 Kontaktda mavjudligi:</b> <code>{user.contact}</code>\n\n"
-            f"📃 None = <b>yoʻq, mavjud emas</b>\n"
-            f"📃 False = <b>yolgʻon (yoʻq degandek gap)</b>\n"
-            f"📃 True = <b>toʻgʻri (xa degandek gap)</b>\n\n"
-            f"<b>📃 Qoʻllanma esdan chiqmasin:</b> <code>.id @user</code>"
+            f"<b>🌇 Foydalanuvchi haqida maʼlumotlar:</b>\n\n"
+            f"<b>🏙️ Ismi:</b> <a href='tg://user?id={user.id}'>{user.first_name}</a>\n"            
+            f"<b>🏙️ Familiyasi:</b> <a href='t.me/{user.username}'>{user.last_name}</a>\n"
+            f"<b>🌉 User'nomi:</b> @{user.username}\n"
+            f"<b>🌉 Raqami:</b> {user.phone}\n"
+            f"<b>🌉 ID raqami:</b> <code>{user.id}</code>\n\n"
+            f"<b>🏙️ O'chirilgan akkaunt:</b> <code>{user.deleted}</code>\n"
+            f"<b>🏙️ Tasdiqlangan akkaunt:</b> <code>{user.verified}</code>\n"
+            f"<b>🏙️ Kontaktda mavjudligi:</b> <code>{user.contact}</code>\n\n"
+            f"🌆 None = <b>yoʻq, mavjud emas</b>\n"
+            f"🌆 False = <b>yolgʻon (yoʻq degandek gap)</b>\n"
+            f"🌆 True = <b>toʻgʻri (xa degandek gap)</b>\n\n"
+            f"<b>🌉 Qoʻllanma esdan chiqmasin:</b> <code>.id @user</code>"
         )
-
-# 1234567890 1234567890 1234567890 1234567890 1234567890
