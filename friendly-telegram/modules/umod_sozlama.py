@@ -37,7 +37,7 @@ class CoreMod(loader.Module):
         "packs_cleared": "<b>✅ Tarjimalar tozalandi</b>",
         "lang_set": "<b>✅ Til o'zgartirildi</b>",
         "db_cleared": "<b>📖 ✅ Barcha oʻzgarishlar tozalandi</b>",
-        "geek": "🌇 <b>Malades! Sizda ''UMod!''\n🌉 Versiya: <code>2.0.6</code>\n🌉 Soʻngi yangilanish: <code>22.05.2022</code></b>",
+        "geek": "🌇 <b>«Malades!» Sizda ''UMod!''\n🌉 Versiya: <code>2.0.9</code>\n🌉 Soʻngi yangilanish: <code>22.05.2022</code></b>",
         "geek_beta": "🕶 <b>Congrats! You are UMod!</b>\n\n<b>UMod version: {}.{}.{}beta</b>\n<b>Branch: beta</b>\n\n<i>🔮 You're using the unstable branch (<b>beta</b>). You receive fresh but untested updates. Report any bugs to @ftgchatuz</i>",
         "geek_alpha": "🕶 <b>Congrats! You are UMod!</b>\n\n<b>UMod version: {}.{}.{}alpha</b>\n<b>Branch: alpha</b>\n\n<i>🔮 You're using <b><u>very</u></b> unstable branch (<b>alpha</b>). You receive fresh but untested updates. You <b><u>can't ask for help, only report bugs</u></b></i>",
     }
@@ -272,31 +272,4 @@ class CoreMod(loader.Module):
         else:
             await utils.answer(message, self.strings("bad_pack", message))
 
-    async def cmd(self, message: Message) -> None:
-        """Hamma tillarni oʻchirish"""
-        self._db.set(main.__name__, "langpacks", [])
-        await utils.answer(message, self.strings("packs_cleared", message))
-
-    async def cmd(self, message: Message) -> None:
-        """Tarjimalar uchun ishlatiladigan afzal tilni o'zgartiring
-        Tilni afzallik tartibida ISO 639-1 til kodlari roʻyxati boʻsh joy sifatida belgilang (masalan, fr en)
-        Parametrlarsiz, hammasi"""
-        langs = utils.get_args(message)
-        self._db.set(main.__name__, "language", langs)
-        await utils.answer(message, self.strings("lang_set", message))
-
-    @loader.owner
-    async def tozalashcmd(self, message: Message) -> None:
-        """barcha o'zgarishlarni tozalash"""
-        self._db.clear()
-        self._db.save()
-        await utils.answer(message, self.strings("db_cleared", message))
-
-    async def _client_ready2(self, client, db):  # skicpq: PYL-W0613
-        ret = {
-            alias: cmd
-            for alias, cmd in db.get(__name__, "aliases", {}).items()
-            if self.allmodules.add_alias(alias, cmd)
-        }
-
-        db.set(__name__, "aliases", ret)
+    async def cmd(self,
