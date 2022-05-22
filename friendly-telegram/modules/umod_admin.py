@@ -1,6 +1,3 @@
-# meta pic: https://img.icons8.com/stickers/100/000000/enter-pin.png
-# scope: inline
-
 from types import FunctionType
 from typing import List, Union
 from telethon.tl.types import Message, User, PeerUser
@@ -38,7 +35,7 @@ class GeekSecurityMod(loader.Module):
     """Control security settings (geek3.0.8alpha+)"""
 
     strings = {
-        "name": "9.UModAdmin",
+        "name": "umod_admin",
         "no_command": "🚫 <b>Buyruq </b><code>{}</code><b> topilmadi!</b>",
         "permissions": "🔐 <b>Bu yerda siz </b><code>{}{}</code> uchun ruxsatlarni sozlashingiz mumkin",
         "close_menu": "🙈 Ushbu menyuni yoping",
