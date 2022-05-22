@@ -8,10 +8,10 @@ logger = logging.getLogger(__name__)
 @loader.tds
 class PurgeMod(loader.Module):
     """Xabarni o'chirish moduli"""
-    strings = {"name": "Oʻchirgich",
-               "from_where": "<b>🥷 Qaysi xabarlar oralig'ini o'chirish kerak?</b>",
-               "not_supergroup_bot": "<b>🥷 Bu buyruq faqat superguruhlar bilan ishlaydi. </b> ",
-               "delete_what": "<b>🥷 Qaysi xabarni o'chirish kerak?</b>"}
+    strings = {"name": "o'chirgich",
+               "from_where": "<b>🌉 Qaysi xabarlar oralig'ini o'chirish kerak?</b>",
+               "not_supergroup_bot": "<b>🌇 Bu buyruq faqat superguruhlar bilan ishlaydi. </b> ",
+               "delete_what": "<b>🌇 Qaysi xabarni o'chirish kerak?</b>"}
 
     @loader.group_admin_delete_messages
     @loader.ratelimit
