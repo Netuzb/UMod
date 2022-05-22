@@ -14,15 +14,15 @@ class CoreMod(loader.Module):
     """UMod'ni sozlash boʻlimi"""
 
     strings = {
-        "name": "2.UModSozlama",
+        "name": "umod_sozlamalar",
         "too_many_args": "🚫 <b>Arglar juda ko'p</b>",
         "blacklisted": "✅ <b>Chat {} userbotdan qora roʻyxatga kiritilgan</b>",
         "unblacklisted": "✅ <b>Chat {} userbotdan qora roʻyxatga olib tashlandi</b>",
         "user_blacklisted": "✅ <b>Foydalanuvchi {} userbotdan qora roʻyxatga tushdi</b>",
         "user_unblacklisted": "✅ <b>{} foydalanuvchisi userbotdan qora roʻyxatdan chiqarildi</b>",
-        "what_prefix": "<b>🥷 Akasi yangi nuqta simvoli qani?</b>",
-        "prefix_incorrect": "🥷 <b>Nuqta oʻrnida simvol tanlanmadi.</b>",
-        "prefix_set": "<b>🥷 Yangi nuqta oʻrnida simvol muvaffaqiyatli oʻrnatildi.\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Yangi nuqta simvoli:</b> <code>{newprefix}help</code> <a href='{oldprefix}'></a>",
+        "what_prefix": "<b>🌇 Akasi yangi nuqta simvoli qani?</b>",
+        "prefix_incorrect": "🌇 <b>Nuqta oʻrnida simvol tanlanmadi.</b>",
+        "prefix_set": "<b>🌇 Yangi nuqta oʻrnida simvol muvaffaqiyatli oʻrnatildi.\n├╴╴╴╴╴╴╴╴╴╴\n└ 👾 Yangi nuqta simvoli:</b> <code>{newprefix}help</code> <a href='{oldprefix}'></a>",
         "alias_created": "✅ <b>Taxallus yaratildi. Unga</b> <code>{}</code> orqali kiring",
         "aliases": "<b>Taxalluslar:</b>\n",
         "umod": "<b>Tabriklayman!</b>\n",
@@ -37,7 +37,7 @@ class CoreMod(loader.Module):
         "packs_cleared": "<b>✅ Tarjimalar tozalandi</b>",
         "lang_set": "<b>✅ Til o'zgartirildi</b>",
         "db_cleared": "<b>📖 ✅ Barcha oʻzgarishlar tozalandi</b>",
-        "geek": "🥷 <b>Malades! Sizda ''UMod!''\n├╴╴╴╴╴╴╴╴╴╴\n├ 👾 Versiya: <code>2.0.5</code>\n└ 👾 Soʻngi yangilanish: <code>03.05.2022</code></b>",
+        "geek": "🌇 <b>Malades! Sizda ''UMod!''\n🌉 Versiya: <code>2.0.6</code>\n🌉 Soʻngi yangilanish: <code>22.05.2022</code></b>",
         "geek_beta": "🕶 <b>Congrats! You are UMod!</b>\n\n<b>UMod version: {}.{}.{}beta</b>\n<b>Branch: beta</b>\n\n<i>🔮 You're using the unstable branch (<b>beta</b>). You receive fresh but untested updates. Report any bugs to @ftgchatuz</i>",
         "geek_alpha": "🕶 <b>Congrats! You are UMod!</b>\n\n<b>UMod version: {}.{}.{}alpha</b>\n<b>Branch: alpha</b>\n\n<i>🔮 You're using <b><u>very</u></b> unstable branch (<b>alpha</b>). You receive fresh but untested updates. You <b><u>can't ask for help, only report bugs</u></b></i>",
     }
@@ -74,7 +74,15 @@ class CoreMod(loader.Module):
     async def ftgvercmd(self, message: Message) -> None:
         """UMod tekshiruvchi"""
 
-        await utils.answer(message, self.strings("geek"))
+        await self.inline.form(
+                    self.strings("geek", message),
+                    reply_markup=[
+                        [{"text": "🌇 UMod", "url": "https://t.me/umodules"}],                        
+
+                    ],
+                    ttl=10,
+                    message=message,
+                )
 
     async def cmd(self, message: Message) -> None:
         """.blacklist [id]
