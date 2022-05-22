@@ -20,7 +20,7 @@ def register(cb):
 class TelegraphMod(loader.Module):
 	"""telegra.ph hostiga rasm/video/gif yuklash"""
 	strings = {
-               "name": "Telegraph",
+               "name": "telegraph",
                "reply": "🏙️ <b>Mediaga javob tariqasida...</b>"}
 
 	def __init__(self):
