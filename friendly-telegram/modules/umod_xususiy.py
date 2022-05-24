@@ -12,19 +12,19 @@ class GeekSettingsMod(loader.Module):
 
     strings = {
         "name": "umod_xususiy",
-        "watchers": "👀 <b>Kuzatuvchilar:</b>\n\n<b>{}</b>",
-        "mod404": "🚫 <b>{} kuzatuvchisi topilmadi</b>",
-        "already_disabled": "👀 <b>{} kuzatuvchisi allaqachon oʻchirib qoʻyilgan</b>",
-        "disabled": "👀 <b>{} kuzatuvchisi endi <u>o‘chirilgan</u></b>",
-        "enabled": "👀 <b>{} kuzatuvchisi endi <u>yoqilgan</u></b>",
-        "args": "🚫 <b>Siz kuzatuvchi nomini belgilashingiz kerak</b>",
-        "user_nn": "🔰 <b>Bu foydalanuvchi uchun NoNick hozir {}</b>",
-        "no_cmd": "🔰 <b>Iltimos, NoNick-ni almashtirish uchun buyruqni belgilang</b>",
-        "cmd_nn": "🔰 <code>{}</code><b> uchun NoNick hozir {}</b>",
-        "cmd404": "🔰 <b>Buyruq topilmadi</b>",
-        "inline_settings": "⚙️ <b>Bu yerda siz UMod sozlamalarini sozlashingiz mumkin</b>",
-        "confirm_update": "🪂 <b>Iltimos, yangilashni xohlayotganingizni tasdiqlang. Sizning userbotingiz qayta ishga tushiriladi</b>",
-        "confirm_restart": "🔄 <b>Iltimos, qayta ishga tushirishni xohlayotganingizni tasdiqlang</b>",
+        "watchers": "🏙️ <b>Kuzatuvchilar:</b>\n\n<b>{}</b>",
+        "mod404": "🏙️ <b>{} kuzatuvchisi topilmadi</b>",
+        "already_disabled": "🏙️ <b>{} kuzatuvchisi allaqachon oʻchirib qoʻyilgan</b>",
+        "disabled": "🏙️ <b>{} kuzatuvchisi endi <u>o‘chirilgan</u></b>",
+        "enabled": "🏙️ <b>{} kuzatuvchisi endi <u>yoqilgan</u></b>",
+        "args": "🌉 <b>Siz kuzatuvchi nomini belgilashingiz kerak</b>",
+        "user_nn": "🌇 <b>Bu foydalanuvchi uchun NoNick hozir {}</b>",
+        "no_cmd": "🌇 <b>Iltimos, NoNick-ni almashtirish uchun buyruqni belgilang</b>",
+        "cmd_nn": "🌇 <code>{}</code><b> uchun NoNick hozir {}</b>",
+        "cmd404": "🌇 <b>Buyruq topilmadi</b>",
+        "inline_settings": "🌉 <b>Bu yerda siz UMod sozlamalarini sozlashingiz mumkin</b>",
+        "confirm_update": "🌉 <b>Iltimos, yangilashni xohlayotganingizni tasdiqlang. Sizning userbotingiz qayta ishga tushiriladi</b>",
+        "confirm_restart": "🌉 <b>Iltimos, qayta ishga tushirishni xohlayotganingizni tasdiqlang</b>",
     }
 
     def get_watchers(self) -> tuple:
@@ -42,7 +42,7 @@ class GeekSettingsMod(loader.Module):
         """List current watchers"""
         watchers, disabled_watchers = self.get_watchers()
         watchers = [
-            f"🥷 {_}" for _ in watchers if _ not in list(disabled_watchers.keys())
+            f"🌇 {_}" for _ in watchers if _ not in list(disabled_watchers.keys())
         ]
         watchers += [f"💢 {k} {v}" for k, v in disabled_watchers.items()]
         await utils.answer(
