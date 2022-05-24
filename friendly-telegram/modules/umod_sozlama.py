@@ -14,7 +14,7 @@ class CoreMod(loader.Module):
     """UMod'ni sozlash boʻlimi"""
 
     strings = {
-        "name": "umod_sozlamalar",
+        "name": "Umod_sozlamalar",
         "too_many_args": "🚫 <b>Arglar juda ko'p</b>",
         "blacklisted": "✅ <b>Chat {} userbotdan qora roʻyxatga kiritilgan</b>",
         "unblacklisted": "✅ <b>Chat {} userbotdan qora roʻyxatga olib tashlandi</b>",
