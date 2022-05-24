@@ -35,7 +35,7 @@ class GeekSecurityMod(loader.Module):
     """Control security settings (geek3.0.8alpha+)"""
 
     strings = {
-        "name": "umod_admin",
+        "name": "Umod_admin",
         "no_command": "🚫 <b>Buyruq </b><code>{}</code><b> topilmadi!</b>",
         "permissions": "🔐 <b>Bu yerda siz </b><code>{}{}</code> uchun ruxsatlarni sozlashingiz mumkin",
         "close_menu": "🙈 Ushbu menyuni yoping",
