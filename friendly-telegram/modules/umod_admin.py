@@ -59,7 +59,7 @@ class GeekSecurityMod(loader.Module):
         "no_owner": "🏙️ <b>There is no users in group </b><code>owner</code>",
         "no_sudo": "🏙️ <b>There is no users in group </b><code>sudo</code>",
         "no_support": "🌇 <b>There is no users in group </b><code>support</code>",
-        "owner_added": '🌇 <b><a href="tg://user?id={}">{}</a> added to group </b><code>owner</code>',
+        "owner_added": '🌇 <b><a href="tg://user?id={}">{}</a> - </b><code>Owner</code> <b>guruhiga qoʻshildi.</b>',
         "sudo_added": '🌇 <b><a href="tg://user?id={}">{}</a> added to group </b><code>sudo</code>',
         "support_added": '🌇 <b><a href="tg://user?id={}">{}</a> added to group </b><code>support</code>',
         "owner_removed": '🌇 <b><a href="tg://user?id={}">{}</a> removed from group </b><code>owner</code>',
