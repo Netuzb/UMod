@@ -105,7 +105,7 @@ class LoaderMod(loader.Module):
     """Loads modules"""
 
     strings = {
-        "name": "umod_saqlagich",
+        "name": "Umod_saqlagich",
         "repo_config_doc": "...",
         "avail_header": "<b>🌇 UMod\n</b>",
         "select_preset": "...",
