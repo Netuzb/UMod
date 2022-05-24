@@ -27,7 +27,7 @@ class PythonMod(loader.Module):
     """Evaluates python code"""
 
     strings = {
-        "name": "python",
+        "name": "Python",
         "eval": "<b>🌇 Kod:</b>\n<code>{}</code>\n\n<b>🌉 Natija:</b>\n<code>{}</code>",
         "err": "<b>🌇 Kod:</b>\n<code>{}</code>\n\n<b>🏙️ Xato:</b>\n<code>{}</code>",
         "db_permission": (
