@@ -22,7 +22,7 @@ def register(cb):
 class PingerMod(loader.Module):
 	"""Userbot tezligini o'lchaydigan modul"""
 
-	strings = {'name': 'tezlik'}
+	strings = {'name': 'Tezlik'}
 
 	def __init__(self):
 		self.name = self.strings['name']
