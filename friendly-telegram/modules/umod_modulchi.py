@@ -15,7 +15,7 @@ from .. import loader, utils
 class ModulesLinkMod(loader.Module):
     """Modulni yuklash"""
 
-    strings = {"name": "modulchi"}
+    strings = {"name": "Modulchi"}
 
     async def mlcmd(self, message):
         """modul faylini olish"""
