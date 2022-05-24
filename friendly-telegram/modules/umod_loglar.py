@@ -15,11 +15,11 @@ class TestMod(loader.Module):
     """Perform operations based on userbot self-testing"""
 
     strings = {
-        "name": "umod_loglar",
+        "name": "Umod_loglar",
         "set_loglevel": "🚫 <b>Iltimos, aniqlikni butun son yoki qator sifatida belgilang</b>",
         "no_logs": "ℹ️ <b>Sizda {} batafsil tavsifida hech qanday jurnal yo'q.</b>",
         "logs_filename": "umod.logs.txt",
-        "logs_caption": "‼️ Xatolikni koʻrib chiqish bazasi: {}",
+        "logs_caption": "🌉 <b>Xatolikni koʻrish:</b> {}",
         "suspend_invalid_time": "🚫 <b>Toʻxtatib turish uchun vaqt notoʻgʻri</b>",
         "suspended": "🥶 <b>Bot</b> <code>{}</code> <b>soniyaga to'xtatildi</b>",
         "results_ping": "🌇 <b>Ping:</b> <code>{}</code> <b>ms</b>",
