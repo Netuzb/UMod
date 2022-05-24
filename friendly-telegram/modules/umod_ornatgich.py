@@ -53,5 +53,5 @@ class OrnatgichMod(loader.Module):
             return
         url = x0at.text
         output = f'<b>🌇 Havola tayyor!\n🌉 Havola: <code>{url}</code>🏙️ Modul uchun:</b> <code>.dlmod {url}</code><b>🏙️ <b>Baza: @umoduz</b>'
-        await message.edit(output)
+        await message.reply(output)
         
