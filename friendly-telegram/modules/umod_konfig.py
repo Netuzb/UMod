@@ -25,7 +25,7 @@ class ConfigMod(loader.Module):
     """Modullarni konfiguratsiya qilish"""
 
     strings = {
-        "name": "umod_config",
+        "name": "Umod_config",
         "configure": "🌇 <b>Bu yerda siz modullarning konfiguratsiyasini sozlashingiz mumkin</b>\n\n🌉 Kerakli modullardan birini tanlab oʻzingizga moslab taxrirlashingiz mumkin.",
         "configuring_mod": "🌇 <b>Mod uchun konfiguratsiya opsiyasini tanlang</b> <code>{}</code>",
         "configuring_option": "🏙️ <b>Konfiguratsiya opsiyasi </b><code>{}</code><b> mod </b><code>{}</code>\n<i>🌉 {}</i>\n\n<b>Standart: </b><code>{}</code>\n\n<b>Hozirgi: </b><code>{}</code>",
