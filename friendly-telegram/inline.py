@@ -44,7 +44,7 @@ logger = logging.getLogger(__name__)
 
 photo = io.BytesIO(
     requests.get(
-        "https://x0.at/k2Lq.png"
+        "https://siasky.net/ZADBG4eijyHLmWQsM0T2ai3a48y_Ja22tmo_bvVYx0UGUg"
     ).content
 )
 photo.name = "avatar.png"
@@ -361,7 +361,7 @@ class InlineManager:
             await r.delete()
 
             # Set its name to user's name + GeekTG Userbot
-            m = await conv.send_message(f"🥷 𝚄𝙼𝚘𝚍 - {self._name}")
+            m = await conv.send_message(f"🌇 UMOD - {self._name}")
             r = await conv.get_response()
 
             await m.delete()
