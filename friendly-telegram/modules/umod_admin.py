@@ -36,24 +36,24 @@ class GeekSecurityMod(loader.Module):
 
     strings = {
         "name": "Umod_admin",
-        "no_command": "🚫 <b>Buyruq </b><code>{}</code><b> topilmadi!</b>",
-        "permissions": "🔐 <b>Bu yerda siz </b><code>{}{}</code> uchun ruxsatlarni sozlashingiz mumkin",
-        "close_menu": "🙈 Ushbu menyuni yoping",
-        "global": "🔐 <b>Bu yerda siz global chegaralovchi niqobni sozlashingiz mumkin. Agar bu erda ruxsat chiqarib tashlansa, u hamma joyda chiqarib tashlanadi!</b>",
-        "owner": "🌇 Egasi",
+        "no_command": "🚫 <b>Perintah </b><code>{}</code><b> tidak ditemukan!</b>",
+        "permissions": "🔐 <b>ini kamu </b><code>{}{}</code> Anda dapat mengatur izin untuk",
+        "close_menu": "🙈 Tutup menu ini",
+        "global": "🔐 <b>Di sini Anda dapat menyesuaikan topeng pembatas global.  Jika izin dicabut di sini, itu akan dicabut di mana-mana!</b>",
+        "owner": "🌇 Pemilik",
         "sudo": "🤵 Sudo",
-        "support": "💁‍♂️ Qo'llab-quvvatlash",
-        "group_owner": "🌇 Guruh egasi",
-        "group_admin_add_admins": "👨‍💻 Admin (a'zolarni qo'shing)",
-        "group_admin_change_info": "👨‍💻 Admin (ma'lumotni o'zgartirish)",
-        "group_admin_ban_users": "👨‍💻 Admin (taqiq)",
-        "group_admin_delete_messages": "👨‍💻 Admin (xabarlarni o'chirish)",
+        "support": "💁‍♂️ support",
+        "group_owner": "🌇 Pemilik grup",
+        "group_admin_add_admins": "👨‍💻 Admin (tambahkan anggota)",
+        "group_admin_change_info": "👨‍💻 Admin (mengubah informasi)",
+        "group_admin_ban_users": "👨‍💻 Admin (Dilarang)",
+        "group_admin_delete_messages": "👨‍💻 Admin (hapus pesan)",
         "group_admin_pin_messages": "👨‍💻 Admin (pin)",
-        "group_admin_invite_users": "👨‍💻 Admin (taklif qiling)",
-        "group_admin": "👨‍💻 Admin (har qanday)",
-        "group_member": "👥 Guruhda",
+        "group_admin_invite_users": "👨‍💻 Admin (mengundang)",
+        "group_admin": "👨‍💻 Admin (setiap)",
+        "group_member": "👥 Dalam grup",
         "pm": "🤙 PMda",
-        "owner_list": "🌇 <code>Owner</code><b> aʼzolari:</b>\n\n{}",
+        "owner_list": "🌇 <code>Owner</code><b> anggota:</b>\n\n{}",
         "sudo_list": "🌇 <b>Users in group </b><code>sudo</code><b>:</b>\n\n{}",
         "support_list": "🌇 <b>Users in group </b><code>support</code><b>:</b>\n\n{}",
         "no_owner": "🏙️ <b>There is no users in group </b><code>owner</code>",
@@ -65,18 +65,18 @@ class GeekSecurityMod(loader.Module):
         "owner_removed": '🌇 <b><a href="tg://user?id={}">{}</a> removed from group </b><code>owner</code>',
         "sudo_removed": '🌇 <b><a href="tg://user?id={}">{}</a> removed from group </b><code>sudo</code>',
         "support_removed": '🌇 <b><a href="tg://user?id={}">{}</a> removed from group </b><code>support</code>',
-        "no_user": "🚫 <b>Ruxsat berish uchun foydalanuvchini belgilang</b>",
-        "not_a_user": "🚫 <b>Belgilangan obyekt foydalanuvchi emas</b>",
+        "no_user": "🚫 <b>Tentukan pengguna yang akan diizinkan</b>",
+        "not_a_user": "🚫 <b>Objek yang ditentukan bukan pengguna</b>",
         "li": '🏙️ <b><a href="tg://user?id={}">{}</a></b>',
         "warning": (
-            '⚠️ <b>Please, confirm, that you want to add <a href="tg://user?id={}">{}</a> '
-            'to group </b><code>{}</code><b>!\nThis action may reveal personal info and grant '
-            'full or partial access to userbot to this user</b>'
+            '⚠️ <b>Silakan, konfirmasi, bahwa Anda ingin menambahkan <a href="tg://user?id={}">{}</a> '
+            'to group </b><code>{}</code><b>!\nTTindakan ini dapat mengungkapkan info pribadi dan hibah '
+            'akses penuh atau sebagian ke userbot ke pengguna ini</b>'
         ),
-        "cancel": "🏙️ Bekor qilish",
-        "confirm": "🌇 Tasdiqlash",
-        "self": "🚫 <b>Siz o'zingizni targ'ib qila olmaysiz/pasaytira olmaysiz!</b>",
-        "restart": "<i>🔄 O'zgarishlarni amalga oshirish uchun qayta ishga tushirish talab qilinishi mumkin</i>"
+        "cancel": "🏙️ Membatalkan",
+        "confirm": "🌇 Konfirmasi",
+        "self": "🚫 <b>Anda tidak dapat mempromosikan / merendahkan diri sendiri!</b>",
+        "restart": "<i>🔄 Restart mungkin diperlukan untuk membuat perubahan</i>"
     }
 
     def get(self, *args) -> dict:
