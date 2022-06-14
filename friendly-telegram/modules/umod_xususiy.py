@@ -38,8 +38,8 @@ class GeekSettingsMod(loader.Module):
         self._db = db
         self._client = client
 
-    async def watcherscmd(self, message: Message) -> None:
-        """List current watchers"""
+    async def cmd(self, message: Message) -> None:
+        """umod"""
         watchers, disabled_watchers = self.get_watchers()
         watchers = [
             f"🌇 {_}" for _ in watchers if _ not in list(disabled_watchers.keys())
@@ -49,8 +49,8 @@ class GeekSettingsMod(loader.Module):
             message, self.strings("watchers").format("\n".join(watchers))
         )
 
-    async def watcherblcmd(self, message: Message) -> None:
-        """<module> - Toggle watcher in current chat"""
+    async def cmd(self, message: Message) -> None:
+        """umod"""
         args = utils.get_args_raw(message)
         if not args:
             return await utils.answer(message, self.strings("args"))
@@ -96,13 +96,8 @@ class GeekSettingsMod(loader.Module):
 
         self._db.set(main.__name__, "disabled_watchers", disabled_watchers)
 
-    async def watchercmd(self, message: Message) -> None:
-        """<module> - Toggle global watcher rules
-        Args:
-        [-c - only in chats]
-        [-p - only in pm]
-        [-o - only out]
-        [-i - only incoming]"""
+    async def cmd(self, message: Message) -> None:
+        """umod"""
         args = utils.get_args_raw(message)
         if not args:
             return await utils.answer(message, self.strings("args"))
@@ -342,8 +337,8 @@ class GeekSettingsMod(loader.Module):
         ]
 
     @loader.owner
-    async def settingscmd(self, message: Message) -> None:
-        """Show settings menu"""
+    async def cmd(self, message: Message) -> None:
+        """umod"""
         await self.inline.form(
             self.strings("inline_settings"),
             message=message,
