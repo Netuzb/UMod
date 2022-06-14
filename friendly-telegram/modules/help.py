@@ -18,7 +18,7 @@ class HelpMod(loader.Module):
         "single_mod_header": "🌇 <b>Modul nomi:</b> {}",
         "single_cmd": "\n 🏙️ <b>{}{}</b> - ",
         "undoc_cmd": "🏙️ Hujjatlar yoʻq!",
-        "all_header": "🌇 <b>Umumiy modullar: <code>{}</code>\n🌉 Berkitilganlari: <code>{}</code>\n🌉 Premium modullar: <code>0</code></b>",
+        "all_header": "🌉 <b>Umumiy modullar: <code>{}</code>\n🌉 Berkitilganlari: <code>{}</code>",
         "mod_tmpl": "\n{} <b>{}</b>",
         "first_cmd_tmpl": ": {}",
         "cmd_tmpl": ", {}",
@@ -278,7 +278,7 @@ class HelpMod(loader.Module):
         core_.sort(key=lambda x: x.split()[1])
         inline_.sort(key=lambda x: x.split()[1])
 
-        await utils.answer(message, f"{reply}\n{''.join(core_)}{''.join(plain_)}{''.join(inline_)}")
+        await utils.answer(message, f"{reply}\n{''.join(core_)}{''.join(plain_)}{''.join(inline_)}\n\n🌉 <b>UMod</b> - yangi avlod yuserboti.")
 
     async def client_ready(self, client, db) -> None:
         self._client = client
