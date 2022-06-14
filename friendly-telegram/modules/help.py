@@ -278,7 +278,7 @@ class HelpMod(loader.Module):
         core_.sort(key=lambda x: x.split()[1])
         inline_.sort(key=lambda x: x.split()[1])
 
-        await utils.answer(message, f"{reply}\n{''.join(core_)}{''.join(plain_)}{''.join(inline_)}\n\n🌉 <b>UMod</b> - yangi avlod yuserboti.")
+        await utils.answer(message, f"{reply}\n{''.join(core_)}{''.join(plain_)}{''.join(inline_)}\n\n🌉 <b>UMod</b> - yangi avlod yuzerboti.")
 
     async def client_ready(self, client, db) -> None:
         self._client = client
