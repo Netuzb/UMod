@@ -44,10 +44,10 @@ logger = logging.getLogger(__name__)
 
 photo = io.BytesIO(
     requests.get(
-        "https://te.legra.ph/file/ee86db1ce84eafe0c96c4.jpg"
+        "https://siasky.net/FACU4D7kxX3opNOun7CxuUJldpTeGT8DZLKOdrUP-CyIdQ"
     ).content
 )
-photo.name = "umod.png"
+photo.name = "avatar.png"
 
 
 class InlineCall:
