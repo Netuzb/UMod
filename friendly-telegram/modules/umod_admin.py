@@ -68,7 +68,7 @@ class GeekSecurityMod(loader.Module):
         "no_user": "🚫 <b>Ruxsat berish uchun foydalanuvchini belgilang</b>",
         "not_a_user": "🚫 <b>Belgilangan obyekt foydalanuvchi emas</b>",
         "li": '🏙️ <b><a href="tg://user?id={}">{}</a></b>',
-        "warning": '◍ Admin qilish tasdiqlang: <a href="tg://user?id={}">{}</a>',
+        "warning": '🌉 <b>Quyidagi shaxsni admin qilishni tasdiqlang</b>: <a href="tg://user?id={}">{}</a>',
         "cancel": "🏙️ Bekor qilish",
         "confirm": "🌇 Tasdiqlash",
         "self": "🚫 <b>Siz o'zingizni targ'ib qila olmaysiz/pasaytira olmaysiz!</b>",
