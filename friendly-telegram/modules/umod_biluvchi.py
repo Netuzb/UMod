@@ -73,9 +73,10 @@ class BluvchiMod(loader.Module):
             f"<b>🏙️ O'chirilgan akkaunt:</b> <code>{user.deleted}</code>\n"
             f"<b>🏙️ Tasdiqlangan akkaunt:</b> <code>{user.verified}</code>\n"
             f"<b>🏙️ Kontaktda mavjudligi:</b> <code>{user.contact}</code>\n\n"
-            f"🌆 None = <b>yoʻq, mavjud emas</b>\n"
-            f"🌆 False = <b>yolgʻon (yoʻq degandek gap)</b>\n"
-            f"🌆 True = <b>toʻgʻri (xa degandek gap)</b>\n\n"
+            f"🌆 <b>None</b> = yoʻq, mavjud emas\n"
+            f"🌆 <b>False</b> = yolgʻon (yoʻq degandek gap)\n"
+            f"🌆 <b>True</b> = toʻgʻri (xa degandek gap)\n\n"
+            f"<b>🌉 Foydalanuvchi maʼlumotlari <u>UMod</u></b> orqali qoʻlga kiritdi."
             f"<b>🌉 Qoʻllanma esdan chiqmasin:</b> <code>.id @user</code>"
         )
         await self.inline.form(
