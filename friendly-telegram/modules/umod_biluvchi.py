@@ -76,7 +76,7 @@ class BluvchiMod(loader.Module):
             f"🌆 <b>None</b> = yoʻq, mavjud emas\n"
             f"🌆 <b>False</b> = yolgʻon (yoʻq degandek gap)\n"
             f"🌆 <b>True</b> = toʻgʻri (xa degandek gap)\n\n"
-            f"<b>🌉 Foydalanuvchi maʼlumotlari <u>UMod</u></b> orqali qoʻlga kiritdi."
+            f"<b>🌉 Foydalanuvchi maʼlumotlari <u>UMod</u></b> orqali qoʻlga kiritdi.\n"
             f"<b>🌉 Qoʻllanma esdan chiqmasin:</b> <code>.id @user</code>"
         )
         await self.inline.form(
