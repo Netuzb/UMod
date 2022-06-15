@@ -7,7 +7,7 @@
 # meta developer: @netuzb
 # meta channel: @umodules
 
-version = (1, 1, 0)
+__version__ = (3, 6, 13)
 
 import asyncio
 import io
