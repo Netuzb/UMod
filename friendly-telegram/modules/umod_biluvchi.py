@@ -65,8 +65,8 @@ class BluvchiMod(loader.Module):
         except ValueError:           
             user = await message.client.gek_entity(GetFullUserRequest(message.sender_id))
         idmod = (f"<b>🌇 Foydalanuvchi haqida maʼlumotlar:</b>\n\n"
-            f"<b>🏙️ Ismi:</b> <a href='tg://user?id={user.id}'>{user.first_name}</a>\n"            
-            f"<b>🏙️ Familiyasi:</b> <a href='t.me/{user.username}'>{user.last_name}</a>\n"
+            f"<b>🌉 Ismi:</b> <a href='tg://user?id={user.id}'>{user.first_name}</a>\n"            
+            f"<b>🌉 Familiyasi:</b> <a href='t.me/{user.username}'>{user.last_name}</a>\n"
             f"<b>🌉 User'nomi:</b> @{user.username}\n"
             f"<b>🌉 Raqami:</b> {user.phone}\n"
             f"<b>🌉 ID raqami:</b> <code>{user.id}</code>\n\n"
