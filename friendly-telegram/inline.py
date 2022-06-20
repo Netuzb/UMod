@@ -941,7 +941,7 @@ class InlineManager:
                         not in self._client.dispatcher.security._owner  # skipcq: PYL-W0212
                         and query.from_user.id not in form["always_allow"]
                     ):
-                        await query.answer("You are not allowed to press this button!")
+                        await query.answer("UMod sizga tegishli emas!")
                         return
 
                     query.delete = functools.partial(
