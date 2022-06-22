@@ -72,8 +72,16 @@ class CoreMod(loader.Module):
     async def ftgvercmd(self, message: Message) -> None:
         """UMod tekshiruvchi"""
 
+        umod_ftgver = """🌄 <b>Barakalla! Sizda «UMod»!</b> 
+— <i>Ayni damda ushbu talqin takomillashgan sanaladi</i>
+
+🌄 <b>«Quyidagi versiya»</b> <code>2.4.6</code>
+— <i>Agarda versiya boshqalarnikiga nisbatan kichik boʻlsa, iltimos yangilashni unutmang.</i>
+
+🌄 <b>«Soʻngi yangilanish sanasi»</b> <code>15.06.2022</code>"""
+
         await self.inline.form(
-                    self.strings("umod_versiya", message),
+                    text = umod_ftgver,
                     reply_markup=[
                         [{"text": "🌇 UMod - yuzerbot kanali", "url": "https://t.me/umodules"}],                        
                         [{
