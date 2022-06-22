@@ -77,7 +77,7 @@ class CoreMod(loader.Module):
         await self.inline.form(
                     self.strings("geek", message),
                     reply_markup=[
-                        [{"text": "🌇 UMod", "url": "https://t.me/umodules"}],                        
+                        [{"text": "🌇 UMod - yuzerbot kanali", "url": "https://t.me/umodules"}],                        
                         [{
        "text": "👇 TREND MODULLARIMIZ", 
        "callback": "umoduz",
