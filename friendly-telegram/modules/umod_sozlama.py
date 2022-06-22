@@ -37,7 +37,6 @@ class CoreMod(loader.Module):
         "packs_cleared": "<b>✅ Tarjimalar tozalandi</b>",
         "lang_set": "<b>✅ Til o'zgartirildi</b>",
         "db_cleared": "<b>🏙️ Barcha oʻzgarishlar tozalandi!</b>",
-        "umod_versiya": "🌉 <b>Barakalla! Sizda «UMod»!</b> Ayni damda ushbu talqin takomillashgan sanaladi\n🌉 <b>«Quyidagi versiya»</b> <code>2.4.6</code>\n🌉 <b>«Soʻngi yangilanish sanasi»</b> <code>15.06.2022</code>",
     }
 
     async def client_ready(self, client, db):
@@ -75,7 +74,7 @@ class CoreMod(loader.Module):
         umod_ftgver = """🌄 <b>Barakalla! Sizda «UMod»!</b> 
 — <i>Ayni damda ushbu talqin takomillashgan sanaladi</i>
 
-🌄 <b>«Quyidagi versiya»</b> <code>2.4.6</code>
+🌄 <b>«Quyidagi versiya»</b> <code>2.5.12</code>
 — <i>Agarda versiya boshqalarnikiga nisbatan kichik boʻlsa, iltimos yangilashni unutmang.</i>
 
 🌄 <b>«Soʻngi yangilanish sanasi»</b> <code>15.06.2022</code>"""
