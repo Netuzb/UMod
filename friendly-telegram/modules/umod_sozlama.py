@@ -37,9 +37,7 @@ class CoreMod(loader.Module):
         "packs_cleared": "<b>✅ Tarjimalar tozalandi</b>",
         "lang_set": "<b>✅ Til o'zgartirildi</b>",
         "db_cleared": "<b>🏙️ Barcha oʻzgarishlar tozalandi!</b>",
-        "geek": "🌉 <b>Malades! Sizda ''UMod!''\n🌉 Versiya: <code>2.4.6</code>\n🌉 Soʻngi yangilanish: <code>15.06.2022</code></b>",
-        "geek_beta": "🕶 <b>Congrats! You are UMod!</b>\n\n<b>UMod version: {}.{}.{}beta</b>\n<b>Branch: beta</b>\n\n<i>🔮 You're using the unstable branch (<b>beta</b>). You receive fresh but untested updates. Report any bugs to @ftgchatuz</i>",
-        "geek_alpha": "🕶 <b>Congrats! You are UMod!</b>\n\n<b>UMod version: {}.{}.{}alpha</b>\n<b>Branch: alpha</b>\n\n<i>🔮 You're using <b><u>very</u></b> unstable branch (<b>alpha</b>). You receive fresh but untested updates. You <b><u>can't ask for help, only report bugs</u></b></i>",
+        "umod_versiya": "🌉 <b>Barakalla! Sizda «UMod»!</b> Ayni damda ushbu talqin takomillashgan sanaladi\n🌉 <b>«Quyidagi versiya»</b> <code>2.4.6</code>\n🌉 <b>«Soʻngi yangilanish sanasi»</b> <code>15.06.2022</code>",
     }
 
     async def client_ready(self, client, db):
@@ -75,7 +73,7 @@ class CoreMod(loader.Module):
         """UMod tekshiruvchi"""
 
         await self.inline.form(
-                    self.strings("geek", message),
+                    self.strings("umod_versiya", message),
                     reply_markup=[
                         [{"text": "🌇 UMod - yuzerbot kanali", "url": "https://t.me/umodules"}],                        
                         [{
