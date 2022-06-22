@@ -77,7 +77,7 @@ class CoreMod(loader.Module):
 🌄 <b>«Quyidagi versiya»</b> <code>2.5.12</code>
 — <i>Agarda versiya boshqalarnikiga nisbatan kichik boʻlsa, iltimos yangilashni unutmang.</i>
 
-🌄 <b>«Soʻngi yangilanish sanasi»</b> <code>23.07.2022</code>"""
+🌄 <b>«Soʻngi yangilanish sanasi»</b> <code>23.06.2022</code>"""
 
         await self.inline.form(
                     text = umod_ftgver,
