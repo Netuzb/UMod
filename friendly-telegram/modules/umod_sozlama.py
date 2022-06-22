@@ -78,7 +78,31 @@ class CoreMod(loader.Module):
                     self.strings("geek", message),
                     reply_markup=[
                         [{"text": "🌇 UMod", "url": "https://t.me/umodules"}],                        
-
+                        [{
+       "text": "👇 TREND MODULLARIMIZ", 
+       "callback": "umoduz",
+      }],
+                    [{
+       "text": "🍊 Animatsiya", 
+       "url": "https://t.me/UModules/144",
+      },{
+       "text": "❤️ MagicText", 
+       "url": "https://t.me/UModules/166",
+      }],                     
+[{
+       "text": "✍️ Typewriter", 
+       "url": "https://t.me/UModules/158",
+      },{
+       "text": "🕋 JumaMuborak", 
+       "url": "https://t.me/UModules/159",
+      }],                     
+[{
+       "text": "💖 LoveMagic", 
+       "url": "https://t.me/UModules/156",
+      },{
+       "text": "🥰 LoveEmoji", 
+       "url": "https://t.me/UModules/155",
+      }],
                     ],
                     ttl=10,
                     message=message,
