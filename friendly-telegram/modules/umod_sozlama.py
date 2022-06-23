@@ -1,11 +1,9 @@
-__version__ = (1, 0, 0)
+__version__ = (2, 0, 0)
 # meta developer: @umodules
 
 import os
-
 import telethon
 from telethon.tl.types import Message
-
 from .. import loader, main, utils
 
 
@@ -74,7 +72,7 @@ class CoreMod(loader.Module):
         umod_ftgver = """🌄 <b>Barakalla! Sizda «UMod»!</b> 
 — <i>Ayni damda ushbu talqin takomillashgan sanaladi</i>
 
-🌄 <b>«Quyidagi versiya»</b> <code>2.5.12</code>
+🌄 <b>«Quyidagi versiya»</b> <code>2.5.32</code>
 — <i>Agarda versiya boshqalarnikiga nisbatan kichik boʻlsa, iltimos yangilashni unutmang.</i>
 
 🌄 <b>«Soʻngi yangilanish sanasi»</b> <code>23.06.2022</code>"""
