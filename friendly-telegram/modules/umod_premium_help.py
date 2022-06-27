@@ -290,7 +290,7 @@ class HelpMod(loader.Module):
         umod = f"{reply}\n{''.join(core_)}{''.join(plain_)}{''.join(inline_)}"
         umod_turn = f"\n\n🌉 <b>«UMod» - yangi avlod yuzerboti.</b>"
         umod_classic = "\n— <i>«Help» oynasining klassik koʻrinishini ochish uchun «<b>.helpc</b>» buyrugʻini ishlating</i>"
-        umod_mods = "\n— <i>Quyuda sizdagi mavjud umumiy modullar soni hamda berkitilganlar soni koʻrsatilgan</i>"
+        umod_mods = "\n— <i>Quyida sizdagi mavjud umumiy modullar soni hamda berkitilganlar soni koʻrsatilgan</i>"
         asos = "🌉 <b>Zamonaviylashgan «Help» oynasi.</b>"
         
         await self.inline.form(
