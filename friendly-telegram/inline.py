@@ -1148,9 +1148,7 @@ class InlineManager:
             )
         except Exception:
             msg = (
-                "🚫 <b>A problem occurred with inline bot "
-                "while processing query. Check logs for "
-                "further info.</b>"
+                "🌉 <b>«UMod»</b> tarafidan yaratilgan maxsus bot oʻlib qolgan.\n🌄 <b>«Iltimos!»</b> UMod qayta oʻrnating."
             )
 
             del self._forms[form_uid]
