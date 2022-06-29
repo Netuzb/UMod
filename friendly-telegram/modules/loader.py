@@ -111,8 +111,8 @@ class LoaderMod(loader.Module):
         "no_file": "<b>🏙️ Fayl topilmadi!?</b>",
         "provide_module": "<b>🌉 O'rnatish kerak boʻlgan modul fayliga javob tariqasida yozing!</b>",
         "bad_unicode": "<b>🏙️ Bu modul emas!</b>",
-        "load_failed": "<b>🌇 Modul oʻrnatilmadi!\n🌉 Xatolikni tekshirib koʻring: <code>.logs</code></b>",
-        "loaded": "<b>🌇 Modul oʻrnatildi!\n🌉 Nomi:</b> {}\n<b>🌉 Versiya:</b> {}{}",
+        "load_failed": "<b>🌇 «Modul oʻrnatilmadi!»\n🌉 «Xatolikni tekshirib koʻrish uchun» <code>.logs</code></b>",
+        "loaded": "<b>🌇 «Modul oʻrnatildi!»\n🌄 «Nomi» :</b> {}\n<b>🌄 «Versiya» :</b> {}{}",
         "unloaded": "<b>🏙️ Modul toʻliq oʻchirib tashlandi.</b>",
         "not_unloaded": "<b>🏙️ Modul neto joylashganmi deyman, oʻchirishga qurbimiz yetmadi.</b>",
         "requirements_failed": "<b>🏙️ Rasmiyga oʻrnatilmadi!</b>",
@@ -133,18 +133,18 @@ class LoaderMod(loader.Module):
         "repo_not_loaded": "<b>🚫 Repository not loaded</b>",
         "repo_unloaded": "<b>🔄 Repository unloaded, but restart is required to unload repository modules</b>",
         "repo_not_unloaded": "<b>🚫 Repository not unloaded</b>",
-        "single_cmd": "\n🏙️ <b>{}{}</b> - ",
+        "single_cmd": "\n🌄 <b>{}{}</b> - ",
         "undoc_cmd": "👁‍🗨 No docs",
-        "ihandler": "\n🏙️ <i>Inline</i>: <code>{}</code> - ",
+        "ihandler": "\n🌄 <i>Inline</i>: <code>{}</code> - ",
         "undoc_ihandler": "👁‍🗨 No docs",
-        "chandler": "\n🏙️ <i>Callback</i>: <code>{}</code> - ",
+        "chandler": "\n🌄 <i>Callback</i>: <code>{}</code> - ",
         "undoc_chandler": "👁‍🗨 No docs",
         "inline_init_failed": """🚫 <b>This module requires GeekTG inline feature and initialization of InlineManager failed</b>
 <i>Please, remove one of your old bots from @BotFather and restart userbot to load this module</i>""",
         "version_incompatible": "🚫 <b>This module requires GeekTG {}+\nPlease, update with </b><code>.update</code>",
         "non_heroku": "♓️ <b>This module is not supported on Heroku</b>",
         "ffmpeg_required": "🚫 <b>This module requires FFMPEG, which is not installed</b>",
-        "developer": "\n\n🌇 <b>Qisqa maʼlumot:\n🌉 Modul egasi: <code>{}</code>\n🌉 Modul bazasi: <code>@umoduz</code></b>"
+        "developer": "\n\n🌉 <b>«Qisqa maʼlumot» :</b> (modul bilan bogʻliq)\n🌄 <b>«Modul egasi» : <code>{}</code>\n🌄 «Modul bazasi» : <code>@umodules</code></b>"
     }
 
     def __init__(self):
@@ -426,7 +426,7 @@ class LoaderMod(loader.Module):
 
             if instance.__doc__:
                 modhelp += (
-                    f"<b>\n🌉 Vazifasi:</b> {utils.escape_html(inspect.getdoc(instance))}\n"
+                    f"<b>\n🌄 «Vazifasi» :</b> {utils.escape_html(inspect.getdoc(instance))}\n"
                 )
 
             if re.search(r"# ?scope: ?disable_onload_docs", doc):
