@@ -66,7 +66,7 @@ class CoreMod(loader.Module):
         module = self.allmodules.get_classname(module)
         return f"{str(chatid)}.{module}" if module else chatid
 
-    async def ftgvercmd(self, message: Message) -> None:
+    async def infocmd(self, message: Message) -> None:
         """UMod tekshiruvchi"""
 
         umod_ftgver = """🌄 <b>Barakalla! Sizda «UMod»!</b> 
