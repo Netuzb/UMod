@@ -72,10 +72,10 @@ class CoreMod(loader.Module):
         umod_ftgver = """🌄 <b>Barakalla! Sizda «UMod»!</b> 
 — <i>Ayni damda ushbu talqin takomillashgan sanaladi</i>
 
-🌄 <b>«Quyidagi versiya»</b> <code>2.5.32</code>
+🌄 <b>«Quyidagi versiya»</b> <code>2.06.01</code>
 — <i>Agarda versiya boshqalarnikiga nisbatan kichik boʻlsa, iltimos yangilashni unutmang.</i>
 
-🌄 <b>«Soʻngi yangilanish sanasi»</b> <code>23.06.2022</code>"""
+🌄 <b>«Soʻngi yangilanish sanasi»</b> <code>15.11.2022</code>"""
 
         await self.inline.form(
                     text = umod_ftgver,
