@@ -15,7 +15,7 @@ class TestMod(loader.Module):
     """Perform operations based on userbot self-testing"""
 
     strings = {
-        "name": "Umod_loglar",
+        "name": "UMod Loglar",
         "set_loglevel": "🚫 <b>Iltimos, aniqlikni butun son yoki qator sifatida belgilang</b>",
         "no_logs": "ℹ️ <b>Sizda {} batafsil tavsifida hech qanday jurnal yo'q.</b>",
         "logs_filename": "umod.logs.txt",
