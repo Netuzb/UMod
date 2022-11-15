@@ -11,7 +11,7 @@ class GeekSettingsMod(loader.Module):
     """UMod sozlamalari"""
 
     strings = {
-        "name": "Umod_xususiy",
+        "name": "UMod Xususiy",
         "watchers": "🏙️ <b>Kuzatuvchilar:</b>\n\n<b>{}</b>",
         "mod404": "🏙️ <b>{} kuzatuvchisi topilmadi</b>",
         "already_disabled": "🏙️ <b>{} kuzatuvchisi allaqachon oʻchirib qoʻyilgan</b>",
