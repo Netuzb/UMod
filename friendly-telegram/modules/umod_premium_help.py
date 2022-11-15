@@ -24,7 +24,7 @@ class HelpMod(loader.Module):
     """UMod uchun yordam moduli"""
 
     strings = {
-        "name": "UMod_yordam",
+        "name": "UMod Yordam",
         "bad_module": "<b>🌄 Modul: <code>{}</code> - topilmadi!</b>",
         "single_mod_header": "🌇 <b>Modul nomi:</b> {}",
         "single_cmd": "\n🌄️ <b>{}{}</b> - ",
