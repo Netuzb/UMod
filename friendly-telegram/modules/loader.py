@@ -105,7 +105,7 @@ class LoaderMod(loader.Module):
     """Loads modules"""
 
     strings = {
-        "name": "Umod_saqlagich",
+        "name": "UMod Saqlagich",
         "avail_header": "<b>🌇 UMod\n</b>",
         "no_module": "<b>🌇 Modul manzili xato!</b>",
         "no_file": "<b>🏙️ Fayl topilmadi!?</b>",
